@@ -90,28 +90,28 @@ export function Header() {
       >
         {/* Menu items container */}
         <div className="h-full flex flex-col justify-end pb-32 px-8 sm:px-12 lg:px-16">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="block text-[72px] font-normal font-montserrat text-[#6a6a6a] hover:text-white transition-colors duration-200 mb-2"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
+  {menuItems.map((item) => (
+    <Link
+      key={item.name}
+      href={item.href}
+      className="block text-[25px] font-bold font-['Montserrat',_sans-serif] text-[#6a6a6a] hover:text-white transition-colors duration-200 mb-0.5"
+      onClick={() => setIsOpen(false)}
+    >
+      {item.name}
+    </Link>
+  ))}
+</div>
 
         {/* Contact footer */}
-        <div className="absolute bottom-0 left-0 right-0 px-8 sm:px-12 lg:px-16 py-8 flex justify-between items-center border-t border-gray-800">
+        <div className="absolute bottom-0 left-0 right-0 px-8 sm:px-12 lg:px-16 py-6 flex justify-between items-center border-t border-gray-800">
           <span className="text-gray-400 font-ibm-plex-mono text-sm uppercase">
             KONTAKT
           </span>
           <a 
-            href="tel:+49123456789" 
+            href="tel:+4930123456789" 
             className="text-white font-montserrat text-sm underline decoration-1 underline-offset-4 hover:text-gray-400 transition-colors duration-200"
           >
-            +49 123 456 789
+            +49 30 123 45 678
           </a>
         </div>
       </div>
