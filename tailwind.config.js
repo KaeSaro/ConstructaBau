@@ -13,8 +13,10 @@ module.exports = {
         border: 'var(--border)',
       },
       fontFamily: {
-        montserrat: ['var(--font-montserrat)'],
-        'ibm-plex-mono': ['var(--font-ibm-plex-mono)'],
+        montserrat: ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
+        'ibm-plex-mono': ['var(--font-ibm-plex-mono)', 'IBM Plex Mono', 'sans-serif'],
+        arial: ['Arial', 'sans-serif'],
+        'arial-extended': ['Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
       },
     },
   },

@@ -2,18 +2,22 @@ import { Montserrat, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/Header';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-});
-
+// IBM Plex Mono mit sans-serif fallback
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   variable: '--font-ibm-plex-mono',
   display: 'swap',
   weight: ['100', '200', '300', '400', '500', '600', '700'],
+  fallback: ['sans-serif'],
+});
+
+// Montserrat mit sans-serif fallback
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
+  weight: ['500'],
+  fallback: ['sans-serif'],
 });
 
 export const metadata = {
@@ -24,9 +28,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${ibmPlexMono.variable} antialiased`}>
+      <body
+        className={`${montserrat.variable} ${ibmPlexMono.variable} antialiased`}
+        style={{
+          fontFamily: 'Arial, Helvetica Neue, Helvetica, sans-serif',
+        }}
+      >
         <Header />
-        <main className="pt-[80px]">{children}</main>
+        {children}
       </body>
     </html>
   );
