@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         }}
       >
         <Header />
-        {children}
+        <div className="mb-32 mt-[550px] w-full max-w-[1200px] px-8 sm:px-12 lg:px-16">{children}</div>
       </body>
     </html>
   );

@@ -30,27 +30,29 @@ export function Header() {
       <div className="w-full">
         <div className="flex h-[80px]">
           <div className="w-full h-full px-8 sm:px-12 lg:px-16">
-            {/* Logo */}
-            <div className="absolute left-8 sm:left-12 lg:left-16 h-[80px] flex items-center z-[60]">
-              <Link 
-                href="/" 
-                onClick={() => setIsOpen(false)}
-                className={`text-xl font-bold font-['IBM_Plex_Mono',_sans-serif] uppercase tracking-wider transition-colors duration-300 ease-in-out text-foreground md:text-foreground ${
-                  isOpen ? 'text-white' : ''
-                }`}
-              >
-                CONSTRUCTA BAU
-              </Link>
-            </div>
+{/* Logo */}
+<div className="absolute left-8 sm:left-12 lg:left-16 h-[80px] flex items-center z-[60]">
+  <Link 
+    href="/" 
+    onClick={() => setIsOpen(false)}
+    className={`rounded-lg px-4 py-1 text-[24px] font-['Montserrat',_sans-serif] uppercase transition-colors duration-300 ease-in-out ${
+      isOpen 
+        ? 'bg-white text-black' 
+        : 'bg-[#1a1a1a] text-white'
+    }`}
+  >
+    Constructa Bau<span className="text-[#e36800]">.</span>
+  </Link>
+</div>
             
             {/* Desktop menu */}
-            <nav className="hidden md:flex h-full flex-1 justify-center items-center pl-40">
+            <nav className="hidden md:flex h-full flex-1 justify-center items-center" style={{paddingLeft:220}}>
               <div className="flex space-x-12">
                 {menuItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="group relative inline-flex items-center px-1 text-sm font-medium font-['Montserrat',_sans-serif] text-[#0d0e14]"
+                    className="group relative inline-flex items-center px-1 text-md font-medium font-['Montserrat',_sans-serif] text-[#0d0e14]"
                   >
                     {item.name}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0d0e14] group-hover:w-full transition-all duration-300 ease-in-out" />

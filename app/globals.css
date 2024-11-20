@@ -13,3 +13,11 @@ body {
   background: var(--background);
   font-family: var(--font-montserrat);
 }
+
+@layer base {
+  .font-\[\'Montserrat\'\2c _sans-serif\] {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.09em; /* adjust spacing as needed */
+    /* add other font styles here */
+  }
+}
