@@ -32,7 +32,7 @@ export default function Kontakt() {
           </p>
           <p className="text-sm text-black font-['IBM_Plex_Mono',_sans-serif] uppercase">
             Schreiben Sie uns also eine E-Mail und wir werden unser Bestes tun, Ihre Fragen schneller zu beantworten,
-            als Sie sagen können: „Ist das das wahre Leben oder ist das nur Fantasie?" Lass uns chatten!
+            als Sie sagen können: „Ist das das wahre Leben oder ist das nur Fantasie?&quot; Lass uns chatten!
           </p>
         </div>
 
