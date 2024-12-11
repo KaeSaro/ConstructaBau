@@ -21,8 +21,12 @@ export default function Leistungen() {
       {/* Tiefbau Section */}
       <div className="mt-32 text-left">
         <Subtitle withDot>Tiefbau</Subtitle>
-        <RegularText withQuotes>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
-        <RegularText withQuotes>Wir legen das Fundament</RegularText>
+        <RegularText withDot withQuotes>
+          vom Aushub bis zu komplexen Infrastruktur-projekten
+        </RegularText>
+        <RegularText withDot withQuotes>
+          Wir legen das Fundament
+        </RegularText>
       </div>
 
       {/* Baggerarbeiten Section */}
@@ -35,13 +39,15 @@ export default function Leistungen() {
       {/* Pflastergestaltung Section */}
       <div className="mt-16 text-left">
         <Subtitle withDot>Pflastergestaltung</Subtitle>
-        <RegularText withQuotes>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
+        <RegularText withDot withQuotes>
+          Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen
+        </RegularText>
       </div>
 
       {/* Grünflächenpflege Section */}
       <div className="mt-16 text-left">
         <Subtitle withDot>Pflastergestaltung</Subtitle>
-        <RegularText withQuotes>
+        <RegularText withDot withQuotes>
           Damit Ihr Garten das ganze Jahe über in voller Pracht erstrahlt,
           {'\n'}übernehmen wir alle Pflegearbeiten
         </RegularText>

@@ -71,8 +71,8 @@ export default function Home() {
             Kontaktieren
           </a>
           Sie uns noch heute für eine individuelle Beratung!
-          <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>
         </RegularText>
+        <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>
       </div>
     </div>
   );
