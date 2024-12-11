@@ -38,7 +38,7 @@ export default function Kontakt() {
 
         {/* Formular rechts */}
         <div className="w-full md:w-1/2 bg-[rgb(242,241,235)] p-8 rounded-lg">
-          <form action="mailto:ek@c-bau.com" method="post" enctype="text/plain">
+          <form action="mailto:ek@c-bau.com" method="post" encType="text/plain">
             <div className="flex flex-col gap-4">
               <input
                 type="text"
@@ -67,6 +67,13 @@ export default function Kontakt() {
               >
                 Senden
               </button>
+              {/* Neuer Anrufen Button */}
+              <a
+                href="tel:+4930123456789"
+                className="bg-[#f1f2eb] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
+              >
+                Anrufen
+              </a>
             </div>
           </form>
         </div>
@@ -85,22 +92,22 @@ export default function Kontakt() {
         <div className="w-full md:w-1/2 text-right">
           <ul className="space-y-4">
             <li>
-              <a href="/leistungen" className="text-[#c7c7c7] text-[24px] uppercase hover:text-white">
+              <a href="/leistungen" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
                 LEISTUNGEN
               </a>
             </li>
             <li>
-              <a href="/karriere" className="text-[#c7c7c7] text-[24px] uppercase hover:text-white">
-                KARIERRE
+              <a href="/baustellenmanagement" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
+                Baustellenmanagement
               </a>
             </li>
             <li>
-              <a href="/team" className="text-[#c7c7c7] text-[24px] uppercase hover:text-white">
+              <a href="/team" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
                 TEAM
               </a>
             </li>
             <li>
-              <a href="/kontakt" className="text-[#c7c7c7] text-[24px] uppercase hover:text-white">
+              <a href="/kontakt" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
                 KONTAKT
               </a>
             </li>

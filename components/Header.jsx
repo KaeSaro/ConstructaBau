@@ -2,21 +2,24 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 const menuItems = [
+  { name: 'Home', href: '/' },
   { name: 'Leistungen', href: '/leistungen' },
-  { name: 'Karriere', href: '/karriere' },
+  { name: 'Baustellenmanagement', href: '/baustellenmanagement' },
   { name: 'Team', href: '/team' },
   { name: 'Kontakt', href: '/kontakt' },
-]
+] 
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) { // 768px ist der md breakpoint in Tailwind
+      // Breakpoint auf 1024px erhöht
+      if (window.innerWidth >= 1024) {
         setIsOpen(false)
       }
     }
@@ -30,42 +33,44 @@ export function Header() {
       <div className="w-full">
         <div className="flex h-[80px]">
           <div className="w-full h-full px-8 sm:px-12 lg:px-16">
-{/* Logo */}
-<div className="absolute left-8 sm:left-12 lg:left-16 h-[80px] flex items-center z-[60]">
-  <Link 
-    href="/" 
-    onClick={() => setIsOpen(false)}
-    className={`rounded-lg px-4 py-1 text-[24px] font-['Montserrat',_sans-serif] uppercase transition-colors duration-300 ease-in-out ${
-      isOpen 
-        ? 'bg-white text-black' 
-        : 'bg-[#1a1a1a] text-white'
-    }`}
-  >
-    Constructa Bau<span className="text-[#e36800]">.</span>
-  </Link>
-</div>
+            {/* Logo */}
+            <div className="absolute left-8 sm:left-12 lg:left-16 h-[80px] flex items-center z-[60]">
+              <Link 
+                href="/" 
+                onClick={() => setIsOpen(false)}
+                className={`rounded-lg px-4 py-1 text-[24px] font-['Montserrat',_sans-serif] uppercase transition-colors duration-300 ease-in-out ${
+                  isOpen 
+                    ? 'bg-white text-black' 
+                    : 'bg-[#1a1a1a] text-white'
+                }`}
+              >
+                Constructa Bau<span className="text-[#e36800]">.</span>
+              </Link>
+            </div>
             
-            {/* Desktop menu */}
-            <nav className="hidden md:flex h-full flex-1 justify-center items-center" style={{paddingLeft:220}}>
-              <div className="flex space-x-12">
+            {/* Desktop menu - md durch lg ersetzt */}
+            <nav className="hidden lg:flex h-full flex-1 items-center relative" style={{marginLeft: "340px", marginRight: "100px"}}>
+              <div className="flex justify-center w-full space-x-6 lg:space-x-12">
                 {menuItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="group relative inline-flex items-center px-1 text-md font-medium font-['Montserrat',_sans-serif] text-[#0d0e14]"
+                    className="group relative inline-flex items-center px-1 text-md font-medium font-['Montserrat',_sans-serif] text-[#0d0e14] whitespace-nowrap"
                   >
                     {item.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0d0e14] group-hover:w-full transition-all duration-300 ease-in-out" />
+                    <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0d0e14] transition-all duration-300 ease-in-out
+                      ${pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'}`} 
+                    />
                   </Link>
                 ))}
               </div>
             </nav>
             
-            {/* Menu button */}
+            {/* Menu button - md durch lg ersetzt */}
             <div className="absolute right-8 sm:right-12 lg:right-16 h-[80px] flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex md:hidden items-center w-10 h-10 rounded-md focus:outline-none z-[60]"
+                className="inline-flex lg:hidden items-center w-10 h-10 rounded-md focus:outline-none z-[60]"
                 aria-label="Toggle menu"
               >
                 <div className="relative w-7 h-2.5 ml-auto">
@@ -89,27 +94,26 @@ export function Header() {
           </div>
         </div>
 
-        {/* Border */}
         <div className="px-8 sm:px-12 lg:px-16">
           <div className="h-px bg-border" />
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - md durch lg ersetzt */}
       <div 
-        className={`fixed top-0 left-0 right-0 bottom-0 bg-[#1a1a1a] md:hidden z-50 transition-all duration-300 ease-in-out transform ${
+        className={`fixed top-0 left-0 right-0 bottom-0 bg-[#1a1a1a] lg:hidden z-50 transition-all duration-300 ease-in-out transform ${
           isOpen 
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 -translate-y-full pointer-events-none'
         }`}
       >
-        {/* Menu items container */}
         <div className="h-full flex flex-col justify-end pb-32 px-8 sm:px-12 lg:px-16">
           {menuItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="block text-[25px] font-[500] font-bold font-['Montserrat',_sans-serif] text-[#6a6a6a] hover:text-white transition-colors duration-200 mb-0.5"
+              className={`block text-[25px] font-[500] font-bold font-['Montserrat',_sans-serif] transition-colors duration-200 mb-0.5 
+                ${pathname === item.href ? 'text-white' : 'text-[#6a6a6a] hover:text-white'}`}
               onClick={() => setIsOpen(false)}
             >
               {item.name}
@@ -117,7 +121,6 @@ export function Header() {
           ))}
         </div>
 
-        {/* Contact footer */}
         <div className="absolute bottom-0 left-0 right-0 px-8 sm:px-12 lg:px-16 py-6 flex justify-between items-center border-t border-gray-800">
           <span className="text-gray-400 font-['IBM_Plex_Mono',_sans-serif] text-sm uppercase">
             <span className="hidden min-[400px]:inline">BLEIBEN SIE IN KONTAKT</span>

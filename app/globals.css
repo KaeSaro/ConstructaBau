@@ -12,6 +12,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-montserrat);
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 @layer base {
@@ -20,4 +25,19 @@ body {
     letter-spacing: -0.09em; /* adjust spacing as needed */
     /* add other font styles here */
   }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+  border: 4px solid var(--background);
 }

@@ -1,21 +1,24 @@
 import React from 'react';
 
-const TeamMember = ({ name, position, image, bio }) => {
+const TeamMember = ({ name, position, image }) => {
+  const isEyup = name === 'Eyüp Keser'; // Bedingung, um Eyüp zu erkennen
   return (
-    <div className="flex flex-col items-start bg-[#f1f2eb] p-6 rounded-lg hover:cursor-pointer">
+    <div className="flex flex-col items-start bg-background p-6 rounded-lg hover:cursor-pointer">
       <div className="relative w-full h-[174px] overflow-hidden rounded-[10px]">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover rounded-[10px] transition-all duration-300 ease-in-out hover:rounded-none hover:scale-105"
+          className={`w-full h-full object-cover rounded-[10px] transition-all duration-300 ${
+            isEyup ? 'filter grayscale hover:grayscale-0 hover:scale-105' : ''
+          }`}
         />
       </div>
       <div className="mt-4">
-        <h3 className="text-[32px] font-['IBM_Plex_Mono',_sans-serif] font-bold uppercase text-left">
+        <h3 className="text-[32px] font-montserrat font-bold uppercase text-left">
           {name}
-          <span className="text-[#e36800] -ml-2">.</span>
+          <span className="text-[#e36800] -ml-0.4">.</span>
         </h3>
-        <p className="text-[20px] font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#e36800] mt-1">{position}</p>
+        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#e36800] mt-1">{position}</p>
       </div>
     </div>
   );
@@ -36,7 +39,7 @@ export default function Team() {
     {
       name: 'Eyüp Keser',
       position: 'Polier',
-      image: '/api/placeholder/329/174',
+      image: '/images/Eyo.jpg',
     },
     {
       name: 'Momo',
