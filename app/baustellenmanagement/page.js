@@ -1,4 +1,7 @@
 import { Header } from '@/components/Header';
+import { Title } from '@/components/Title';
+import { RegularText } from '@/components/RegularText';
+
 import Image from 'next/image';
 
 export default function Baustellenmanagement() {
@@ -13,24 +16,18 @@ export default function Baustellenmanagement() {
       </div>
 
       {/* Hauptüberschrift - jetzt links ausgerichtet */}
-      <h2 className="text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mt-2">
-        Management<span className="text-[#e36800]">.</span>
-      </h2>
+      <Title withDot>Management</Title>
 
       {/* Text Abschnitte */}
-      <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] mt-24 leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left space-y-12">
-        <p>
-          Effizienz und Präzision auf jeder Baustelle<span className="text-[#e36800] -ml-3">.</span>
-        </p>
-
-        <p>
+      <div className="mt-32 space-y-16">
+        <RegularText withDot>Effizienz und Präzision auf jeder Baustelle</RegularText>
+        <RegularText withDot>
           Ein erfolgreiches Bauprojekt beginnt mit einer klaren Planung und einem strukturierten Ablauf
-          <span className="text-[#e36800] -ml-3">.</span>
-        </p>
-        <p>
+        </RegularText>
+        <RegularText withDot>
           Mit unserem professionellen Baustellenmanagement sorgen wir für eine reibungslose Koordination aller Gewerke,
-          die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort<span className="text-[#e36800] -ml-3">.</span>
-        </p>
+          die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort
+        </RegularText>
       </div>
     </div>
   );

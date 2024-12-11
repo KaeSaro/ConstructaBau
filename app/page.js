@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className="flex flex-col items-start space-y-32">
       <Title withDot>Willkommen bei der Constructa Bau GmbH</Title>
-      <RegularText withDot withQuotes>
-        Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten
-      </RegularText>
 
-      <div className="space-y-12">
+      <div className="space-y-16">
+        <RegularText withDot withQuotes>
+          Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten
+        </RegularText>
         <RegularText>
           Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und Tiefbauprojekte
           präzise umsetzt?

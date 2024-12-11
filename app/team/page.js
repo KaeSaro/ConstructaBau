@@ -1,13 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const TeamMember = ({ name, position, image }) => {
   const isEyup = name === 'Eyüp Keser'; // Bedingung, um Eyüp zu erkennen
   return (
     <div className="flex flex-col items-start bg-background p-6 rounded-lg hover:cursor-pointer">
       <div className="relative w-full h-[174px] overflow-hidden rounded-[10px]">
-        <img
+        <Image
           src={image}
           alt={name}
+          width={200}
+          height={200}
           className={`w-full h-full object-cover rounded-[10px] transition-all duration-300 ${
             isEyup ? 'filter grayscale hover:grayscale-0 hover:scale-105' : ''
           }`}
@@ -68,7 +71,7 @@ export default function Team() {
       </h2>
 
       {/* Team-Mitglieder Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-32">
         {teamMembers.map((member) => (
           <TeamMember
             key={member.name}

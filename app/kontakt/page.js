@@ -18,7 +18,7 @@ export default function Kontakt() {
       </h2>
 
       {/* Flexbox für Desktop: Text und Formular nebeneinander */}
-      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 mt-32">
         {/* Text links */}
         <div className="w-full md:w-1/2 flex flex-col space-y-4 md:pt-8">
           <h2 className="text-xl font-bold font-['IBM_Plex_Mono',_sans-serif] text-black uppercase">
@@ -80,7 +80,7 @@ export default function Kontakt() {
       </div>
 
       {/* Schwarze Box mit Links */}
-      <div className="bg-[#1a1a1a] w-full mt-12 rounded-lg flex flex-col md:flex-row justify-between items-start p-8">
+      <div className="bg-[#1a1a1a] w-full mt-16 rounded-lg flex flex-col md:flex-row justify-between items-start p-8">
         <div className="text-white w-full md:w-1/2">
           <div className="flex flex-col items-start">
             <h1 className="text-[35px] font-['Montserrat',_sans-serif] uppercase">

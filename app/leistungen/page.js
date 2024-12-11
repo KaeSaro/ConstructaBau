@@ -32,7 +32,7 @@ export default function Leistungen() {
       </div>
 
       {/* Baggerarbeiten Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-16 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Baggerarbeiten<span className="text-[#e36800]">.</span>
         </h3>
@@ -43,7 +43,7 @@ export default function Leistungen() {
       </div>
 
       {/* Pflastergestaltung Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-16 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Pflastergestaltung<span className="text-[#e36800]">.</span>
         </h3>
@@ -54,7 +54,7 @@ export default function Leistungen() {
       </div>
 
       {/* Grünflächenpflege Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-16 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Grünflächenpflege<span className="text-[#e36800]">.</span>
         </h3>
@@ -66,12 +66,12 @@ export default function Leistungen() {
       </div>
 
       {/* Warum*/}
-      <h2 className="mt-40 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+      <h2 className="mt-32 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
         Warum Constructa Bau?<span className="text-[#e36800]"></span>
       </h2>
 
       {/* Erfahrung und Kompetenz Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-32 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Erfahrung und Kompetenz<span className="text-[#e36800]">.</span>
         </h3>
@@ -82,7 +82,7 @@ export default function Leistungen() {
       </div>
 
       {/* Individuelle Lösungen Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-16 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Individuelle Lösungen<span className="text-[#e36800]">.</span>
         </h3>
@@ -93,7 +93,7 @@ export default function Leistungen() {
       </div>
 
       {/* Zuverlässigkeit und Qualität Section */}
-      <div className="mt-40 text-left">
+      <div className="mt-16 text-left">
         <h3 className="text-[32px] font-['Montserrat',_sans-serif] uppercase mb-2">
           Zuverlässigkeit und Qualität<span className="text-[#e36800]">.</span>
         </h3>
@@ -105,7 +105,7 @@ export default function Leistungen() {
 
       <div className="flex flex-col">
         {/* Traumprojekt */}
-        <h2 className="mt-40 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+        <h2 className="mt-32 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           LASSEN SIE UNS IHR TRAUMPROJEKT GESTALTEN<span className="text-[#e36800] -ml-1">.</span>
         </h2>
       </div>
