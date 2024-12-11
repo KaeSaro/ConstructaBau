@@ -50,7 +50,7 @@ export default function Team() {
     {
       name: 'Momo',
       position: 'Feel Good Manager',
-      image: '/momo.JPG',
+      image: '/momo.jpg',
     },
   ];
 
