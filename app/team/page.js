@@ -43,7 +43,7 @@ export default function Team() {
     {
       name: 'Eyüp Keser',
       position: 'Polier',
-      image: 'https://picsum.photos/329/174',
+      image: '/team-eyo.jpg',
     },
     {
       name: 'Don Carlos',
