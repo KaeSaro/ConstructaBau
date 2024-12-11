@@ -11,6 +11,7 @@ const TeamMember = ({ name, position, image }) => {
           alt={name}
           width={200}
           height={200}
+          quality={100}
           className={`w-full h-full object-cover rounded-[10px] transition-all duration-300 ${
             isEyup ? 'filter grayscale hover:grayscale-0 hover:scale-105' : ''
           }`}
