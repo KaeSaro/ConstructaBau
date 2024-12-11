@@ -4,6 +4,10 @@ import { Title } from '@/components/Title';
 export default function Home() {
   return (
     <div className="flex flex-col items-start space-y-32">
+      <div className="w-full aspect-video relative overflow-hidden rounded-2xl">
+        <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-full object-cover" />
+      </div>
+
       <Title withDot>Willkommen bei der Constructa Bau GmbH</Title>
 
       <div className="space-y-16">
