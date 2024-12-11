@@ -89,26 +89,32 @@ export default function Kontakt() {
             <p className="text-[#999999] text-[16px] font-['Montserrat',_sans-serif]">Wir schaffen solide Grundlagen</p>
           </div>
         </div>
-        <div className="w-full md:w-1/2 text-right">
+        <div className="w-full md:w-1/2 text-right mt-8">
           <ul className="space-y-4">
             <li>
-              <a href="/leistungen" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
+              <a href="/home" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 LEISTUNGEN
               </a>
             </li>
             <li>
-              <a href="/baustellenmanagement" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
+              <a href="/baustellenmanagement" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 Baustellenmanagement
               </a>
             </li>
             <li>
-              <a href="/team" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
+              <a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 TEAM
               </a>
             </li>
+
             <li>
-              <a href="/kontakt" className="text-[#c7c7c7] text-[20px] uppercase hover:text-white">
-                KONTAKT
+              <a href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+                IMPRESSIONEN
               </a>
             </li>
           </ul>
