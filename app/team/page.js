@@ -43,7 +43,7 @@ export default function Team() {
     {
       name: 'Eyüp Keser',
       position: 'Polier',
-      image: '/test.JPG',
+      image: '/eyo.JPG',
     },
     {
       name: 'Don Carlos',
