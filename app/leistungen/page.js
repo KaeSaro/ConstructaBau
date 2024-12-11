@@ -28,9 +28,8 @@ export default function Leistungen() {
       {/* Baggerarbeiten Section */}
       <div className="mt-16 text-left">
         <Subtitle withDot>Baggerarbeiten</Subtitle>
-        <p className="mt-2 text-[24px] font-['IBM_Plex_Mono',_sans-serif] uppercase whitespace-pre-line">
-          <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
-        </p>
+
+        <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
       </div>
 
       {/* Pflastergestaltung Section */}
