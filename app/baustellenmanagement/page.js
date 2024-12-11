@@ -9,18 +9,17 @@ export default function Baustellenmanagement() {
     <div className="flex flex-col">
       {/* Punkt und Seitentitel */}
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+        <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           Baustellenmanagement
         </h1>
       </div>
 
       {/* Hauptüberschrift - jetzt links ausgerichtet */}
-      <Title withDot>Management</Title>
+      <Title withDot>Effizienz und Präzision auf jeder Baustelle</Title>
 
       {/* Text Abschnitte */}
       <div className="mt-32 space-y-16">
-        <RegularText withDot>Effizienz und Präzision auf jeder Baustelle</RegularText>
         <RegularText withDot>
           Ein erfolgreiches Bauprojekt beginnt mit einer klaren Planung und einem strukturierten Ablauf
         </RegularText>

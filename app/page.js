@@ -28,25 +28,25 @@ export default function Home() {
 
       <div className="flex flex-col space-y-6">
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Tiefbau
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Baggerarbeiten
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Pflastergestaltung
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Grünflächenpflege
           </h3>
@@ -63,14 +63,15 @@ export default function Home() {
       <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
 
       <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
-        <RegularText withDot>
+        <RegularText>
           <a
             href="/kontakt"
             className="inline-block rounded-lg px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
           >
             Kontaktieren
-          </a>{' '}
-          Sie uns noch heute für eine individuelle Beratung! Wir freuen uns darauf, Ihre Ideen zu realisieren
+          </a>
+          Sie uns noch heute für eine individuelle Beratung!
+          <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>
         </RegularText>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Kontakt() {
     <div className="flex flex-col">
       {/* Punkt und KONTAKT Text */}
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+        <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           KONTAKT
         </h1>
@@ -14,7 +14,7 @@ export default function Kontakt() {
 
       {/* Haupttext */}
       <h2 className="text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mt-2">
-        Schreiben Sie uns – wir melden uns bei Ihnen<span className="text-[#e36800]">.</span>
+        Schreiben Sie uns – wir melden uns bei Ihnen<span className="text-[#FF0000]">.</span>
       </h2>
 
       {/* Flexbox für Desktop: Text und Formular nebeneinander */}
@@ -37,40 +37,40 @@ export default function Kontakt() {
         </div>
 
         {/* Formular rechts */}
-        <div className="w-full md:w-1/2 bg-[rgb(242,241,235)] p-8 rounded-lg">
+        <div className="w-full md:w-1/2 p-8 rounded-lg">
           <form action="mailto:ek@c-bau.com" method="post" encType="text/plain">
             <div className="flex flex-col gap-4">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="p-4 border border-[#c7c7c7] rounded-md bg-[#f1f2eb] text-black"
+                className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
                 required
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="p-4 border border-[#c7c7c7] rounded-md bg-[#f1f2eb] text-black"
+                className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
                 required
               />
               <textarea
                 name="message"
                 placeholder="Nachricht"
-                className="p-4 border border-[#c7c7c7] rounded-md bg-[#f1f2eb] text-black"
+                className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
                 rows="6"
                 required
               />
               <button
                 type="submit"
-                className="bg-[#f1f2eb] text-black p-4 rounded-full mt-4 border-2 border-black transition-all duration-200 hover:bg-black hover:text-white"
+                className="bg-[#e5e5e5] text-black p-4 rounded-full mt-4 border-2 border-black transition-all duration-200 hover:bg-black hover:text-white"
               >
                 Senden
               </button>
               {/* Neuer Anrufen Button */}
               <a
                 href="tel:+4930123456789"
-                className="bg-[#f1f2eb] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
+                className="bg-[#e5e5e5] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
               >
                 Anrufen
               </a>
@@ -84,7 +84,7 @@ export default function Kontakt() {
         <div className="text-white w-full md:w-1/2">
           <div className="flex flex-col items-start">
             <h1 className="text-[35px] font-['Montserrat',_sans-serif] uppercase">
-              Constructa Bau<span className="text-[#e36800]">.</span>
+              Constructa Bau<span className="text-[#FF0000]">.</span>
             </h1>
             <p className="text-[#999999] text-[16px] font-['Montserrat',_sans-serif]">Wir schaffen solide Grundlagen</p>
           </div>

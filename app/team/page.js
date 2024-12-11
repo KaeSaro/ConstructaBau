@@ -19,9 +19,9 @@ const TeamMember = ({ name, position, image }) => {
       <div className="mt-4">
         <h3 className="text-[32px] font-montserrat font-bold uppercase text-left">
           {name}
-          <span className="text-[#e36800] -ml-0.4">.</span>
+          <span className="text-[#FF0000] -ml-0.4">.</span>
         </h3>
-        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#e36800] mt-1">{position}</p>
+        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#FF0000] mt-1">{position}</p>
       </div>
     </div>
   );
@@ -45,13 +45,13 @@ export default function Team() {
       image: '/static/Eyo.jpg',
     },
     {
-      name: 'Momo',
-      position: 'Feel Good Manager',
+      name: 'Don Carlos',
+      position: 'Security Manager',
       image: '/api/placeholder/329/174',
     },
     {
-      name: 'Don Carlos',
-      position: 'Security Manager',
+      name: 'Momo',
+      position: 'Feel Good Manager',
       image: '/api/placeholder/329/174',
     },
   ];
@@ -59,7 +59,7 @@ export default function Team() {
   return (
     <div className="flex flex-col">
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#e36800] mr-1"></span>
+        <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           Team
         </h1>
@@ -67,7 +67,7 @@ export default function Team() {
 
       {/* Haupttext */}
       <h2 className="text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mt-2">
-        Constructa Bau – ein unabhängiger Blick<span className="text-[#e36800] pl-1">.</span>
+        Constructa Bau – ein unabhängiger Blick<span className="text-[#FF0000] pl-1">.</span>
       </h2>
 
       {/* Team-Mitglieder Grid */}
