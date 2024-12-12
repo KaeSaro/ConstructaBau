@@ -80,7 +80,7 @@ export default function Kontakt() {
       </div>
 
       {/* Schwarze Box mit Links */}
-      <div className="bg-[#1a1a1a] w-full mt-16 rounded-lg flex flex-col md:flex-row justify-between items-start p-8">
+      {/* <div className="bg-[#1a1a1a] w-full mt-16 rounded-lg flex flex-col md:flex-row justify-between items-start p-8">
         <div className="text-white w-full md:w-1/2">
           <div className="flex flex-col items-start">
             <h1 className="text-[35px] font-['Montserrat',_sans-serif] uppercase">
@@ -107,19 +107,18 @@ export default function Kontakt() {
               </a>
             </li>
             <li>
-              <a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
-                TEAM
-              </a>
-            </li>
-
-            <li>
               <a href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 IMPRESSIONEN
               </a>
             </li>
+            <li>
+              <a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+                TEAM
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
