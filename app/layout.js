@@ -1,6 +1,7 @@
 import { Montserrat, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 // IBM Plex Mono mit sans-serif fallback
 const ibmPlexMono = IBM_Plex_Mono({
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <div className="mx-auto mb-32 mt-[150px] w-full max-w-[1200px] px-8 sm:px-12 lg:px-16">{children}</div>
+        <Footer />
       </body>
     </html>
   );
