@@ -3,14 +3,25 @@ import { Title } from '@/components/Title';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-start space-y-32">
-      <div className="w-full aspect-video relative overflow-hidden rounded-2xl">
-        <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-full object-cover" />
+    <div className="flex flex-col items-start">
+      {/* Container für Bild und überlappenden Titel */}
+      <div className="relative w-full">
+        {/* Bild */}
+        <div className="w-full aspect-video relative overflow-hidden rounded-2xl">
+          <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-full object-cover" />
+        </div>
+
+        {/* Titel, der das Bild überlappt */}
+        <div className="absolute bottom-[0%] left-[3px] w-full text-[#e5e5e5]">
+          <Title>Willkommen bei</Title>
+        </div>
       </div>
 
-      <Title withDot>Willkommen bei der Constructa Bau GmbH</Title>
+      {/* Rest des Titels */}
 
-      <div className="space-y-16">
+      <Title withDot>der Constructa Bau GmbH</Title>
+
+      <div className="mt-32 space-y-16">
         <RegularText withDot withQuotes>
           Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten
         </RegularText>
@@ -27,8 +38,9 @@ export default function Home() {
           um Ihre Vorstellungen Wirklichkeit werden zu lassen
         </RegularText>
       </div>
-
-      <Title withDot>Unsere Leistungen auf einen Blick</Title>
+      <div className="mt-32 mb-32">
+        <Title withDot>Unsere Leistungen auf einen Blick</Title>
+      </div>
 
       <div className="flex flex-col space-y-6">
         <div className="flex items-center">
@@ -63,9 +75,9 @@ export default function Home() {
           präzise umsetzt?
         </RegularText>
       </div>
-
-      <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
-
+      <div className="mt-32 mb-32">
+        <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
+      </div>
       <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
         <RegularText>
           <a
