@@ -30,9 +30,7 @@ export default function Home() {
       <Title withDot>der Constructa Bau GmbH</Title>
 
       <div className="mt-32 space-y-16">
-        <RegularText withDot withQuotes>
-          Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten
-        </RegularText>
+        <RegularText withDot>Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten</RegularText>
         <RegularText>
           Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und Tiefbauprojekte
           präzise umsetzt?
