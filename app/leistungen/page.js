@@ -47,7 +47,7 @@ export default function Leistungen() {
       <div className="mt-16 text-left">
         <Subtitle withDot>Pflastergestaltung</Subtitle>
         <RegularText withDot withQuotes>
-          Damit Ihr Garten das ganze Jahe über in voller Pracht erstrahlt,
+          Damit Ihr Garten das ganze Jahr über in voller Pracht erstrahlt,
           {'\n'}übernehmen wir alle Pflegearbeiten
         </RegularText>
       </div>
