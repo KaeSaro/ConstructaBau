@@ -16,7 +16,7 @@ export default function Home() {
           <div className="relative w-full max-w-[1215px] mx-auto">
             <div
               style={{ color: '#e5e5e5' }}
-              className="absolute left-10 sm:left-14 md:left-14 lg:left-[76px] xl:left-20 2xl:left-20 bottom-0"
+              className="absolute left-8 sm:left-14 md:left-14 lg:left-20 xl:left-20 2xl:left-20 max-[1200px]:left-16 bottom-0"
             >
               <Title>Willkommen bei</Title>
             </div>

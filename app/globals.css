@@ -41,3 +41,19 @@ body {
   border-radius: 5px;
   border: 4px solid var(--background);
 }
+
+.mobile-left {
+  left: 32px; /* 8 in Tailwind units */
+}
+
+@media (pointer: coarse) and (max-width: 640px) {
+  .title-position {
+    left: 32px !important; /* entspricht left-8 */
+  }
+}
+
+@media (min-width: 640px) {
+  .desktop-left {
+    left: 40px; /* 10 in Tailwind units */
+  }
+}
