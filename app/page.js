@@ -5,15 +5,22 @@ export default function Home() {
   return (
     <div className="flex flex-col items-start">
       {/* Container für Bild und überlappenden Titel */}
-      <div className="relative w-full">
+      <div className="relative left-[50%] -translate-x-1/2 w-screen">
         {/* Bild */}
-        <div className="w-full aspect-video relative overflow-hidden rounded-2xl">
+        <div className="aspect-video relative overflow-hidden">
           <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-full object-cover" />
         </div>
 
         {/* Titel, der das Bild überlappt */}
-        <div className="absolute bottom-[0%] left-[3px] w-full text-[#e5e5e5]">
-          <Title>Willkommen bei</Title>
+        <div className="absolute bottom-0 w-full">
+          <div className="relative w-full max-w-[1215px] mx-auto">
+            <div
+              style={{ color: '#e5e5e5' }}
+              className="absolute left-10 sm:left-14 md:left-14 lg:left-[76px] xl:left-20 2xl:left-20 bottom-0"
+            >
+              <Title>Willkommen bei</Title>
+            </div>
+          </div>
         </div>
       </div>
 
