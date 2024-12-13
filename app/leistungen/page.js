@@ -53,9 +53,9 @@ export default function Leistungen() {
       </div>
 
       {/* Warum*/}
-      <h2 className="mt-32 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
-        Warum Constructa Bau?<span className="text-[#FF0000]"></span>
-      </h2>
+      <div className="mt-32">
+        <Title>Warum Constructa Bau?</Title>
+      </div>
 
       {/* Erfahrung und Kompetenz Section */}
       <div className="mt-32 text-left">
