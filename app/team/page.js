@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Title } from '@/components/Title';
 
 const TeamMember = ({ name, position, image }) => {
   return (
@@ -63,9 +64,7 @@ export default function Team() {
         </h1>
       </div>
 
-      <h2 className="text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mt-2">
-        Constructa Bau – ein unabhängiger Blick<span className="text-[#FF0000] pl-1">.</span>
-      </h2>
+      <Title withDot>Constructa Bau – ein unabhängiger Blick</Title>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-32">
         {teamMembers.map((member) => (

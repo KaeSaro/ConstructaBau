@@ -29,7 +29,7 @@ export function Footer() {
       </div>
 
       {/* Footer Bottom mit Kontaktinformationen */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-center border-t border-[#333333] pt-4 space-y-4 md:space-y-0">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center border-t border-[#D0312D] pt-4 space-y-4 md:space-y-0">
         {/* Copyright Text */}
         <div className="w-full md:w-auto text-center md:text-left">
           <p className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999]">

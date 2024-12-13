@@ -1,6 +1,6 @@
 export function RegularText ({children, withQuotes, withDot}){
     
-    return (<p className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
+    return (<p className="text-[16px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
         {withQuotes ? <>&quot;</> : null}
 
         {children}

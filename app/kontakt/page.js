@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Title } from '@/components/Title';
 
 export default function Kontakt() {
   return (
@@ -12,9 +13,7 @@ export default function Kontakt() {
       </div>
 
       {/* Haupttext */}
-      <h2 className="text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mt-2">
-        Schreiben Sie uns – wir melden uns bei Ihnen<span className="text-[#FF0000]">.</span>
-      </h2>
+      <Title withDot>Schreiben Sie uns – wir melden uns bei Ihnen</Title>
 
       {/* Flexbox für Desktop: Text und Formular nebeneinander */}
       <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 mt-32">
