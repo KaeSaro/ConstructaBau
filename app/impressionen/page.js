@@ -1,4 +1,3 @@
-import { Header } from '@/components/Header';
 import { ImageCard } from '@/components/ImageCard';
 
 const images = [

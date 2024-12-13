@@ -1,4 +1,3 @@
-import { Header } from '@/components/Header';
 import { Title } from '@/components/Title';
 import { Subtitle } from '@/components/Subtitle';
 import { RegularText } from '@/components/RegularText';
