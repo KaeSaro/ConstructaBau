@@ -69,12 +69,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
-        <RegularText>
-          Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und Tiefbauprojekte
-          präzise umsetzt?
-        </RegularText>
-      </div>
+      <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left"></div>
       <div className="mt-32 mb-32">
         <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
       </div>

@@ -68,7 +68,7 @@ export default function Kontakt() {
               </button>
               {/* Neuer Anrufen Button */}
               <a
-                href="tel:+4930123456789"
+                href="tel:+4915170220139"
                 className="bg-[#e5e5e5] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
               >
                 Anrufen

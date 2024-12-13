@@ -128,10 +128,10 @@ export function Header() {
             <span className="min-[400px]:hidden">KONTAKT</span>
           </span>
           <a 
-            href="tel:+4930123456789" 
+            href="tel:+4915170220139" 
             className="text-white font-['Montserrat',_sans-serif] text-sm underline decoration-1 underline-offset-4 hover:text-gray-400 transition-colors duration-200"
           >
-            +49 30 123 45 678
+            +49 151 7022 0139
           </a>
         </div>
       </div>
