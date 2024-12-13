@@ -1,4 +1,5 @@
 import { RegularText } from '@/components/RegularText';
+import { Subtitle } from '@/components/Subtitle';
 import { Title } from '@/components/Title';
 
 export default function Home() {
@@ -49,30 +50,22 @@ export default function Home() {
         <Title withDot>Unsere Leistungen auf einen Blick</Title>
       </div>
 
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col space-y-3">
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
-          <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
-            Tiefbau
-          </h3>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <Subtitle>Tiefbau</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
-          <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
-            Baggerarbeiten
-          </h3>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <Subtitle>Baggerarbeiten</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
-          <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
-            Pflastergestaltung
-          </h3>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <Subtitle>Pflastergestaltung</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
-          <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
-            Grünflächenpflege
-          </h3>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <Subtitle>Grünflächenpflege</Subtitle>
         </div>
       </div>
 
