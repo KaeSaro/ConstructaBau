@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Kontakt() {
   return (
-    <div className="flex flex-col mt-[640px]">
+    <div className="flex flex-col mt-[304px]">
       {/* Punkt und KONTAKT Text */}
       <div className="flex items-center mb-1">
         <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>

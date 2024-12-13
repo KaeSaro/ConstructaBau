@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Leistungen() {
   return (
-    <div className="flex flex-col mt-[608px]">
+    <div className="flex flex-col mt-[304px]">
       <div className="flex items-center mb-1">
         <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
@@ -20,12 +20,8 @@ export default function Leistungen() {
       {/* Tiefbau Section */}
       <div className="mt-32 text-left">
         <Subtitle withDot>Tiefbau</Subtitle>
-        <RegularText withDot withQuotes>
-          vom Aushub bis zu komplexen Infrastruktur-projekten
-        </RegularText>
-        <RegularText withDot withQuotes>
-          Wir legen das Fundament
-        </RegularText>
+        <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
+        <RegularText withDot>Wir legen das Fundament</RegularText>
       </div>
 
       {/* Baggerarbeiten Section */}
@@ -38,15 +34,13 @@ export default function Leistungen() {
       {/* Pflastergestaltung Section */}
       <div className="mt-16 text-left">
         <Subtitle withDot>Pflastergestaltung</Subtitle>
-        <RegularText withDot withQuotes>
-          Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen
-        </RegularText>
+        <RegularText withDot>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
       </div>
 
       {/* Grünflächenpflege Section */}
       <div className="mt-16 text-left">
         <Subtitle withDot>Grünflächenpflege</Subtitle>
-        <RegularText withDot withQuotes>
+        <RegularText withDot>
           Damit Ihr Garten das ganze Jahe über in voller Pracht erstrahlt,
           {'\n'}übernehmen wir alle Pflegearbeiten
         </RegularText>

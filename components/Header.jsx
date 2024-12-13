@@ -45,7 +45,7 @@ export function Header() {
                     : 'bg-[#1a1a1a] text-white'
                 }`}
               >
-                Constructa Bau<span className="text-[#e36800]">.</span>
+                Constructa Bau<span className="text-[#D0312D]">.</span>
               </Link>
             </div>
             

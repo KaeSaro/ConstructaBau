@@ -44,25 +44,25 @@ export default function Home() {
 
       <div className="flex flex-col space-y-6">
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Tiefbau
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Baggerarbeiten
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Pflastergestaltung
           </h3>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
           <h3 className="text-[28px] sm:text-[28px] md:text-[28px] lg:text-[28px] xl:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase">
             Grünflächenpflege
           </h3>

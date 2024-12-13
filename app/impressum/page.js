@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 export default function Impressum() {
   return (
-    <div className="flex flex-col mt-[640px] space-y-20">
+    <div className="flex flex-col mt-[304px] space-y-20">
       {/* Punkt und Seitentitel */}
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#FF0000] mr-1"></span>
+        <span className="w-2 h-2 rounded-full bg-[#D0312D] mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           Impressum
         </h1>
