@@ -45,17 +45,17 @@ export default function Leistungen() {
 
       {/* Grünflächenpflege Section */}
       <div className="mt-16 text-left">
-        <Subtitle withDot>Pflastergestaltung</Subtitle>
+        <Subtitle withDot>Grünflächenpflege</Subtitle>
         <RegularText withDot withQuotes>
-          Damit Ihr Garten das ganze Jahr über in voller Pracht erstrahlt,
+          Damit Ihr Garten das ganze Jahe über in voller Pracht erstrahlt,
           {'\n'}übernehmen wir alle Pflegearbeiten
         </RegularText>
       </div>
 
       {/* Warum*/}
-      <div className="mt-32">
-        <Title>Warum Constructa Bau?</Title>
-      </div>
+      <h2 className="mt-32 text-[36px] sm:text-[46.8px] md:text-[56px] lg:text-[80px] xl:text-[112px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+        Warum Constructa Bau?<span className="text-[#FF0000]"></span>
+      </h2>
 
       {/* Erfahrung und Kompetenz Section */}
       <div className="mt-32 text-left">
