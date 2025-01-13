@@ -3,7 +3,7 @@ import { ImageCard } from '@/components/ImageCard';
 const images = [
   {
     src: '/Bad Endbach/1.jpg',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 3000,
@@ -12,7 +12,7 @@ const images = [
   },
   {
     src: '/Bad Endbach/3.JPG',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 4284,
@@ -21,7 +21,7 @@ const images = [
   },
   {
     src: '/Bad Endbach/4.jpg',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 2252,
@@ -30,7 +30,7 @@ const images = [
   },
   {
     src: '/Bad Endbach/2.JPG',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 5712,
@@ -39,7 +39,7 @@ const images = [
   },
   {
     src: '/Bad Endbach/5.jpg',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 3000,
@@ -48,7 +48,7 @@ const images = [
   },
   {
     src: '/Bad Endbach/6.jpg',
-    alt: 'pasi',
+    alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
     width: 2252,
@@ -57,7 +57,7 @@ const images = [
   },
   {
     src: '/Rollrasen/1.jpg',
-    alt: 'pasi',
+    alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
     width: 1440,
@@ -66,7 +66,7 @@ const images = [
   },
   {
     src: '/Rollrasen/4.jpg',
-    alt: 'pasi',
+    alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
     width: 2560,
@@ -75,7 +75,7 @@ const images = [
   },
   {
     src: '/Rollrasen/3.jpg',
-    alt: 'pasi',
+    alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
     width: 1440,
@@ -84,7 +84,7 @@ const images = [
   },
   {
     src: '/Rollrasen/2.jpg',
-    alt: 'pasi',
+    alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
     width: 1440,
@@ -93,7 +93,7 @@ const images = [
   },
   {
     src: '/Gemuenden/1.jpg',
-    alt: 'pasi',
+    alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
     width: 3000,
@@ -102,7 +102,7 @@ const images = [
   },
   {
     src: '/Gemuenden/2.jpg',
-    alt: 'pasi',
+    alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
     width: 3000,
@@ -111,7 +111,7 @@ const images = [
   },
   {
     src: '/Gemuenden/3.jpg',
-    alt: 'pasi',
+    alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
     width: 3000,
@@ -120,7 +120,7 @@ const images = [
   },
   {
     src: '/Albstadt/1.jpg',
-    alt: 'pasi',
+    alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
     width: 3000,
@@ -130,7 +130,7 @@ const images = [
 
   {
     src: '/Albstadt/2.jpg',
-    alt: 'pasi',
+    alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
     width: 1440,
@@ -140,7 +140,7 @@ const images = [
 
   {
     src: '/Albstadt/3.jpg',
-    alt: 'pasi',
+    alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
     width: 1440,
@@ -149,7 +149,7 @@ const images = [
   },
   {
     src: '/Albstadt/4.jpg',
-    alt: 'pasi',
+    alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
     width: 3000,
@@ -158,7 +158,7 @@ const images = [
   },
   {
     src: '/Albstadt/5.jpg',
-    alt: 'pasi',
+    alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
     width: 3000,
@@ -167,7 +167,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/1.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 4000,
@@ -176,7 +176,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/2.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -185,7 +185,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/3.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -194,7 +194,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/4.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -203,7 +203,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/5.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -212,7 +212,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/6.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -221,7 +221,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/7.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -230,7 +230,7 @@ const images = [
   },
   {
     src: '/Wuerzburg/9.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 3000,
@@ -239,11 +239,158 @@ const images = [
   },
   {
     src: '/Wuerzburg/8.jpg',
-    alt: 'pasi',
+    alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
     width: 4000,
     height: 3000,
+    span: 'full',
+  },
+  {
+    src: '/Taktile/1.jpg',
+    alt: 'Taktile',
+    title: 'Taktiles Leitsystem',
+    date: '2024',
+    width: 2252,
+    height: 4000,
+    span: 'full',
+  },
+
+  {
+    src: '/Taktile/2.jpg',
+    alt: 'Taktile',
+    title: 'Taktiles Leitsystem',
+    date: '2024',
+    width: 2252,
+    height: 4000,
+    span: 'full',
+  },
+
+  {
+    src: '/Taktile/3.png',
+    alt: 'Taktile',
+    title: 'Taktiles Leitsystem',
+    date: '2024',
+    width: 4000,
+    height: 3000,
+    span: 'full',
+  },
+  {
+    src: '/Schachtabdeckung/1.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Schachtabdeckung/2.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Schachtabdeckung/3.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Neumarkierung/1.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Neumarkierung/2.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Neumarkierung/3.jpg',
+    alt: 'Kabelschachtabdeckung',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+
+  {
+    src: '/Alsbach/1.jpeg',
+    alt: 'Alsbach',
+    title: 'Kabelschachtabdeckung',
+    date: '2024',
+    width: 2160,
+    height: 3840,
+    span: 'full',
+  },
+  {
+    src: '/Alsbach/2.jpeg',
+    alt: 'Alsbach',
+    title: 'Alsbach',
+    date: '2024',
+    width: 2160,
+    height: 3840,
+    span: 'full',
+  },
+  {
+    src: '/Alsbach/3.jpeg',
+    alt: 'Alsbach',
+    title: 'Alsbach',
+    date: '2024',
+    width: 2160,
+    height: 3840,
+    span: 'full',
+  },
+  {
+    src: '/Alsbach/4.jpeg',
+    alt: 'Alsbach',
+    title: 'Alsbach',
+    date: '2024',
+    width: 3840,
+    height: 2160,
+    span: 'full',
+  },
+  {
+    src: '/Alsbach/5.jpg',
+    alt: 'Anfahrschutz',
+    title: 'Alsbach',
+    date: '2024',
+    width: 3000,
+    height: 4000,
+    span: 'full',
+  },
+  {
+    src: '/Anfahrschutz/1.jpg',
+    alt: 'Anfahrschutz',
+    title: 'Anfahrschutz',
+    date: '2024',
+    width: 4000,
+    height: 3000,
+    span: 'full',
+  },
+  {
+    src: '/Anfahrschutz/2.jpeg',
+    alt: 'Anfahrschutz',
+    title: 'Anfahrschutz',
+    date: '2024',
+    width: 3000,
+    height: 4000,
     span: 'full',
   },
 ];
@@ -258,7 +405,6 @@ export default function Impressionen() {
           IMPRESSIONEN
         </h1>
       </div>
-
       {/* Wide (2:2) + zwei Default (1:1) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <div className="md:col-span-2">
@@ -271,14 +417,12 @@ export default function Impressionen() {
           </div>
         </div>
       </div>
-
       {/* Landscape (3:1) */}
       <div className="mt-8 md:mt-12">
         <div className="grid grid-cols-1 gap-8 md:gap-12">
           <ImageCard {...images[3]} span="landscape" />
         </div>
       </div>
-
       {/* Half Landscape (2:1) + Default (1:1) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <div className="md:col-span-2">
@@ -288,19 +432,16 @@ export default function Impressionen() {
           <ImageCard {...images[5]} span="default" />
         </div>
       </div>
-
       {/* Three Default (1:1) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <ImageCard {...images[6]} span="default" />
         <ImageCard {...images[7]} span="default" />
         <ImageCard {...images[8]} span="default" />
       </div>
-
       {/* Two Wide (2:2) nebeneinander */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-8 md:mt-12">
         <ImageCard {...images[9]} span="wide" />
       </div>
-
       {/* Default (1:1) + Half Landscape (2:1) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <div className="md:col-span-1">
@@ -310,12 +451,10 @@ export default function Impressionen() {
           <ImageCard {...images[11]} span="halflandscape" />
         </div>
       </div>
-
       {/* Two Half Landscape (2:1) untereinander */}
       <div className="grid grid-cols-1 gap-8 md:gap-12 mt-8 md:mt-12">
         <ImageCard {...images[12]} span="halflandscape" />
       </div>
-
       {/* Default (1:1) + Wide (2:2) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <div className="md:col-span-1">
@@ -336,7 +475,6 @@ export default function Impressionen() {
         <ImageCard {...images[19]} span="default" />
         <ImageCard {...images[20]} span="default" />
       </div>
-
       {/* Wide (2:2) + zwei Default (1:1) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         <div className="md:col-span-2">
@@ -349,7 +487,6 @@ export default function Impressionen() {
           </div>
         </div>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
         {/* Zwei kleine Bilder links */}
         <div className="md:col-span-1">
@@ -361,6 +498,76 @@ export default function Impressionen() {
         {/* Großes Bild rechts */}
         <div className="md:col-span-2">
           <ImageCard {...images[26]} span="wide" />
+        </div>
+      </div>
+      {/* Default (1:1) + Wide (2:2) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <div className="md:col-span-1">
+          <ImageCard {...images[27]} span="default" />
+        </div>
+        <div className="md:col-span-2">
+          <ImageCard {...images[28]} span="wide" />
+        </div>
+      </div>
+      {/* Landscape (3:1) */}
+      <div className="mt-8 md:mt-12">
+        <div className="grid grid-cols-1 gap-8 md:gap-12">
+          <ImageCard {...images[29]} span="landscape" />
+        </div>
+      </div>
+      {/* Three Default (1:1) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <ImageCard {...images[30]} span="default" />
+        <ImageCard {...images[31]} span="default" />
+        <ImageCard {...images[32]} span="default" />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <div className="md:col-span-1">
+          <div className="aspect-[1/2]">
+            <ImageCard {...images[33]} span="default" className="h-full object-cover" />
+          </div>
+        </div>
+        <div className="md:col-span-1">
+          <div className="aspect-[1/2]">
+            <ImageCard {...images[34]} span="default" className="h-full object-cover" />
+          </div>
+        </div>
+        <div className="md:col-span-1">
+          <div className="aspect-[1/2]">
+            <ImageCard {...images[35]} span="default" className="h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      {/* Wide (2:2) + zwei Default (1:1) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <div className="md:col-span-2">
+          <ImageCard {...images[36]} span="wide" />
+        </div>
+        <div className="md:col-span-1">
+          <div className="grid grid-cols-1 gap-8 md:gap-12">
+            <ImageCard {...images[37]} span="default" />
+            <ImageCard {...images[38]} span="default" />
+          </div>
+        </div>
+      </div>
+
+      {/* Two Half Landscape (2:1) untereinander */}
+      <div className="grid grid-cols-1 gap-8 md:gap-12 mt-8 md:mt-12">
+        <ImageCard {...images[39]} span="halflandscape" />
+      </div>
+      {/* Two Wide (2:2) nebeneinander */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-8 md:mt-12">
+        <ImageCard {...images[40]} span="wide" />
+      </div>
+
+      {/* Wide (2:2) + Default (1:1)   */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <div className="md:col-span-2">
+          <ImageCard {...images[41]} span="wide" />
+        </div>
+        <div className="md:col-span-1">
+          <ImageCard {...images[42]} span="default" />
         </div>
       </div>
     </div>
