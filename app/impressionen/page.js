@@ -41,22 +41,15 @@ export default function Impressionen() {
         </h1>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-[120px]">
-        {/* Full width (2:3) */}
-        <div className="grid grid-cols-1 gap-8 md:gap-12">
-          <ImageCard {...images[0]} span="full" />
+      {/* Wide (2:2) + zwei Default (1:1) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
+        <div className="md:col-span-2">
+          <ImageCard {...images[1]} span="wide" />
         </div>
-
-        {/* Wide (2:2) + zwei Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8 md:mt-12">
-          <div className="md:col-span-2">
-            <ImageCard {...images[1]} span="wide" />
-          </div>
-          <div className="md:col-span-1">
-            <div className="grid grid-cols-1 gap-8 md:gap-12">
-              <ImageCard {...images[2]} span="default" />
-              <ImageCard {...images[2]} span="default" />
-            </div>
+        <div className="md:col-span-1">
+          <div className="grid grid-cols-1 gap-8 md:gap-12">
+            <ImageCard {...images[2]} span="default" />
+            <ImageCard {...images[2]} span="default" />
           </div>
         </div>
       </div>
