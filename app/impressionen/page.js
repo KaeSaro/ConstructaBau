@@ -304,8 +304,8 @@ const images = [
   },
   {
     src: '/Neumarkierung/1.jpg',
-    alt: 'Kabelschachtabdeckung',
-    title: 'Kabelschachtabdeckung',
+    alt: 'Neumarkierung',
+    title: 'Neumarkierung',
     date: '2024',
     width: 3000,
     height: 4000,
@@ -313,8 +313,8 @@ const images = [
   },
   {
     src: '/Neumarkierung/2.jpg',
-    alt: 'Kabelschachtabdeckung',
-    title: 'Kabelschachtabdeckung',
+    alt: 'Reinigung',
+    title: 'Reinigung',
     date: '2024',
     width: 3000,
     height: 4000,
@@ -322,8 +322,8 @@ const images = [
   },
   {
     src: '/Neumarkierung/3.jpg',
-    alt: 'Kabelschachtabdeckung',
-    title: 'Kabelschachtabdeckung',
+    alt: 'Neumarkierung',
+    title: 'Neumarkierung',
     date: '2024',
     width: 3000,
     height: 4000,
@@ -333,7 +333,7 @@ const images = [
   {
     src: '/Alsbach/1.jpeg',
     alt: 'Alsbach',
-    title: 'Kabelschachtabdeckung',
+    title: 'Alsbach',
     date: '2024',
     width: 2160,
     height: 3840,
