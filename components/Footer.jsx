@@ -7,7 +7,7 @@ export function Footer() {
         <div className="text-white w-full md:w-1/2">
           <div className="flex flex-col items-start">
             <h1 className="text-[35px] font-['Montserrat',_sans-serif] uppercase">
-              Constructa Bau<span className="text-[#FF0000]">.</span>
+              Constructa Bau<span className="text-[#D0312D]">.</span>
             </h1>
             <p className="text-[#999999] text-[16px] font-['Montserrat',_sans-serif]">
               Wir schaffen solide Grundlagen

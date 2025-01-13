@@ -18,9 +18,9 @@ const TeamMember = ({ name, position, image }) => {
       <div className="mt-4">
         <h3 className="text-[32px] font-montserrat font-bold uppercase text-left">
           {name}
-          <span className="text-[#FF0000] -ml-0.4">.</span>
+          <span className="text-[#D0312D] -ml-0.4">.</span>
         </h3>
-        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#FF0000] mt-1">{position}</p>
+        <p className="text-[20px] font-ibm-plex-mono uppercase text-#D0312D] mt-1">{position}</p>
       </div>
     </div>
   );
@@ -58,7 +58,7 @@ export default function Team() {
   return (
     <div className="flex flex-col mt-[304px]">
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#FF0000] ml-2 mr-1"></span>
+        <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           Team
         </h1>
