@@ -305,7 +305,7 @@ const images = [
   {
     src: '/Neumarkierung/1.jpg',
     alt: 'Neumarkierung',
-    title: 'Neumarkierung',
+    title: 'Reinigung Plattenbelag',
     date: '2024',
     width: 3000,
     height: 4000,
@@ -314,7 +314,7 @@ const images = [
   {
     src: '/Neumarkierung/2.jpg',
     alt: 'Reinigung',
-    title: 'Reinigung',
+    title: 'Reinigung Plattenbelag',
     date: '2024',
     width: 3000,
     height: 4000,
@@ -322,8 +322,8 @@ const images = [
   },
   {
     src: '/Neumarkierung/3.jpg',
-    alt: 'Neumarkierung',
-    title: 'Neumarkierung',
+    alt: 'Bahnsteigmarkierung',
+    title: 'Bahnsteigmarkierung',
     date: '2024',
     width: 3000,
     height: 4000,
