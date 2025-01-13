@@ -39,7 +39,7 @@ export default function Impressum() {
         <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
           <RegularText className="text-[16px]">Eintragung im Handelsregister</RegularText>
           <RegularText className="text-[16px]">Registergericht: Amtsgericht Siegen</RegularText>
-          <RegularText className="text-[16px]">Registernummer: HRB XXXXX</RegularText>
+          <RegularText className="text-[16px]">Registernummer: HRB 13712</RegularText>
         </div>
       </section>
 
@@ -58,7 +58,7 @@ export default function Impressum() {
           <RegularText className="text-[16px]">
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
           </RegularText>
-          <RegularText className="text-[16px]">DE XXX XXX XXX</RegularText>
+          <RegularText className="text-[16px]">DE 365 839 088</RegularText>
         </div>
       </section>
 
