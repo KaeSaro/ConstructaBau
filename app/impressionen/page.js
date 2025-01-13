@@ -11,7 +11,7 @@ const images = [
     span: 'full',
   },
   {
-    src: '/Bad Endbach/3.jpg',
+    src: '/Bad Endbach/3.JPG',
     alt: 'pasi',
     title: 'Bad Endbach',
     date: '2024',
@@ -29,7 +29,7 @@ const images = [
     span: 'full',
   },
   {
-    src: '/Bad Endbach/2.jpg',
+    src: '/Bad Endbach/2.JPG',
     alt: 'pasi',
     title: 'Bad Endbach',
     date: '2024',
