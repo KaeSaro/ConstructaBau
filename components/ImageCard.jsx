@@ -1,12 +1,10 @@
-import Image from 'next/image';
-
 export function ImageCard({ src, alt, title, date, width, height, span = "default" }) {
   const config = {
     default: {
       gridClass: "", 
       titleClass: "text-[12px]",
       aspectRatio: "aspect-square", // 1:1
-      heightClass: "h-full", // Füllt die Höhe des Containers
+      heightClass: "h-full", 
     },
     wide: {
       gridClass: "md:col-span-2",
@@ -45,11 +43,9 @@ export function ImageCard({ src, alt, title, date, width, height, span = "defaul
         </span>
       </div>
       <div className={`relative flex-1 overflow-hidden rounded-2xl ${config.aspectRatio}`}>
-        <Image
+        <img
           src={src}
           alt={alt}
-          fill
-          quality={100}
           className="w-full h-full object-cover transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
         />
       </div>
