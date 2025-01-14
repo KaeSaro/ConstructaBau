@@ -1,4 +1,5 @@
 import { ImageCard } from '@/components/ImageCard';
+import { Title } from '@/components/Title';
 
 const images = [
   {
@@ -401,13 +402,14 @@ export default function Impressionen() {
   return (
     <div className="flex flex-col mt-[304px]">
       {/* Punkt und Seitentitel */}
-      <div className="flex items-center mb-12">
+      <div className="flex items-center mb-1">
         <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
         <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
           IMPRESSIONEN
         </h1>
       </div>
-      <div className="space-y-12">
+      <Title withDot>Qualität in Bildern – unsere Bauprojekte</Title>
+      <div className="mt-32 space-y-16">
         {/* Wide (2:2) + zwei Default (1:1) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
           <div className="md:col-span-2">
