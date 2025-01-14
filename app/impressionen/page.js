@@ -320,7 +320,7 @@ export default function Impressionen() {
         <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
         <h1 className="text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">IMPRESSIONEN</h1>
       </div>
-      <Title withDot>Von der Vizion zur Realität – unsere Referenzen</Title>
+      <Title withDot>Von der Vision zur Realität – unsere Referenzen</Title>
 
       {/* Hauptcontainer für Bilder mit konsistentem Spacing */}
       <div className="mt-32">
