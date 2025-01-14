@@ -104,7 +104,7 @@ const images = [
   },
 
   {
-    src: '/Albstadt/2.jpg',
+    src: '/Albstadt/6.jpg',
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
