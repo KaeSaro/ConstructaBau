@@ -264,7 +264,7 @@ const images = [
   },
 
   {
-    src: '/Taktile/3.png',
+    src: '/Taktile/3.jpg',
     alt: 'Taktile',
     title: 'Taktiles Leitsystem',
     date: '2024',
@@ -328,7 +328,7 @@ const images = [
   },
 
   {
-    src: '/Alsbach/1.jpeg',
+    src: '/Alsbach/1.jpg',
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
@@ -337,7 +337,7 @@ const images = [
     span: 'full',
   },
   {
-    src: '/Alsbach/2.jpeg',
+    src: '/Alsbach/2.jpg',
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
