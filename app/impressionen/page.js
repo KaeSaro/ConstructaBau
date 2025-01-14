@@ -30,8 +30,6 @@ const images = [
     alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
-    width: 5712,
-    height: 4284,
     span: 'full',
   },
   {
@@ -39,8 +37,6 @@ const images = [
     alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -48,8 +44,6 @@ const images = [
     alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
-    width: 2252,
-    height: 4000,
     span: 'full',
   },
   {
@@ -57,8 +51,6 @@ const images = [
     alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
-    width: 1440,
-    height: 2560,
     span: 'full',
   },
   {
@@ -66,8 +58,6 @@ const images = [
     alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
-    width: 2560,
-    height: 1440,
     span: 'full',
   },
   {
@@ -75,8 +65,6 @@ const images = [
     alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
-    width: 1440,
-    height: 2560,
     span: 'full',
   },
   {
@@ -84,8 +72,6 @@ const images = [
     alt: 'Rollrasen',
     title: 'Neunkirchen',
     date: '2024',
-    width: 1440,
-    height: 2560,
     span: 'full',
   },
   {
@@ -93,8 +79,6 @@ const images = [
     alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -102,8 +86,6 @@ const images = [
     alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -111,8 +93,6 @@ const images = [
     alt: 'Gemünden',
     title: 'Gemünden',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -120,8 +100,6 @@ const images = [
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
 
@@ -130,8 +108,6 @@ const images = [
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
-    width: 1440,
-    height: 2560,
     span: 'full',
   },
 
@@ -140,8 +116,6 @@ const images = [
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
-    width: 1440,
-    height: 2560,
     span: 'full',
   },
   {
@@ -149,8 +123,6 @@ const images = [
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -158,8 +130,6 @@ const images = [
     alt: 'Albstadt',
     title: 'Albstadt',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -167,8 +137,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 4000,
-    height: 3000,
     span: 'full',
   },
   {
@@ -176,8 +144,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -185,8 +151,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -194,8 +158,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -203,8 +165,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -212,8 +172,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -221,8 +179,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -230,8 +186,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -239,8 +193,6 @@ const images = [
     alt: 'Würzburg',
     title: 'Würzburg',
     date: '2024',
-    width: 4000,
-    height: 3000,
     span: 'full',
   },
   {
@@ -248,8 +200,6 @@ const images = [
     alt: 'Taktile',
     title: 'Taktiles Leitsystem',
     date: '2024',
-    width: 2252,
-    height: 4000,
     span: 'full',
   },
 
@@ -258,8 +208,6 @@ const images = [
     alt: 'Taktile',
     title: 'Taktiles Leitsystem',
     date: '2024',
-    width: 2252,
-    height: 4000,
     span: 'full',
   },
 
@@ -268,8 +216,6 @@ const images = [
     alt: 'Taktile',
     title: 'Taktiles Leitsystem',
     date: '2024',
-    width: 4000,
-    height: 3000,
     span: 'full',
   },
   {
@@ -277,8 +223,6 @@ const images = [
     alt: 'Kabelschachtabdeckung',
     title: 'Kabelschachtabdeckung',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -286,8 +230,6 @@ const images = [
     alt: 'Kabelschachtabdeckung',
     title: 'Kabelschachtabdeckung',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -295,8 +237,6 @@ const images = [
     alt: 'Kabelschachtabdeckung',
     title: 'Kabelschachtabdeckung',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -304,8 +244,6 @@ const images = [
     alt: 'Neumarkierung',
     title: 'Reinigung Plattenbelag',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -313,8 +251,6 @@ const images = [
     alt: 'Reinigung',
     title: 'Reinigung Plattenbelag',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -322,8 +258,6 @@ const images = [
     alt: 'Bahnsteigmarkierung',
     title: 'Bahnsteigmarkierung',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
 
@@ -332,8 +266,6 @@ const images = [
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
-    width: 2160,
-    height: 3840,
     span: 'full',
   },
   {
@@ -341,8 +273,6 @@ const images = [
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
-    width: 2160,
-    height: 3840,
     span: 'full',
   },
   {
@@ -350,8 +280,6 @@ const images = [
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
-    width: 2160,
-    height: 3840,
     span: 'full',
   },
   {
@@ -359,8 +287,6 @@ const images = [
     alt: 'Alsbach',
     title: 'Alsbach',
     date: '2024',
-    width: 3840,
-    height: 2160,
     span: 'full',
   },
   {
@@ -368,8 +294,6 @@ const images = [
     alt: 'Anfahrschutz',
     title: 'Alsbach',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -377,8 +301,6 @@ const images = [
     alt: 'Anfahrschutz',
     title: 'Anfahrschutz',
     date: '2024',
-    width: 4000,
-    height: 3000,
     span: 'full',
   },
   {
@@ -386,8 +308,6 @@ const images = [
     alt: 'Anfahrschutz',
     title: 'Anfahrschutz',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
 ];
