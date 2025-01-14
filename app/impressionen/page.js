@@ -315,178 +315,185 @@ const images = [
 export default function Impressionen() {
   return (
     <div className="flex flex-col mt-[304px]">
-      {/* Punkt und Seitentitel */}
+      {/* Header Sektion */}
       <div className="flex items-center mb-1">
         <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-        <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
-          IMPRESSIONEN
-        </h1>
+        <h1 className="text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">IMPRESSIONEN</h1>
       </div>
       <Title withDot>Von der Vizion zur Realität – unsere Referenzen</Title>
-      <div className="mt-32 space-y-16">
-        {/* Wide (2:2) + zwei Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
-          <div className="md:col-span-2">
-            <ImageCard {...images[0]} span="wide" />
-          </div>
-          <div className="md:col-span-1">
-            <div className="grid grid-cols-1 gap-12">
-              <ImageCard {...images[1]} span="default" />
-              <ImageCard {...images[2]} span="default" />
+
+      {/* Hauptcontainer für Bilder mit konsistentem Spacing */}
+      <div className="mt-32">
+        <div className="grid grid-cols-1 gap-12">
+          {/* Wide (2:2) + zwei Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-2">
+              <ImageCard {...images[0]} span="wide" />
+            </div>
+            <div className="md:col-span-1">
+              <div className="grid grid-cols-1 gap-12">
+                <ImageCard {...images[1]} span="default" />
+                <ImageCard {...images[2]} span="default" />
+              </div>
             </div>
           </div>
-        </div>
-        {/* Landscape (3:1) */}
-        <div className="mt-8 md:mt-12">
+
+          {/* Landscape (3:1) */}
           <div className="grid grid-cols-1 gap-12">
             <ImageCard {...images[3]} span="landscape" />
           </div>
-        </div>
-        {/* Half Landscape (2:1) + Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-2">
-            <ImageCard {...images[4]} span="halflandscape" />
-          </div>
-          <div className="md:col-span-1">
-            <ImageCard {...images[5]} span="default" />
-          </div>
-        </div>
-        {/* Three Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <ImageCard {...images[6]} span="default" />
-          <ImageCard {...images[7]} span="default" />
-          <ImageCard {...images[8]} span="default" />
-        </div>
-        {/* Two Wide (2:2) nebeneinander */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <ImageCard {...images[9]} span="wide" />
-        </div>
-        {/* Default (1:1) + Half Landscape (2:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-1">
-            <ImageCard {...images[10]} span="default" />
-          </div>
-          <div className="md:col-span-2">
-            <ImageCard {...images[11]} span="halflandscape" />
-          </div>
-        </div>
-        {/* Two Half Landscape (2:1) untereinander */}
-        <div className="grid grid-cols-1 gap-12">
-          <ImageCard {...images[12]} span="halflandscape" />
-        </div>
-        {/* Default (1:1) + Wide (2:2) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-1">
-            <ImageCard {...images[13]} span="default" />
-          </div>
-          <div className="md:col-span-2">
-            <ImageCard {...images[14]} span="wide" />
-          </div>
-        </div>
-        {/* Three Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <ImageCard {...images[15]} span="default" />
-          <ImageCard {...images[16]} span="default" />
-          <ImageCard {...images[17]} span="default" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <ImageCard {...images[18]} span="default" />
-          <ImageCard {...images[19]} span="default" />
-          <ImageCard {...images[20]} span="default" />
-        </div>
-        {/* Wide (2:2) + zwei Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-2">
-            <ImageCard {...images[21]} span="wide" />
-          </div>
-          <div className="md:col-span-1">
-            <div className="grid grid-cols-1 gap-12">
-              <ImageCard {...images[22]} span="default" />
-              <ImageCard {...images[23]} span="default" />
+
+          {/* Half Landscape (2:1) + Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-2">
+              <ImageCard {...images[4]} span="halflandscape" />
+            </div>
+            <div className="md:col-span-1">
+              <ImageCard {...images[5]} span="default" />
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Zwei kleine Bilder links */}
-          <div className="md:col-span-1">
-            <div className="grid grid-cols-1 gap-12">
-              <ImageCard {...images[24]} span="default" />
-              <ImageCard {...images[25]} span="default" />
+
+          {/* Three Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <ImageCard {...images[6]} span="default" />
+            <ImageCard {...images[7]} span="default" />
+            <ImageCard {...images[8]} span="default" />
+          </div>
+
+          {/* Single Wide (2:2) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <ImageCard {...images[9]} span="wide" />
+          </div>
+
+          {/* Default (1:1) + Half Landscape (2:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-1">
+              <ImageCard {...images[10]} span="default" />
+            </div>
+            <div className="md:col-span-2">
+              <ImageCard {...images[11]} span="halflandscape" />
             </div>
           </div>
-          {/* Großes Bild rechts */}
-          <div className="md:col-span-2">
-            <ImageCard {...images[26]} span="wide" />
+
+          {/* Single Half Landscape */}
+          <div className="grid grid-cols-1 gap-12">
+            <ImageCard {...images[12]} span="halflandscape" />
           </div>
-        </div>
-        {/* Default (1:1) + Wide (2:2) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-1">
-            <ImageCard {...images[27]} span="default" />
+
+          {/* Default (1:1) + Wide (2:2) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-1">
+              <ImageCard {...images[13]} span="default" />
+            </div>
+            <div className="md:col-span-2">
+              <ImageCard {...images[14]} span="wide" />
+            </div>
           </div>
-          <div className="md:col-span-2">
-            <ImageCard {...images[28]} span="wide" />
+
+          {/* Three Default (1:1) - First Set */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <ImageCard {...images[15]} span="default" />
+            <ImageCard {...images[16]} span="default" />
+            <ImageCard {...images[17]} span="default" />
           </div>
-        </div>
-        {/* Landscape (3:1) */}
-        <div className="mt-8 md:mt-12">
+
+          {/* Three Default (1:1) - Second Set */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <ImageCard {...images[18]} span="default" />
+            <ImageCard {...images[19]} span="default" />
+            <ImageCard {...images[20]} span="default" />
+          </div>
+
+          {/* Wide (2:2) + Two Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-2">
+              <ImageCard {...images[21]} span="wide" />
+            </div>
+            <div className="md:col-span-1">
+              <div className="grid grid-cols-1 gap-12">
+                <ImageCard {...images[22]} span="default" />
+                <ImageCard {...images[23]} span="default" />
+              </div>
+            </div>
+          </div>
+
+          {/* Two Default (1:1) + Wide (2:2) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-1">
+              <div className="grid grid-cols-1 gap-12">
+                <ImageCard {...images[24]} span="default" />
+                <ImageCard {...images[25]} span="default" />
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              <ImageCard {...images[26]} span="wide" />
+            </div>
+          </div>
+
+          {/* Default (1:1) + Wide (2:2) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-1">
+              <ImageCard {...images[27]} span="default" />
+            </div>
+            <div className="md:col-span-2">
+              <ImageCard {...images[28]} span="wide" />
+            </div>
+          </div>
+
+          {/* Landscape (3:1) */}
           <div className="grid grid-cols-1 gap-12">
             <ImageCard {...images[29]} span="landscape" />
           </div>
-        </div>
-        {/* Three Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <ImageCard {...images[30]} span="default" />
-          <ImageCard {...images[31]} span="default" />
-          <ImageCard {...images[32]} span="default" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-1">
-            <div className="aspect-[1/2]">
-              <ImageCard {...images[33]} span="default" className="h-full object-cover" />
-            </div>
-          </div>
-          <div className="md:col-span-1">
-            <div className="aspect-[1/2]">
-              <ImageCard {...images[34]} span="default" className="h-full object-cover" />
-            </div>
-          </div>
-          <div className="md:col-span-1">
-            <div className="aspect-[1/2]">
-              <ImageCard {...images[35]} span="default" className="h-full object-cover" />
-            </div>
-          </div>
-        </div>
 
-        {/* Wide (2:2) + zwei Default (1:1) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-2">
-            <ImageCard {...images[36]} span="wide" />
+          {/* Three Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <ImageCard {...images[30]} span="default" />
+            <ImageCard {...images[31]} span="default" />
+            <ImageCard {...images[32]} span="default" />
           </div>
-          <div className="md:col-span-1">
-            <div className="grid grid-cols-1 gap-12">
-              <ImageCard {...images[37]} span="default" />
-              <ImageCard {...images[38]} span="default" />
+
+          {/* Portrait Images */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[33, 34, 35].map((index) => (
+              <div key={index} className="md:col-span-1">
+                <div className="aspect-[1/2]">
+                  <ImageCard {...images[index]} span="default" className="h-full object-cover" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Wide (2:2) + Two Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-2">
+              <ImageCard {...images[36]} span="wide" />
+            </div>
+            <div className="md:col-span-1">
+              <div className="grid grid-cols-1 gap-12">
+                <ImageCard {...images[37]} span="default" />
+                <ImageCard {...images[38]} span="default" />
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Two Half Landscape (2:1) untereinander */}
-        <div className="grid grid-cols-1 gap-12">
-          <ImageCard {...images[39]} span="halflandscape" />
-        </div>
-        {/* Two Wide (2:2) nebeneinander */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <ImageCard {...images[40]} span="wide" />
-        </div>
-
-        {/* Wide (2:2) + Default (1:1)   */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-2">
-            <ImageCard {...images[41]} span="wide" />
+          {/* Single Half Landscape */}
+          <div className="grid grid-cols-1 gap-12">
+            <ImageCard {...images[39]} span="halflandscape" />
           </div>
-          <div className="md:col-span-1">
-            <ImageCard {...images[42]} span="default" />
+
+          {/* Single Wide (2:2) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <ImageCard {...images[40]} span="wide" />
+          </div>
+
+          {/* Wide (2:2) + Default (1:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-2">
+              <ImageCard {...images[41]} span="wide" />
+            </div>
+            <div className="md:col-span-1">
+              <ImageCard {...images[42]} span="default" />
+            </div>
           </div>
         </div>
       </div>
