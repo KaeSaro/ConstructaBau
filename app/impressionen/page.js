@@ -4,6 +4,7 @@ const images = [
   {
     src: '/Bad Endbach/1.jpg',
     alt: 'Bad Endbach',
+    decoding: 'async',
     title: 'Bad Endbach',
     date: '2024',
     width: 3000,
@@ -13,6 +14,7 @@ const images = [
   {
     src: '/Bad Endbach/3.JPG',
     alt: 'Bad Endbach',
+    decoding: 'async',
     title: 'Bad Endbach',
     date: '2024',
     width: 4284,

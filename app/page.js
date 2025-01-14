@@ -50,19 +50,19 @@ export default function Home() {
 
       <div className="flex flex-col space-y-3">
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D]  self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
           <Subtitle>Tiefbau</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
           <Subtitle>Baggerarbeiten</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
           <Subtitle>Pflastergestaltung</Subtitle>
         </div>
         <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-4 mr-1"></span>
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
           <Subtitle>Grünflächenpflege</Subtitle>
         </div>
       </div>
