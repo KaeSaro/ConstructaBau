@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [], // Wenn du externe Domains brauchst
+    domains: [],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     unoptimized: false,
-    // Lokale Bilder brauchen keine remotePatterns
     remotePatterns: [
       {
         protocol: 'https',
@@ -16,11 +15,11 @@ const nextConfig = {
       },
     ],
   },
-  // Füge diese Einstellung hinzu, um die Bildoptimierung zu verbessern
-  experimental: {
-    optimizeImages: true,
-    optimizeCss: true,
-  },
+  // Entferne diese experimental Einstellungen
+  // experimental: {
+  //   optimizeImages: true,  // Diese Option existiert nicht mehr
+  //   optimizeCss: true,
+  // },
 };
 
 export default nextConfig;
