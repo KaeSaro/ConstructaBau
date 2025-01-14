@@ -1,33 +1,45 @@
+'use client';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+
 export function ImageCard({ src, alt, title, date, width, height, span = "default" }) {
+  const [isFirefox, setIsFirefox] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsFirefox(window.navigator.userAgent.toLowerCase().includes('firefox'));
+    }
+  }, []);
+
   const config = {
     default: {
       gridClass: "", 
       titleClass: "text-[12px]",
-      aspectRatio: "aspect-square", // 1:1
-      heightClass: "h-full", 
+      aspectRatio: "aspect-square",
+      heightClass: "h-full",
     },
     wide: {
       gridClass: "md:col-span-2",
       titleClass: "text-[12px] md:text-[16px] lg:text-[18px]",
-      aspectRatio: "aspect-square", // 2:2
+      aspectRatio: "aspect-square",
       heightClass: "h-full",
     },
     full: {
       gridClass: "md:col-span-3",
       titleClass: "text-[12px] md:text-[16px] lg:text-[18px]",
-      aspectRatio: "aspect-[2/3]", // 2:3
+      aspectRatio: "aspect-[2/3]",
       heightClass: "h-full",
     },
     landscape: {
       gridClass: "",
       titleClass: "text-[12px] md:text-[16px] lg:text-[18px]",
-      aspectRatio: "aspect-[3/1]", // 1:3
+      aspectRatio: "aspect-[3/1]",
       heightClass: "h-full",
     },
     halflandscape: {
       gridClass: "md:col-span-2",
       titleClass: "text-[12px] md:text-[16px] lg:text-[18px]",
-      aspectRatio: "aspect-[2/1]", // 1:2
+      aspectRatio: "aspect-[2/1]",
       heightClass: "h-full",
     }
   }[span];
@@ -43,11 +55,25 @@ export function ImageCard({ src, alt, title, date, width, height, span = "defaul
         </span>
       </div>
       <div className={`relative flex-1 overflow-hidden rounded-2xl ${config.aspectRatio}`}>
-        <img
-          src={src}
-          alt={alt}
-          className="w-full h-full object-cover transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
-        />
+        {isFirefox ? (
+          // Firefox-spezifische Bilddarstellung mit Next/Image
+          <Image
+            src={src}
+            alt={alt}
+            width={1200}
+            height={800}
+            className="w-full h-full object-cover transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
+          />
+        ) : (
+          // Standard Next/Image für andere Browser
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            quality={100}
+            className="w-full h-full object-cover transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
+          />
+        )}
       </div>
     </div>
   );
