@@ -310,6 +310,27 @@ const images = [
     date: '2024',
     span: 'full',
   },
+  {
+    src: '/Bad Endbach/7.JPG',
+    alt: 'Bad Endbach',
+    title: 'Bad Endbach',
+    date: '2024',
+    span: 'full',
+  },
+  {
+    src: '/Bad Endbach/8.JPG',
+    alt: 'Bad Endbach',
+    title: 'Bad Endbach',
+    date: '2024',
+    span: 'full',
+  },
+  {
+    src: '/Bad Endbach/9.jpg',
+    alt: 'Bad Endbach',
+    title: 'Bad Endbach',
+    date: '2024',
+    span: 'full',
+  },
 ];
 
 export default function Impressionen() {
@@ -351,6 +372,20 @@ export default function Impressionen() {
             <div className="md:col-span-1">
               <ImageCard {...images[5]} span="default" />
             </div>
+          </div>
+          {/* Default (1:1) + Half Landscape (2:1) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="md:col-span-1">
+              <ImageCard {...images[43]} span="default" />
+            </div>
+            <div className="md:col-span-2">
+              <ImageCard {...images[44]} span="halflandscape" />
+            </div>
+          </div>
+
+          {/* Single Half Landscape */}
+          <div className="grid grid-cols-1 gap-12">
+            <ImageCard {...images[45]} span="halflandscape" />
           </div>
 
           {/* Three Default (1:1) */}
