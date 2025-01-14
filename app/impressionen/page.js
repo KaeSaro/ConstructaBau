@@ -8,8 +8,6 @@ const images = [
     decoding: 'async',
     title: 'Bad Endbach',
     date: '2024',
-    width: 3000,
-    height: 4000,
     span: 'full',
   },
   {
@@ -18,8 +16,6 @@ const images = [
     decoding: 'async',
     title: 'Bad Endbach',
     date: '2024',
-    width: 4284,
-    height: 5712,
     span: 'full',
   },
   {
@@ -27,8 +23,6 @@ const images = [
     alt: 'Bad Endbach',
     title: 'Bad Endbach',
     date: '2024',
-    width: 2252,
-    height: 4000,
     span: 'full',
   },
   {
