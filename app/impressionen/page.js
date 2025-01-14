@@ -322,7 +322,7 @@ export default function Impressionen() {
           IMPRESSIONEN
         </h1>
       </div>
-      <Title withDot>Von der Vizion zur Realität – unsere Referenzen!</Title>
+      <Title withDot>Von der Vizion zur Realität – unsere Referenzen</Title>
       <div className="mt-32 space-y-16">
         {/* Wide (2:2) + zwei Default (1:1) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
