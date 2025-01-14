@@ -13,7 +13,7 @@ export default function Datenschutz() {
           Datenschutz
         </h1>
       </div>
-      <Title withDot>Datenschutz – Vertrauen ist die Basis</Title>
+      <Title withDot>Vertrauen ist die Basis</Title>
       <div className="mt-32 space-y-16">
         {/* Einleitung */}
         <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">

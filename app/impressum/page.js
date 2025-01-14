@@ -13,7 +13,7 @@ export default function Impressum() {
           Impressum
         </h1>
       </div>
-      <Title withDot>Impressum – Transparenz ist uns wichtig</Title>
+      <Title withDot>Transparenz ist uns wichtig</Title>
       <div className="mt-32 space-y-16">
         {/* Angaben gemäß § 5 TMG */}
         <section className=" [&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
