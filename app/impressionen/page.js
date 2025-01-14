@@ -395,9 +395,9 @@ export default function Impressionen() {
             <ImageCard {...images[8]} span="default" />
           </div>
 
-          {/* Single Wide (2:2) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <ImageCard {...images[9]} span="wide" />
+          {/* Single Half Landscape */}
+          <div className="grid grid-cols-1 gap-12">
+            <ImageCard {...images[9]} span="halflandscape" />
           </div>
 
           {/* Default (1:1) + Half Landscape (2:1) */}
