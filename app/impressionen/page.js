@@ -6,7 +6,7 @@ const images = [
     src: '/Bad Endbach/1.jpg',
     alt: 'Bad Endbach',
     decoding: 'async',
-    title: 'Bad Endbach Caspers',
+    title: 'Bad Endbach',
     description: 'Caspers',
     date: '2024',
     span: 'full',

@@ -11,6 +11,8 @@ const menuItems = [
   { name: 'Impressionen', href: '/impressionen' },
   { name: 'Team', href: '/team' },
   { name: 'Kontakt', href: '/kontakt' },
+  { name: 'News', href: '/news' },
+  
 ] 
 
 export function Header() {
