@@ -1,9 +1,11 @@
 'use client';
+
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export function ImageCard({ src, alt, title, date, width, height, span = "default" }) {
+export function ImageCard({ src, alt, title, date, description, width, height, span = "default" }) {
   const [isFirefox, setIsFirefox] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -54,9 +56,21 @@ export function ImageCard({ src, alt, title, date, width, height, span = "defaul
           ({date})
         </span>
       </div>
-      <div className={`relative flex-1 overflow-hidden rounded-2xl ${config.aspectRatio}`}>
+      <div 
+        className={`relative flex-1 overflow-hidden rounded-2xl ${config.aspectRatio} group`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Description Overlay */}
+        {description && (
+          <div className={`absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-40 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+            <p className={`font-['IBM_Plex_Mono',_sans-serif] ${config.titleClass} text-white text-center px-6 max-w-[80%]`}>
+              {description}
+            </p>
+          </div>
+        )}
+        
         {isFirefox ? (
-          // Firefox-spezifische Bilddarstellung mit Next/Image
           <Image
             src={src}
             alt={alt}
@@ -65,7 +79,6 @@ export function ImageCard({ src, alt, title, date, width, height, span = "defaul
             className="w-full h-full object-cover transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
           />
         ) : (
-          // Standard Next/Image für andere Browser
           <Image
             src={src}
             alt={alt}
