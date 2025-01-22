@@ -20,9 +20,23 @@ const TeamMember = ({ name, position, image, phone, email }) => {
           {name}
           <span className="text-[#D0312D] -ml-0.4">.</span>
         </h3>
-        <p className="text-[20px] font-ibm-plex-mono uppercase text-[[#1a1a1a]] mt-1">{position}</p>
-        {phone && <p className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1">{phone}</p>}
-        {email && <p className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1">{email}</p>}
+        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#1a1a1a] mt-1">{position}</p>
+        {phone && (
+          <a
+            href={`tel:${phone.replace(/\s/g, '')}`}
+            className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
+          >
+            {phone}
+          </a>
+        )}
+        {email && (
+          <a
+            href={`mailto:${email}`}
+            className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
+          >
+            {email}
+          </a>
+        )}
       </div>
     </div>
   );
