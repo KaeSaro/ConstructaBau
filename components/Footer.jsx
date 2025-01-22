@@ -24,6 +24,7 @@ export function Footer() {
             <li><a href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">IMPRESSIONEN</a></li>
             <li><a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">TEAM</a></li>
             <li><a href="/impressum" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">IMPRESSUM</a></li>
+            <li><a href="/news" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">NEWS</a></li>
           </ul>
         </div>
       </div>
