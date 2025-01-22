@@ -5,7 +5,7 @@ import { Title } from '@/components/Title';
 const TeamMember = ({ name, position, image }) => {
   return (
     <div className="flex flex-col items-start bg-background p-6 rounded-lg hover:cursor-pointer ">
-      <div className="relative w-full h-[174px] overflow-hidden rounded-[10px] ">
+      <div className="relative w-full h-[250px] overflow-hidden rounded-[10px] ">
         <Image
           src={image}
           alt={name}
