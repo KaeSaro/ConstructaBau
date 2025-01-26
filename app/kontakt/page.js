@@ -29,7 +29,7 @@ export default function Kontakt() {
             Unser Team hat vielleicht keine Hotline zur Batcave, aber wir reagieren ziemlich schnell auf E-Mails.
           </p>
           <p className="text-sm text-black font-['IBM_Plex_Mono',_sans-serif] uppercase">
-            Schreiben Sie uns also eine E-Mail und wir werden unser Bestes tun, Ihnen Schnellstmöglich zu antworten!
+            Schreiben Sie uns also eine E-Mail und wir werden unser Bestes tun, Ihnen Schnellstmöglich zu antworten.
           </p>
         </div>
 
