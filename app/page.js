@@ -1,92 +1,92 @@
+import { Content } from '@/components/Content';
 import { RegularText } from '@/components/RegularText';
 import { Subtitle } from '@/components/Subtitle';
 import { Title } from '@/components/Title';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-start">
-      {/* Container für Bild und überlappenden Titel */}
-      <div className="relative left-[50%] -translate-x-1/2 w-screen">
-        {/* Bild */}
-        <div className="aspect-video relative overflow-hidden">
-          <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-full object-cover" />
-        </div>
+    <>
+      {/* Bild */}
 
-        {/* Titel, der das Bild überlappt */}
+      <div className="relative">
+        <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-[990px] object-cover" />
         <div className="absolute bottom-0 w-full">
-          <div className="relative w-full max-w-[1215px] mx-auto">
-            <div
-              style={{ color: '#e5e5e5' }}
-              className="absolute left-8 sm:left-14 md:left-14 lg:left-20 xl:left-20 2xl:left-20 max-[1200px]:left-16 bottom-0"
-            >
+          <Content withoutMargin>
+            <div style={{ color: '#e5e5e5' }}>
               <Title>Willkommen bei</Title>
             </div>
+          </Content>
+        </div>
+      </div>
+
+      {/* Titel, der das Bild überlappt */}
+
+      <Content withoutTopMargin>
+        <div className="flex flex-col items-start">
+          {/* Rest des Titels */}
+
+          <Title withDot>der Constructa Bau GmbH</Title>
+
+          <div className="mt-32 space-y-16">
+            <RegularText withDot>Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten</RegularText>
+            <RegularText>
+              Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und
+              Tiefbauprojekte präzise umsetzt?
+            </RegularText>
+            <RegularText withDot>
+              Bei Constructa Bau haben wir es uns zur Aufgabe gemacht, Ihre individuellen Wünsche in die Realität
+              umzusetzen – von präzisen Erdarbeiten bis hin zu grünen Oasen
+            </RegularText>
+            <RegularText withDot>
+              Ob private Gärten, gewerbliche Außenanlagen oder kommunale Bauvorhaben: Wir verbinden Technik und
+              Kreativität, um Ihre Vorstellungen Wirklichkeit werden zu lassen
+            </RegularText>
+          </div>
+          <div className="mt-32 mb-32">
+            <Title withDot>Unsere Leistungen auf einen Blick</Title>
+          </div>
+
+          <div className="flex flex-col space-y-3">
+            <div className="flex items-center">
+              <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D]  self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Tiefbau</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Baggerarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Pflastergestaltung</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Grünflächenpflege</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Baustellenmanagement</Subtitle>
+            </div>
+          </div>
+
+          <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left"></div>
+          <div className="mt-32 mb-32">
+            <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
+          </div>
+          <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
+            <RegularText>
+              <a
+                href="/kontakt"
+                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
+              >
+                Kontaktieren
+              </a>
+              Sie uns noch heute für eine individuelle Beratung!
+            </RegularText>
+            <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>
           </div>
         </div>
-      </div>
-
-      {/* Rest des Titels */}
-
-      <Title withDot>der Constructa Bau GmbH</Title>
-
-      <div className="mt-32 space-y-16">
-        <RegularText withDot>Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten</RegularText>
-        <RegularText>
-          Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und Tiefbauprojekte
-          präzise umsetzt?
-        </RegularText>
-        <RegularText withDot>
-          Bei Constructa Bau haben wir es uns zur Aufgabe gemacht, Ihre individuellen Wünsche in die Realität umzusetzen
-          – von präzisen Erdarbeiten bis hin zu grünen Oasen
-        </RegularText>
-        <RegularText withDot>
-          Ob private Gärten, gewerbliche Außenanlagen oder kommunale Bauvorhaben: Wir verbinden Technik und Kreativität,
-          um Ihre Vorstellungen Wirklichkeit werden zu lassen
-        </RegularText>
-      </div>
-      <div className="mt-32 mb-32">
-        <Title withDot>Unsere Leistungen auf einen Blick</Title>
-      </div>
-
-      <div className="flex flex-col space-y-3">
-        <div className="flex items-center">
-          <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D]  self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-          <Subtitle>Tiefbau</Subtitle>
-        </div>
-        <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-          <Subtitle>Baggerarbeiten</Subtitle>
-        </div>
-        <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-          <Subtitle>Pflastergestaltung</Subtitle>
-        </div>
-        <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-          <Subtitle>Grünflächenpflege</Subtitle>
-        </div>
-        <div className="flex items-center">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-          <Subtitle>Baustellenmanagement</Subtitle>
-        </div>
-      </div>
-
-      <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left"></div>
-      <div className="mt-32 mb-32">
-        <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
-      </div>
-      <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
-        <RegularText>
-          <a
-            href="/kontakt"
-            className="inline-block rounded-lg px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
-          >
-            Kontaktieren
-          </a>
-          Sie uns noch heute für eine individuelle Beratung!
-        </RegularText>
-        <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>
-      </div>
-    </div>
+      </Content>
+    </>
   );
 }

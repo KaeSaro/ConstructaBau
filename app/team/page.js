@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Title } from '@/components/Title';
+import { Content } from '@/components/Content';
 
 const TeamMember = ({ name, position, image, phone, email }) => {
   return (
@@ -82,28 +83,30 @@ export default function Team() {
   ];
 
   return (
-    <div className="flex flex-col mt-[304px]">
-      <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-        <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
-          Team
-        </h1>
-      </div>
+    <Content>
+      <div className="flex flex-col mt-[304px]">
+        <div className="flex items-center mb-1">
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
+          <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+            Team
+          </h1>
+        </div>
 
-      <Title withDot>Constructa Bau – ein unabhängiger Blick</Title>
+        <Title withDot>Constructa Bau – ein unabhängiger Blick</Title>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-32">
-        {teamMembers.map((member) => (
-          <TeamMember
-            key={member.name}
-            name={member.name}
-            position={member.position}
-            image={member.image}
-            phone={member.phone}
-            email={member.email}
-          />
-        ))}
-      </div>
-    </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-32">
+          {teamMembers.map((member) => (
+            <TeamMember
+              key={member.name}
+              name={member.name}
+              position={member.position}
+              image={member.image}
+              phone={member.phone}
+              email={member.email}
+            />
+          ))}
+        </div>
+      </div>{' '}
+    </Content>
   );
 }
