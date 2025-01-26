@@ -99,7 +99,7 @@ const images = [
   {
     src: '/Albstadt/1.jpg',
     alt: 'Albstadt',
-
+    title: 'Albstadt',
     date: '2024',
     span: 'full',
   },
@@ -115,21 +115,21 @@ const images = [
   {
     src: '/Albstadt/3.jpg',
     alt: 'Albstadt',
-
+    title: 'Albstadt',
     date: '2024',
     span: 'full',
   },
   {
     src: '/Albstadt/4.jpg',
     alt: 'Albstadt',
-
+    title: 'Albstadt',
     date: '2024',
     span: 'full',
   },
   {
     src: '/Albstadt/5.jpg',
     alt: 'Albstadt',
-
+    title: 'Albstadt',
     date: '2024',
     span: 'full',
   },
