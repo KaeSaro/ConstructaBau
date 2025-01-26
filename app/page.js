@@ -7,9 +7,10 @@ export default function Home() {
   return (
     <>
       {/* Bild */}
-
-      <div className="relative">
-        <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full h-[990px] object-cover" />
+      <div className="relative mt-[80px]">
+        <div className=" overflow-hidden">
+          <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full max-h-[980px] object-cover" />
+        </div>
         <div className="absolute bottom-0 w-full">
           <Content withoutMargin>
             <div style={{ color: '#e5e5e5' }}>
