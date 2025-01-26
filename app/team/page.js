@@ -66,7 +66,7 @@ export default function Team() {
       email: 'ek@c-bau.com',
     },
     {
-      name: 'Don Carlos',
+      name: 'Carlos',
       position: 'Security Manager',
       image: '/carlos.JPG',
       phone: null,
@@ -74,7 +74,7 @@ export default function Team() {
     },
     {
       name: 'Momo',
-      position: 'Feel Good Manager',
+      position: 'Happiness Manager',
       image: '/momo.jpg',
       phone: null,
       email: null,
