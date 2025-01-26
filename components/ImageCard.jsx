@@ -63,7 +63,7 @@ export function ImageCard({ src, alt, title, date, description, width, height, s
       >
         {/* Description Overlay */}
         {description && (
-          <div className={`flex items-center justify-center}`}>
+          <div className={`flex items-center justify-center`}>
             <p className={`font-['IBM_Plex_Mono',_sans-serif] ${config.titleClass} text-[#1a1a1a] text-center px-10 `}>
               {description}
             </p>

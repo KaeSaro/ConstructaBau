@@ -22,6 +22,38 @@ export const News: CollectionConfig = {
       required: true,
     },
     {
+      name: 'layout',
+      type: 'select',
+      required: true,
+      defaultValue: 'mediumSquareTextBelow',
+      options: [
+        {
+          label: 'Quadratisches Bild mit Text rechts',
+          value: 'squareTextRight'
+        },
+        {
+          label: 'Mittleres quadratisches Bild mit Text darunter',
+          value: 'mediumSquareTextBelow'
+        },
+        {
+          label: 'Großes quadratisches Bild mit Text darunter',
+          value: 'fullSquareTextBelow'
+        },
+        {
+          label: 'Hochformat mit Text rechts',
+          value: 'portraitImageTextRight'
+        },
+        {
+          label: 'Großes Querformat mit Text darunter',
+          value: 'landscapeLargeImageTextBelow'
+        },
+        {
+          label: 'Breites Querformat mit Text darunter',
+          value: 'landscapeImageTextBelow'
+        }
+      ]
+    },
+    {
       name: 'author',
       type: 'text',
     },

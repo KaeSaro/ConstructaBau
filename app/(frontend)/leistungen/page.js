@@ -19,27 +19,27 @@ export default function Leistungen() {
 
         {/* Tiefbau Section */}
         <div className="mt-32 text-left">
-          <Subtitle withDot>Tiefbau</Subtitle>
+          <Subtitle>Tiefbau</Subtitle>
           <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
           <RegularText withDot>Wir legen das Fundament</RegularText>
         </div>
 
         {/* Baggerarbeiten Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Baggerarbeiten</Subtitle>
+          <Subtitle>Baggerarbeiten</Subtitle>
 
           <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
         </div>
 
         {/* Pflastergestaltung Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Pflastergestaltung</Subtitle>
+          <Subtitle>Pflastergestaltung</Subtitle>
           <RegularText withDot>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
         </div>
 
         {/* Grünflächenpflege Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Grünflächenpflege</Subtitle>
+          <Subtitle>Grünflächenpflege</Subtitle>
           <RegularText withDot>
             Damit Ihr Garten das ganze Jahe über in voller Pracht erstrahlt,
             {'\n'}übernehmen wir alle Pflegearbeiten
@@ -47,7 +47,7 @@ export default function Leistungen() {
         </div>
         {/* Baustellenmanagement Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Baustellenmanagement</Subtitle>
+          <Subtitle>Baustellenmanagement</Subtitle>
           <RegularText withDot>
             Mit unserem professionellen Baustellenmanagement sorgen wir für eine reibungslose Koordination aller
             Gewerke, die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort
@@ -60,7 +60,7 @@ export default function Leistungen() {
         </div>
         {/* Erfahrung und Kompetenz Section */}
         <div className="mt-32 text-left">
-          <Subtitle withDot>Erfahrung und Kompetenz</Subtitle>
+          <Subtitle>Erfahrung und Kompetenz</Subtitle>
           <RegularText withDot>
             Unser erfahrenes Team bringt {'\n'}Fachwissen und Kreativität in jedes Projekt ein
           </RegularText>
@@ -68,7 +68,7 @@ export default function Leistungen() {
 
         {/* Individuelle Lösungen Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Individuelle Lösungen</Subtitle>
+          <Subtitle>Individuelle Lösungen</Subtitle>
 
           <RegularText withDot>
             Jedes Projekt ist einzigartig, {'\n'}deshalb entwickeln wir maßgeschneiderte Konzepte für unsere Kunden
@@ -77,7 +77,7 @@ export default function Leistungen() {
 
         {/* Zuverlässigkeit und Qualität Section */}
         <div className="mt-16 text-left">
-          <Subtitle withDot>Zuverlässigkeit und Qualität</Subtitle>
+          <Subtitle>Zuverlässigkeit und Qualität</Subtitle>
 
           <RegularText withDot>
             Pünktlichkeit, Sorgfalt und hochwertige Arbeit sind für uns selbstverständlich
