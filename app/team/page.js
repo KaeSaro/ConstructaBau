@@ -75,7 +75,7 @@ export default function Team() {
     {
       name: 'Momo',
       position: 'Happiness Manager',
-      image: '/momo.jpg',
+      image: '/momo.jpeg',
       phone: null,
       email: null,
     },
