@@ -78,11 +78,13 @@ export default async function Aktuelles() {
 
               <div className={layout.grid}>
                 {article.featuredImage && (
-                  <img
-                    className={`object-cover ${layout.image}`}
-                    src={article.featuredImage.url}
-                    alt={article.featuredImage.alt}
-                  />
+                  <div className={`overflow-hidden ${layout.image}`}>
+                    <img
+                      className={`object-cover w-full h-full transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105`}
+                      src={article.featuredImage.url}
+                      alt={article.featuredImage.alt}
+                    />
+                  </div>
                 )}
                 <div className={layout.text}>
                   <RegularText>{article.content}</RegularText>

@@ -8,7 +8,6 @@ const images = [
     alt: 'Bad Endbach',
     decoding: 'async',
     title: 'Bad Endbach',
-    description: 'Caspers',
     date: '2024',
     span: 'full',
   },
