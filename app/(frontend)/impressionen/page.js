@@ -1,6 +1,6 @@
-import { Content } from '@/components/Content';
-import { ImageCard } from '@/components/ImageCard';
-import { Title } from '@/components/Title';
+import { Content } from '../../../components/Content';
+import { ImageCard } from '../../../components/ImageCard';
+import { Title } from '../../../components/Title';
 
 const images = [
   {
@@ -338,7 +338,6 @@ const images = [
 export default function Impressionen() {
   return (
     <Content>
-      {' '}
       <div className="flex flex-col mt-[304px]">
         {/* Header Sektion */}
         <div className="flex items-center mb-1">

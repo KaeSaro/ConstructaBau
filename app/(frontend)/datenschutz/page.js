@@ -1,8 +1,6 @@
-import { Title } from '@/components/Title';
-import { Subtitle } from '@/components/Subtitle';
-import { RegularText } from '@/components/RegularText';
-import Image from 'next/image';
-import { Content } from '@/components/Content';
+import { Title } from '../../../components/Title';
+import { RegularText } from '../../../components/RegularText';
+import { Content } from '../../../components/Content';
 
 export default function Datenschutz() {
   return (
