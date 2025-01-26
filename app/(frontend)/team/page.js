@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { Title } from '@/components/Title';
-import { Content } from '@/components/Content';
+import { Title } from '../../../components/Title';
+import { Content } from '../../../components/Content';
 
 const TeamMember = ({ name, position, image, phone, email }) => {
   return (
