@@ -65,6 +65,10 @@ export default function Home() {
           <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
           <Subtitle>Grünflächenpflege</Subtitle>
         </div>
+        <div className="flex items-center">
+          <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+          <Subtitle>Baustellenmanagement</Subtitle>
+        </div>
       </div>
 
       <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left"></div>
