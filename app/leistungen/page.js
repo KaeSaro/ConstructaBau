@@ -49,9 +49,6 @@ export default function Leistungen() {
       <div className="mt-16 text-left">
         <Subtitle withDot>Baustellenmanagement</Subtitle>
         <RegularText withDot>
-          Ein erfolgreiches Bauprojekt beginnt mit einer klaren Planung und einem strukturierten Ablauf
-        </RegularText>
-        <RegularText withDot>
           Mit unserem professionellen Baustellenmanagement sorgen wir für eine reibungslose Koordination aller Gewerke,
           die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort
         </RegularText>
