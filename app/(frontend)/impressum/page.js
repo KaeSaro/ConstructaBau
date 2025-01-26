@@ -94,7 +94,7 @@ export default function Impressum() {
 
           {/* Verbraucherstreitbeilegung */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4 mb-16">
-            <Title withDot>Verbraucherstreitbeilegung</Title>
+            <Title withDot>Streitbeilegung</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
               <RegularText className="text-[16px]">
                 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer

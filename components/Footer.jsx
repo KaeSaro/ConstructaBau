@@ -20,7 +20,6 @@ export function Footer() {
           <ul className="space-y-4">
             <li><a href="/home" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">Home</a></li>
             <li><a href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">LEISTUNGEN</a></li>
-            <li><a href="/baustellenmanagement" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">Baustellenmanagement</a></li>
             <li><a href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">IMPRESSIONEN</a></li>
             <li><a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">TEAM</a></li>
             <li><a href="/impressum" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">IMPRESSUM</a></li>
