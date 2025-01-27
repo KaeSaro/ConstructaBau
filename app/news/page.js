@@ -1,4 +1,4 @@
-import { Content } from '../../../components/Content';
+import { Content } from '../../components/Content';
 import { getPayload } from '@/client/payload';
 import { RegularText } from '@/components/RegularText';
 import { Subtitle } from '@/components/Subtitle';

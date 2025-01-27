@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function Footer() {
   return (
     <footer className="bg-[#1a1a1a] w-full py-8 p-8 relative">
@@ -17,9 +19,9 @@ export function Footer() {
         <div className="w-full md:w-1/2 text-right mt-8 md:mt-0">
           <ul className="space-y-4">
             <li>
-              <a href="/" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">

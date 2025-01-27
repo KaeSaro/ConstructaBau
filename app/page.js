@@ -1,7 +1,7 @@
-import { Content } from '../../components/Content';
-import { RegularText } from '../../components/RegularText';
-import { Subtitle } from '../../components/Subtitle';
-import { Title } from '../../components/Title';
+import { Content } from '../components/Content';
+import { RegularText } from '../components/RegularText';
+import { Subtitle } from '../components/Subtitle';
+import { Title } from '../components/Title';
 
 export default function Home() {
   return (
