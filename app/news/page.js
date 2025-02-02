@@ -63,7 +63,7 @@ export default async function Aktuelles() {
 
           return (
             <article key={article.id} className={index !== 0 ? 'mt-20' : ''}>
-              <div className="flex justify-between items-start">
+              <div className="flex flex-col-reverse gap-1 md:flex-row md:justify-between md:items-start">
                 <Subtitle withDot withLeadingSlash>
                   {article.title}
                 </Subtitle>
