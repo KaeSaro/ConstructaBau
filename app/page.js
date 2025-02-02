@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Content } from '../components/Content';
 import { RegularText } from '../components/RegularText';
 import { Subtitle } from '../components/Subtitle';
@@ -76,12 +77,12 @@ export default function Home() {
           </div>
           <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left">
             <RegularText>
-              <a
+              <Link
                 href="/kontakt"
                 className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
               >
                 Kontaktieren
-              </a>
+              </Link>
               Sie uns noch heute für eine individuelle Beratung!
             </RegularText>
             <RegularText withDot>Wir freuen uns darauf, Ihre Ideen zu realisieren</RegularText>

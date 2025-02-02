@@ -24,6 +24,12 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Constructa Bau',
   description: 'Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten.',
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 
 export default function RootLayout({ children }) {

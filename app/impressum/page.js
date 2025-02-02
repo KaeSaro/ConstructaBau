@@ -1,6 +1,7 @@
 import { Title } from '../../components/Title';
 import { RegularText } from '../../components/RegularText';
 import { Content } from '../../components/Content';
+import Link from 'next/link';
 
 export default function Impressum() {
   return (
@@ -81,14 +82,14 @@ export default function Impressum() {
                 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
               </RegularText>
 
-              <a
+              <Link
                 href="https://ec.europa.eu/consumers/odr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-lg px-0 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white [&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px]"
+                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white [&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px]"
               >
                 <RegularText>https://ec.europa.eu/consumers/odr/</RegularText>
-              </a>
+              </Link>
             </div>
           </section>
 

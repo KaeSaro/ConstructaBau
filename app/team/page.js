@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Title } from '../../components/Title';
 import { Content } from '../../components/Content';
+import Link from 'next/link';
 
 const TeamMember = ({ name, position, image, phone, email }) => {
   return (
@@ -23,20 +24,20 @@ const TeamMember = ({ name, position, image, phone, email }) => {
         </h3>
         <p className="text-[20px] font-ibm-plex-mono uppercase text-[#1a1a1a] mt-1">{position}</p>
         {phone && (
-          <a
+          <Link
             href={`tel:${phone.replace(/\s/g, '')}`}
             className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
           >
             {phone}
-          </a>
+          </Link>
         )}
         {email && (
-          <a
+          <Link
             href={`mailto:${email}`}
             className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
           >
             {email}
-          </a>
+          </Link>
         )}
       </div>
     </div>

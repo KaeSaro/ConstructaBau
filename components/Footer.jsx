@@ -24,29 +24,29 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <a href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 LEISTUNGEN
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 IMPRESSIONEN
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 TEAM
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/impressum" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressum" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 IMPRESSUM
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/news" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/news" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 NEWS
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -68,20 +68,20 @@ export function Footer() {
         {/* Contact Info Container */}
         <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-0">
           <div className="flex whitespace-nowrap">
-            <a
+            <Link
               href="tel:+4915170220139"
               className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
             >
               +49 (0) 151 7022 0139
-            </a>
+            </Link>
           </div>
           <div className="flex whitespace-nowrap justify-center">
-            <a
+            <Link
               href="mailto:info@c-bau.com"
               className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
             >
               info@c-bau.com
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -93,12 +93,12 @@ export function Footer() {
 
         {/* Privacy Link */}
         <div className="flex w-full md:w-auto text-center md:text-right justify-center items-start">
-          <a
+          <Link
             href="/datenschutz"
             className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
           >
             Datenschutz
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

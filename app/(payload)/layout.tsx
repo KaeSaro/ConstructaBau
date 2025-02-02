@@ -22,6 +22,15 @@ const serverFunction: ServerFunctionClient = async function (args) {
   })
 }
 
+export const metadata = {
+  // merges with payload metadata
+  robots: {
+    index: false,
+    follow: false,
+    nocache: false,
+  },
+};
+
 const Layout = ({ children }: Args) => (
   <RootLayout config={config} importMap={importMap} serverFunction={serverFunction}>
     {children}
