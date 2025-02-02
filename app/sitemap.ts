@@ -4,39 +4,41 @@ import { headers } from 'next/headers';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // dynamically retrieve base url from request and generate sitemap
   const headersList = await headers();
+  const protocol = headersList.get('x-forwarded-proto') || 'https'; 
   const host = headersList.get('host');
+    const baseUrl = `${protocol}://${host}`
 
   return [
     {
-      url: host,
+      url: `${baseUrl}`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/leistungen',
+      url: `${baseUrl}/leistungen`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/impressionen',
+      url: `${baseUrl}/impressionen`,
       changeFrequency: 'daily',
     },
     {
-      url: host + '/team',
+      url: `${baseUrl}/team`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/kontakt',
+      url: `${baseUrl}/kontakt`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/impressum',
+      url: `${baseUrl}/impressum`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/datenschutz',
+      url: `${baseUrl}/datenschutz`,
       changeFrequency: 'weekly',
     },
     {
-      url: host + '/news',
+      url: `${baseUrl}/news`,
       changeFrequency: 'daily',
     },
   ];
