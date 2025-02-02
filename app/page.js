@@ -3,6 +3,7 @@ import { Content } from '../components/Content';
 import { RegularText } from '../components/RegularText';
 import { Subtitle } from '../components/Subtitle';
 import { Title } from '../components/Title';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -10,7 +11,13 @@ export default function Home() {
       {/* Bild */}
       <div className="relative mt-[80px]">
         <div className=" overflow-hidden">
-          <img src="/radlader.JPG" alt="Constructa Bau Hero Image" className="w-full max-h-[980px] object-cover" />
+          <Image
+            src="/radlader.JPG"
+            alt="Constructa Bau Hero Image"
+            width="1200"
+            height="676"
+            className="w-full max-h-[980px] object-cover"
+          />
         </div>
         <div className="absolute bottom-0 w-full">
           <Content withoutMargin>
