@@ -1,6 +1,6 @@
-import { Title } from '../components/Title';
-import { RegularText } from '../components/RegularText';
-import { Content } from '../components/Content';
+import { Title } from '../../components/Title';
+import { RegularText } from '../../components/RegularText';
+import { Content } from '../../components/Content';
 
 export default function AGB() {
   return (
