@@ -19,7 +19,6 @@ export default function Kontakt() {
 
         {/* Flexbox für Desktop: Text und Formular nebeneinander */}
         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 mt-32">
-          {/* Text links */}
           <div className="w-full md:w-1/2 flex flex-col space-y-4 md:pt-8">
             <h2 className="text-xl font-bold font-['IBM_Plex_Mono',_sans-serif] text-black uppercase">
               MÖCHTEN SIE MIT UNS KONTAKT AUFNEHMEN?
@@ -33,6 +32,20 @@ export default function Kontakt() {
             <p className="text-sm text-black font-['IBM_Plex_Mono',_sans-serif] uppercase">
               Schreiben Sie uns also eine E-Mail und wir werden unser Bestes tun, Ihnen Schnellstmöglich zu antworten.
             </p>
+
+            <div className="pt-8">
+              {' '}
+              {/* Zusätzlicher Wrapper mit Padding */}
+              <h3 className="text-xl font-bold font-['IBM_Plex_Mono',_sans-serif] text-black uppercase">
+                Geschäftszeiten
+              </h3>
+              <p className="text-sm text-black font-['IBM_Plex_Mono',_sans-serif] uppercase mt-4">
+                Montag - Donnerstag: 8:00 - 17:00 Uhr
+              </p>
+              <p className="text-sm text-black font-['IBM_Plex_Mono',_sans-serif] uppercase mt-4">
+                Freitag: 8:00 - 12:00 Uhr
+              </p>
+            </div>
           </div>
 
           {/* Formular rechts */}
