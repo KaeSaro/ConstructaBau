@@ -14,19 +14,17 @@ export default function AGB() {
         </div>
         <Title withDot>Allgemeine Geschäftsbedingungen</Title>
         <div className="mt-32 space-y-16">
-          {/* Bisherige Sections bleiben gleich bis zum Widerrufsrecht */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>§1 Geltungsbereich</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
               <RegularText>
                 Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen der Constructa Bau GmbH
-                (nachfolgend "Auftragnehmer") und ihren Kunden (nachfolgend "Auftraggeber") über Garten- und
-                Tiefbauarbeiten sowie damit zusammenhängende Dienstleistungen.
+                (nachfolgend &quot;Auftragnehmer&quot;) und ihren Kunden (nachfolgend &quot;Auftraggeber&quot;) über
+                Garten- und Tiefbauarbeiten sowie damit zusammenhängende Dienstleistungen.
               </RegularText>
             </div>
           </section>
 
-          {/* Angebot und Vertragsschluss */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>§2 Angebot und Vertragsschluss</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
@@ -37,7 +35,6 @@ export default function AGB() {
             </div>
           </section>
 
-          {/* Widerrufsrecht - NEU */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>§3 Widerrufsbelehrung für Verbraucher</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
@@ -65,7 +62,6 @@ export default function AGB() {
             </div>
           </section>
 
-          {/* Folgen des Widerrufs - NEU */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>Folgen des Widerrufs</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
@@ -83,7 +79,6 @@ export default function AGB() {
             </div>
           </section>
 
-          {/* Rest der Sections mit angepasster Nummerierung */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>§4 Preise und Zahlung</Title>
             <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
