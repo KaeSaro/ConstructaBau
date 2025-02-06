@@ -90,7 +90,15 @@ export function Footer() {
           <span className="hidden custom:inline">, </span>
           <span className="block custom:inline whitespace-nowrap">57080 Siegen</span>
         </p>
-
+        {/* AGB Link */}
+        <div className="flex w-full md:w-auto text-center md:text-right justify-center items-start">
+          <Link
+            href="/agb"
+            className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
+          >
+            AGB
+          </Link>
+        </div>
         {/* Privacy Link */}
         <div className="flex w-full md:w-auto text-center md:text-right justify-center items-start">
           <Link
