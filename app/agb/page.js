@@ -1,6 +1,6 @@
-import { Title } from '../../../malerbetrieb-pg/components/Title';
-import { RegularText } from '../../../malerbetrieb-pg/components/RegularText';
-import { Content } from '../../../malerbetrieb-pg/components/Content';
+import { Title } from '../components/Title';
+import { RegularText } from '../components/RegularText';
+import { Content } from '../components/Content';
 
 export default function AGB() {
   return (
