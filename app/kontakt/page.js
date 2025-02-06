@@ -1,6 +1,6 @@
 import { Title } from '../../components/Title';
 import { Content } from '../../components/Content';
-import Link from 'next/link';
+import { ContactForm } from '../../components/ContactForm';
 
 export default function Kontakt() {
   return (
@@ -34,7 +34,6 @@ export default function Kontakt() {
             </p>
 
             <div className="pt-8">
-              {' '}
               {/* Zusätzlicher Wrapper mit Padding */}
               <h3 className="text-xl font-bold font-['IBM_Plex_Mono',_sans-serif] text-black uppercase">
                 Geschäftszeiten
@@ -47,48 +46,8 @@ export default function Kontakt() {
               </p>
             </div>
           </div>
-
           {/* Formular rechts */}
-          <div className="w-full md:w-1/2 p-8 rounded-lg">
-            <form action="mailto:ek@c-bau.com" method="post" encType="text/plain">
-              <div className="flex flex-col gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
-                  required
-                />
-                <textarea
-                  name="message"
-                  placeholder="Nachricht"
-                  className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
-                  rows="6"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="bg-[#e5e5e5] text-black p-4 rounded-full mt-4 border-2 border-black transition-all duration-200 hover:bg-black hover:text-white"
-                >
-                  Senden
-                </button>
-                {/* Neuer Anrufen Button */}
-                <Link
-                  href="tel:+4915170220139"
-                  className="bg-[#e5e5e5] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
-                >
-                  Anrufen
-                </Link>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </Content>
