@@ -6,11 +6,16 @@ import { Title } from '../components/Title';
 import Image from 'next/image';
 
 export default function Home() {
+  // You can replace this with an actual tiny base64 of your image
+  const blurDataURL =
+    'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0cHBwcHy8lHyUjJSk1LDArLTMzNTw5OTk5PDpFREVFRUdHR0dHR0dHR0dHR0dHR0f/2wBDARUXFyAeIBshIS03KjQqNDc2NjY2Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k=';
+
   return (
     <>
-      {/* Bild */}
+      {/* Hero Image Section with Blur Loading */}
       <div className="relative mt-[80px]">
-        <div className=" overflow-hidden">
+        <div className="overflow-hidden bg-gray-900">
+          {/* Added background color */}
           <Image
             src="/radlader.JPG"
             alt="Constructa Bau Hero Image"
@@ -18,6 +23,8 @@ export default function Home() {
             height={676}
             priority
             quality={75}
+            placeholder="blur"
+            blurDataURL={blurDataURL}
             sizes="(max-width: 768px) 100vw,
              (max-width: 1200px) 100vw,
              100vw"
@@ -33,12 +40,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Titel, der das Bild überlappt */}
-
       <Content withoutTopMargin>
         <div className="flex flex-col items-start">
-          {/* Rest des Titels */}
-
           <Title withDot>der Constructa Bau GmbH</Title>
 
           <div className="mt-32 space-y-16">
@@ -62,7 +65,7 @@ export default function Home() {
 
           <div className="flex flex-col space-y-3">
             <div className="flex items-center">
-              <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D]  self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Tiefbau</Subtitle>
             </div>
             <div className="flex items-center">
@@ -83,7 +86,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-[18px] sm:text-[20px] md:text-[28px] lg:text-[48px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left"></div>
           <div className="mt-32 mb-32">
             <Title withDot>CONSTRUCTA BAU – Wo Funktionalität und Ästhetik Hand in Hand gehen</Title>
           </div>
