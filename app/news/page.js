@@ -6,12 +6,6 @@ import { Title } from '@/components/Title';
 import { Suspense } from 'react';
 import Image from 'next/image';
 
-// Enable ISR with a 5-minute revalidation period
-export const revalidate = 300;
-
-// Force dynamic rendering to ensure fresh data
-export const dynamic = 'force-dynamic';
-
 // Move layouts object outside component to prevent recreation on each render
 const LAYOUTS = {
   squareTextRight: {

@@ -44,6 +44,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/kontakt" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+                Kontakt
+              </Link>
+            </li>
+            <li>
               <Link href="/news" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 NEWS
               </Link>
