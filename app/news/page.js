@@ -102,7 +102,7 @@ function NewsHeader() {
     </div>
   );
 }
-
+export const dynamic = 'force-dynamic';
 export default function Aktuelles() {
   return (
     <Content>
