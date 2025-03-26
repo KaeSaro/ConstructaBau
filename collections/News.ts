@@ -14,22 +14,7 @@ export const News: CollectionConfig = {
     {
       name: 'content',
       type: 'richText',
-      required: true,
-      admin: {
-        elements: [
-          'h2',
-          'h3',
-          'link',
-          'blockquote',
-          'ul',
-          'ol'
-        ],
-        leaves: [
-          'bold',
-          'italic',
-          'underline'
-        ],
-      }
+      required: true
     },
     {
       name: 'publishedDate',
