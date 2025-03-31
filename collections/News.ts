@@ -11,11 +11,7 @@ export const News: CollectionConfig = {
       type: 'text',
       required: true,
     },
-    {
-      name: 'content',
-      type: 'richText',
-      required: true,
-    },
+ 
     {
       name: 'publishedDate',
       type: 'date',
