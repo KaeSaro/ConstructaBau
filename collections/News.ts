@@ -13,8 +13,8 @@ export const News: CollectionConfig = {
     },
     {
       name: 'content',
-      type: 'textarea',
-      required: false,
+      type: 'richText',
+      required: true,
     },
     {
       name: 'publishedDate',
