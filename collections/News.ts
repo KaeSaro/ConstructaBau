@@ -16,7 +16,7 @@ export const News: CollectionConfig = {
       name: 'contents',
       type: 'richText',
       required: true,
-      editor: lexicalEditor()
+      editor: lexicalEditor({})
     },
     {
       name: 'publishedDate',

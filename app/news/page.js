@@ -5,6 +5,7 @@ import { Subtitle } from '@/components/Subtitle';
 import { Title } from '@/components/Title';
 import { Suspense } from 'react';
 import Image from 'next/image';
+import { RichText } from '@/components/RichText';
 
 // Move layouts object outside component to prevent recreation on each render
 const LAYOUTS = {
@@ -80,7 +81,7 @@ async function NewsData() {
                 </div>
               )}
               <div className={layout.text}>
-                <RegularText>{article.content}</RegularText>
+                <RichText data={article.contents} />
               </div>
             </div>
           </article>
