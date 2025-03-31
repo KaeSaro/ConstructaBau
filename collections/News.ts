@@ -14,7 +14,7 @@ export const News: CollectionConfig = {
     {
       name: 'content',
       type: 'textarea',
-      required: true,
+      required: false,
     },
     {
       name: 'publishedDate',
