@@ -3,9 +3,9 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, phoneNumber, message } = await req.json();
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phoneNumber || !message) {
       return NextResponse.json({ message: 'All fields are required!' }, { status: 400 });
     }
 
@@ -84,6 +84,10 @@ export async function POST(req) {
                 <div class="value">${email}</div>
               </div>
               <div class="field">
+                <span class="label">Telefonnummer:</span>
+                <div class="value">${phoneNumber}</div>
+              </div>
+              <div class="field">
                 <span class="label">Nachricht:</span>
                 <div class="value message-box">${message.replace(/\n/g, '<br>')}</div>
               </div>
@@ -101,7 +105,7 @@ export async function POST(req) {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_TO,
       subject: 'Neue Kontaktformular Anfrage',
-      text: `From: ${name} (${email})\n\nMessage: ${message}`, // Plain text version
+      text: `From: ${name} (${email})\nTelefon: ${phoneNumber}\n\nMessage: ${message}`, // Plain text version
       html: htmlContent,
     });
 

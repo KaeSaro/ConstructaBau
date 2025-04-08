@@ -4,38 +4,44 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '', // Neues Telefonnummer-Feld
+    message: ''
+  });
+  
   const [status, setStatus] = useState(null);
-
+  
   // Add useEffect to clear status after 5 seconds
   useEffect(() => {
     if (status === 'success' || status === 'error') {
       const timer = setTimeout(() => {
         setStatus(null);
       }, 5000);
-
+      
       return () => clearTimeout(timer);
     }
   }, [status]);
-
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-
+    
     try {
       const response = await fetch('/api', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
+      
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phoneNumber: '', message: '' }); // Telefonnummer-Feld zurücksetzen
       } else {
         setStatus('error');
       }
@@ -43,7 +49,7 @@ export function ContactForm() {
       setStatus('error');
     }
   };
-
+  
   return (
     <div className="w-full md:w-1/2 p-8 rounded-lg">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -65,6 +71,16 @@ export function ContactForm() {
           required
           className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
         />
+        {/* Neues Telefonnummer-Feld */}
+        <input
+          type="tel"
+          name="phoneNumber"
+          placeholder="Telefonnummer"
+          value={formData.phoneNumber}
+          onChange={handleChange}
+          required
+          className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
+        />
         <textarea
           name="message"
           placeholder="Nachricht"
@@ -80,7 +96,7 @@ export function ContactForm() {
         >
           Senden
         </button>
-
+        
         {/* Call Button */}
         <Link
           href="tel:+4915170220139"
@@ -88,7 +104,7 @@ export function ContactForm() {
         >
           Anrufen
         </Link>
-
+        
         {/* Status Messages - Moved below the link */}
         <div className="text-center mt-2">
           {status === 'sending' && <p className="text-yellow-500">Senden...</p>}
