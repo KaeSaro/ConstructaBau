@@ -422,7 +422,7 @@ export default function Impressionen() {
                 <ImageCard {...images[46]} span="default" />
               </div>
               <div className="md:col-span-2">
-                <ImageCard {...images[52]} span="wide" />
+                <ImageCard {...images[51]} span="wide" />
               </div>
             </div>
 
