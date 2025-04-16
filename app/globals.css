@@ -6,7 +6,7 @@
   --background: #e5e5e5;
   --foreground: #000000;
   --border: #c7c7c7;
-  --accent: #D0312D; /* Rote Akzentfarbe auf Root-Ebene */
+  --accent: #000000; /* Rote Akzentfarbe auf Root-Ebene */
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 /* Scrollbar Styles - angepasst wie im zweiten Beispiel */
 ::-webkit-scrollbar {
-  width: 10px; /* Geändert von 15px auf 10px */
+  width: 9px; /* Geändert von 15px auf 10px */
 }
 
 ::-webkit-scrollbar-track {
@@ -39,7 +39,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
-  border-radius: 5px;
+  border-radius: 6px;
   border: none; /* Border entfernt */
 }
 
