@@ -332,6 +332,62 @@ const images = [
     date: '2024',
     span: 'full',
   },
+  {
+    src: '/Netphen/1.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/2.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/3.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/4.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/5.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/6.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/7.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Netphen/8.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
 ];
 
 export default function Impressionen() {
@@ -349,17 +405,34 @@ export default function Impressionen() {
 
         {/* Hauptcontainer für Bilder mit konsistentem Spacing */}
         <div className="mt-32">
+          
           <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[47]} span="halflandscape" />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <ImageCard {...images[48]} span="default" />
+              <ImageCard {...images[49]} span="default" />
+              <ImageCard {...images[53]} span="default" />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <ImageCard {...images[46]} span="default" />
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[52]} span="wide" />
+              </div>
+            </div>
+
             {/* Wide (2:2) + zwei Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-2">
                 <ImageCard {...images[0]} span="wide" />
               </div>
               <div className="md:col-span-1">
-                <div className="grid grid-cols-1 gap-12">
-                  <ImageCard {...images[1]} span="default" />
-                  <ImageCard {...images[2]} span="default" />
-                </div>
+                <ImageCard {...images[2]} span="default" />
               </div>
             </div>
 
