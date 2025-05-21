@@ -388,6 +388,62 @@ const images = [
     date: '2025',
     span: 'full',
   },
+  {
+    src: '/Gruenpflege/1.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/2.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/3.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/4.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/5.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/6.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/7.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
+  {
+    src: '/Gruenpflege/8.jpg',
+    alt: 'Gruenpflege',
+    title: 'Grünpflege - Friedhöfe',
+    date: '2025',
+    span: 'full',
+  },
 ];
 
 export default function Impressionen() {
@@ -405,9 +461,41 @@ export default function Impressionen() {
 
         {/* Hauptcontainer für Bilder mit konsistentem Spacing */}
         <div className="mt-32">
-          
           <div className="grid grid-cols-1 gap-12">
-          <div className="grid grid-cols-1 gap-12">
+            {/* Single Half Landscape */}
+            <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[54]} span="halflandscape" />
+            </div>
+
+            {/* Two Default (1:1) + Wide (2:2) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <div className="grid grid-cols-1 gap-12">
+                  <ImageCard {...images[55]} span="default" />
+                  <ImageCard {...images[56]} span="default" />
+                </div>
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[57]} span="wide" />
+              </div>
+            </div>
+
+            {/* Portrait Images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              {[58, 59, 60].map((index) => (
+                <div key={index} className="md:col-span-1">
+                  <div className="aspect-[1/2]">
+                    <ImageCard {...images[index]} span="default" className="h-full object-cover" />
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Landscape (3:1) */}
+            <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[61]} span="landscape" />
+            </div>
+
+            <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[47]} span="halflandscape" />
             </div>
 
