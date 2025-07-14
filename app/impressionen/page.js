@@ -103,7 +103,6 @@ const images = [
     date: '2024',
     span: 'full',
   },
-
   {
     src: '/Albstadt/6.jpg',
     alt: 'Albstadt',
@@ -111,7 +110,6 @@ const images = [
     date: '2024',
     span: 'full',
   },
-
   {
     src: '/Albstadt/3.jpg',
     alt: 'Albstadt',
@@ -203,7 +201,6 @@ const images = [
     date: '2024',
     span: 'full',
   },
-
   {
     src: '/Taktile/2.jpg',
     alt: 'Taktile',
@@ -211,7 +208,6 @@ const images = [
     date: '2024',
     span: 'full',
   },
-
   {
     src: '/Taktile/3.jpg',
     alt: 'Taktile',
@@ -261,7 +257,6 @@ const images = [
     date: '2024',
     span: 'full',
   },
-
   {
     src: '/Alsbach/1.jpg',
     alt: 'Alsbach',
@@ -444,6 +439,195 @@ const images = [
     date: '2025',
     span: 'full',
   },
+    {
+    src: '/Bad Endbach/10.jpg',
+    alt: 'Bad Endbach',
+    title: 'Bad Endbach',
+    date: '2024',
+    span: 'full',
+  },
+     {
+    src: '/Bad Endbach/11.jpg',
+    alt: 'Bad Endbach',
+    title: 'Bad Endbach',
+    date: '2024',
+    span: 'full',
+  },
+    {
+    src: '/Netphen/9.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+    {
+    src: '/Netphen/10.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+    {
+    src: '/Netphen/11.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+      {
+    src: '/Netphen/12.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+        {
+    src: '/Wilnsdorf/1.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/2.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/3.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/4.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/5.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/6.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/7.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/8.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/9.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/10.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/11.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/12.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+          {
+    src: '/Wilnsdorf/13.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
+            {
+    src: '/Elkenroth/1.jpg',
+    alt: 'Elkenroth',
+    title: 'Elkenroth',
+    date: '2025',
+    span: 'full',
+  },
+            {
+    src: '/Elkenroth/2.jpg',
+    alt: 'Elkenroth',
+    title: 'Elkenroth',
+    date: '2025',
+    span: 'full',
+  },
+    {
+    src: '/Netphen/13.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+     {
+    src: '/Netphen/14.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+    {
+    src: '/Netphen/15.jpg',
+    alt: 'Netphen',
+    title: 'Netphen',
+    date: '2025',
+    span: 'full',
+  },
+    {
+    src: '/Wilnsdorf/14.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },          
+  {
+    src: '/Wilnsdorf/15.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },          
+  {
+    src: '/Wilnsdorf/16.jpg',
+    alt: 'Wilnsdorf',
+    title: 'Wilnsdorf',
+    date: '2025',
+    span: 'full',
+  },
 ];
 
 export default function Impressionen() {
@@ -462,6 +646,94 @@ export default function Impressionen() {
         {/* Hauptcontainer für Bilder mit konsistentem Spacing */}
         <div className="mt-32">
           <div className="grid grid-cols-1 gap-12">
+
+
+              {/* Wilnsdorf */}
+
+
+              {/* Wide (2:2) + Default (1:1) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-2">
+                <ImageCard {...images[69]} span="wide" />
+              </div>
+              <div className="md:col-span-1">
+                <ImageCard {...images[68]} span="default" />
+              </div>
+            </div>
+
+
+ {/* Three Default (1:1) - Second Set */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <ImageCard {...images[73]} span="default" />
+              <ImageCard {...images[70]} span="default" />
+              <ImageCard {...images[88]} span="default" />
+            </div>
+
+
+  {/* Two Default (1:1) + Wide (2:2) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <div className="grid grid-cols-1 gap-12">
+                  <ImageCard {...images[74]} span="default" />
+                  <ImageCard {...images[87]} span="default" />
+                </div>
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[75]} span="wide" />
+              </div>
+            </div>
+
+    {/* Landscape (3:1) */}
+            <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[71]} span="landscape" />
+            </div>
+
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <ImageCard {...images[78]} span="default" />
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[72]} span="wide" />
+              </div>
+            </div>
+
+            {/* Wide (2:2) + Default (1:1) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-2">
+                <ImageCard {...images[77]} span="wide" />
+              </div>
+              <div className="md:col-span-1">
+                <ImageCard {...images[76]} span="default" />
+              </div>
+            </div>
+
+             {/* Portrait Images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              {[86, 79, 80].map((index) => (
+                <div key={index} className="md:col-span-1">
+                  <div className="aspect-[1/2]">
+                    <ImageCard {...images[index]} span="default" className="h-full object-cover" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+              {/* Emmerzhausen */}
+
+              {/* Single Half Landscape */}
+            <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[81]} span="halflandscape" />
+            </div>
+
+  {/* Single Half Landscape */}
+            <div className="grid grid-cols-1 gap-12">
+              <ImageCard {...images[82]} span="halflandscape" />
+            </div>
+
+
+            {/* Friedhoefe */}
+
             {/* Single Half Landscape */}
             <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[54]} span="halflandscape" />
@@ -490,13 +762,37 @@ export default function Impressionen() {
                 </div>
               ))}
             </div>
+
             {/* Landscape (3:1) */}
             <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[61]} span="landscape" />
             </div>
 
+            {/* Netphen */}
+
+
+              {/* Three Default (1:1) - Second Set */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <ImageCard {...images[64]} span="default" />
+              <ImageCard {...images[85]} span="default" />
+              <ImageCard {...images[66]} span="default" />
+            </div>
+
             <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[47]} span="halflandscape" />
+            </div>
+
+              {/* Two Default (1:1) + Wide (2:2) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <div className="grid grid-cols-1 gap-12">
+                  <ImageCard {...images[83]} span="default" />
+                  <ImageCard {...images[46]} span="default" />
+                </div>
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[65]} span="wide" />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -507,14 +803,25 @@ export default function Impressionen() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-1">
-                <ImageCard {...images[46]} span="default" />
+                <ImageCard {...images[84]} span="default" />
               </div>
               <div className="md:col-span-2">
                 <ImageCard {...images[51]} span="wide" />
               </div>
             </div>
 
-            {/* Wide (2:2) + zwei Default (1:1) */}
+            {/* Bad Endbach */}
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="md:col-span-1">
+                <ImageCard {...images[62]} span="default" />
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[63]} span="wide" />
+              </div>
+            </div>
+
+            {/* Wide (2:2) + Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-2">
                 <ImageCard {...images[0]} span="wide" />
@@ -538,6 +845,7 @@ export default function Impressionen() {
                 <ImageCard {...images[5]} span="default" />
               </div>
             </div>
+
             {/* Default (1:1) + Half Landscape (2:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-1">
@@ -553,6 +861,8 @@ export default function Impressionen() {
               <ImageCard {...images[45]} span="halflandscape" />
             </div>
 
+            {/* Neunkirchen */}
+
             {/* Three Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <ImageCard {...images[6]} span="default" />
@@ -564,6 +874,8 @@ export default function Impressionen() {
             <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[9]} span="halflandscape" />
             </div>
+
+            {/* Gemuenden */}
 
             {/* Default (1:1) + Half Landscape (2:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -579,6 +891,8 @@ export default function Impressionen() {
             <div className="grid grid-cols-1 gap-12">
               <ImageCard {...images[12]} span="halflandscape" />
             </div>
+
+            {/* Albstadt */}
 
             {/* Default (1:1) + Wide (2:2) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -596,6 +910,8 @@ export default function Impressionen() {
               <ImageCard {...images[16]} span="default" />
               <ImageCard {...images[17]} span="default" />
             </div>
+
+            {/* Wuerzburg */}
 
             {/* Three Default (1:1) - Second Set */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -630,6 +946,8 @@ export default function Impressionen() {
               </div>
             </div>
 
+            {/* Taktiles Leitsystem */}
+
             {/* Default (1:1) + Wide (2:2) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-1">
@@ -645,12 +963,16 @@ export default function Impressionen() {
               <ImageCard {...images[29]} span="landscape" />
             </div>
 
+            {/* Kabelschachtabdeckung */}
+
             {/* Three Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <ImageCard {...images[30]} span="default" />
               <ImageCard {...images[31]} span="default" />
               <ImageCard {...images[32]} span="default" />
             </div>
+
+            {/* Reinigung Plattenbelag */}
 
             {/* Portrait Images */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -662,6 +984,8 @@ export default function Impressionen() {
                 </div>
               ))}
             </div>
+
+            {/* Alsbach */}
 
             {/* Wide (2:2) + Two Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -686,6 +1010,8 @@ export default function Impressionen() {
               <ImageCard {...images[40]} span="wide" />
             </div>
 
+            {/* Anfahrschutz */}
+
             {/* Wide (2:2) + Default (1:1) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="md:col-span-2">
@@ -695,6 +1021,7 @@ export default function Impressionen() {
                 <ImageCard {...images[42]} span="default" />
               </div>
             </div>
+
           </div>
         </div>
       </div>
