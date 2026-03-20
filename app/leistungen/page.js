@@ -54,6 +54,77 @@ export default function Leistungen() {
           </RegularText>
         </div>
 
+        {/* Maler- und Ausbau-Leistungen */}
+        <div className="mt-16 text-left">
+          <Subtitle>Maler- und Lackierarbeiten</Subtitle>
+          <RegularText withDot>
+            Innen und außen – vom klassischen Anstrich bis zu kreativen Techniken, fachgerecht umgesetzt
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Spachtel- und Putzarbeiten</Subtitle>
+          <RegularText withDot>
+            Glatte Flächen oder dekorative Techniken – die richtige Grundlage für Ihre Wände
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Tapezierarbeiten</Subtitle>
+          <RegularText withDot>
+            Präzises Verlegen von Raufaser, Vlies und individuellen Designs
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Bodenbelagsarbeiten</Subtitle>
+          <RegularText withDot>
+            Linoleum, PVC, Teppich und mehr – verlegt für Funktion und Ästhetik
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Bodenbeschichtungsarbeiten</Subtitle>
+          <RegularText withDot>
+            Robuste, pflegeleichte Beschichtungen für Gewerbe und Industrie
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Sandstrahlarbeiten</Subtitle>
+          <RegularText withDot>
+            Reinigung und Vorbereitung von Oberflächen für die nächsten Arbeitsschritte
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Parkplatz- und Hallenmarkierungen</Subtitle>
+          <RegularText withDot>
+            Klare, sichere Markierungen für Parkplätze, Hallen und Freiflächen
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Trockenbau</Subtitle>
+          <RegularText withDot>
+            Trennwände, Deckenverkleidungen und Raumlösungen nach Maß
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>OWA-Decken</Subtitle>
+          <RegularText withDot>
+            Akustik und Brandschutz – OWA-Decken für Gewerbe und öffentliche Gebäude
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Graffitientfernung & Graffitischutz</Subtitle>
+          <RegularText withDot>
+            Schonendes Entfernen und Schutzbeschichtungen, damit neue Graffitis leichter zu beseitigen sind
+          </RegularText>
+        </div>
+
         {/* Warum*/}
         <div className="mt-32 text-left">
           <Title>Warum Constructa Bau?</Title>
