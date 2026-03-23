@@ -1,5 +1,8 @@
-/** Wartung an, wenn Env nach trim (ohne BOM) `true` ist (Groß/Klein egal). */
+function norm(v: string | undefined) {
+  return v?.replace(/^\uFEFF/, '').trim().toLowerCase();
+}
+
+/** Wartung an, wenn eine der Variablen `true` ist (siehe middleware.ts Kommentar zu Vercel). */
 export function maintenanceEnabled(): boolean {
-  const raw = process.env.MAINTENANCE_MODE?.replace(/^\uFEFF/, '').trim().toLowerCase();
-  return raw === 'true';
+  return norm(process.env.MAINTENANCE_MODE) === 'true' || norm(process.env.NEXT_PUBLIC_MAINTENANCE_MODE) === 'true';
 }

@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
- * Env muss hier direkt gelesen werden (nicht nur aus `lib/` importieren):
- * Next.js inlinet `process.env.*` in der Edge-Middleware nur zuverlässig, wenn der Zugriff
- * in dieser Datei steht – sonst ist die Variable auf Vercel oft `undefined` und Wartung greift nie.
+ * Env-Zugriff nur hier (nicht aus `lib/` importieren), damit Next die Werte ins Edge-Bundle übernimmt.
+ * Auf Vercel ist `MAINTENANCE_MODE` manchmal zur Laufzeit nicht gesetzt wie lokal – zusätzlich
+ * `NEXT_PUBLIC_MAINTENANCE_MODE` setzen (gleicher Wert `true`), dann wird er beim Build zuverlässig eingebunden.
+ * Hinweis: `NEXT_PUBLIC_*` ist im Client-JS sichtbar (für einen Wartungs-Schalter unkritisch).
  */
 function maintenanceEnabled(): boolean {
-  const raw = process.env.MAINTENANCE_MODE?.replace(/^\uFEFF/, '').trim().toLowerCase();
-  return raw === 'true';
+  const norm = (v: string | undefined) => v?.replace(/^\uFEFF/, '').trim().toLowerCase();
+  return (
+    norm(process.env.MAINTENANCE_MODE) === 'true' ||
+    norm(process.env.NEXT_PUBLIC_MAINTENANCE_MODE) === 'true'
+  );
 }
 
 /** Statische Wartungsseite – kein Next/React, direkt aus dem Edge. */
