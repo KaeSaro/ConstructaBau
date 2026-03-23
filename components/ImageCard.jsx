@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export function ImageCard({ src, alt, title, date, description, width, height, span = 'default' }) {
+export function ImageCard({ src, alt, title, date, description, width, height, span = 'default', className }) {
   const [isFirefox, setIsFirefox] = useState(false);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export function ImageCard({ src, alt, title, date, description, width, height, s
   }[span];
 
   return (
-    <div className={`flex flex-col ${config.gridClass} ${config.heightClass}`}>
+    <div className={`flex flex-col ${config.gridClass} ${config.heightClass} ${className || ''}`.trim()}>
       <div className="h-[30px] md:h-[40px] flex items-center justify-between px-1 mb-3">
         <h3
           className={`font-['IBM_Plex_Mono',_sans-serif] ${config.titleClass} leading-none font-normal text-[#1a1a1a]`}

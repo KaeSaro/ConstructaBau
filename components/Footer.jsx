@@ -19,37 +19,37 @@ export function Footer() {
         <div className="w-full md:w-1/2 text-right mt-8 md:mt-0">
           <ul className="space-y-4">
             <li>
-              <Link href="/" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/leistungen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/leistungen" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 LEISTUNGEN
               </Link>
             </li>
             <li>
-              <Link href="/impressionen" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressionen" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 IMPRESSIONEN
               </Link>
             </li>
             <li>
-              <Link href="/team" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/team" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 TEAM
               </Link>
             </li>
             <li>
-              <Link href="/impressum" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressum" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 IMPRESSUM
               </Link>
             </li>
             <li>
-              <Link href="/kontakt" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/kontakt" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 Kontakt
               </Link>
             </li>
             <li>
-              <Link href="/news" className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/news" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
                 NEWS
               </Link>
             </li>
@@ -99,6 +99,7 @@ export function Footer() {
         <div className="flex w-full md:w-auto text-center md:text-right justify-center items-start">
           <Link
             href="/agb"
+            prefetch={false}
             className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
           >
             AGB
@@ -108,6 +109,7 @@ export function Footer() {
         <div className="flex w-full md:w-auto text-center md:text-right justify-center items-start">
           <Link
             href="/datenschutz"
+            prefetch={false}
             className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
           >
             Datenschutz

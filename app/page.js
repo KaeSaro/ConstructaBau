@@ -45,18 +45,18 @@ export default function Home() {
           <Title withDot>der Constructa Bau GmbH</Title>
 
           <div className="mt-32 space-y-16">
-            <RegularText withDot>Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten</RegularText>
+            <RegularText withDot>Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau</RegularText>
             <RegularText>
-              Sie suchen einen verlässlichen Partner, der Ihre Außenanlagen mit Kreativität gestaltet und
-              Tiefbauprojekte präzise umsetzt?
+              Von Anstrich und Putz über Bodenbeläge und Trockenbau bis zu Markierungen und taktilen Leitsystemen –
+              wir übernehmen Ihr Projekt von der Vorbereitung bis zur fertigen Oberfläche
             </RegularText>
             <RegularText withDot>
-              Bei Constructa Bau haben wir es uns zur Aufgabe gemacht, Ihre individuellen Wünsche in die Realität
-              umzusetzen – von präzisen Erdarbeiten bis hin zu grünen Oasen
+              Malerarbeiten innen und außen, Spachtel- und Tapezierarbeiten, Bodenbeschichtungen und
+              Parkplatzmarkierungen – fachgerecht und zuverlässig für Wohn- und Gewerbeimmobilien
             </RegularText>
             <RegularText withDot>
-              Ob private Gärten, gewerbliche Außenanlagen oder kommunale Bauvorhaben: Wir verbinden Technik und
-              Kreativität, um Ihre Vorstellungen Wirklichkeit werden zu lassen
+              Ergänzt durch Tiefbau, Pflasterarbeiten und Grünflächenpflege: Constructa Bau bringt
+              alle Gewerke unter ein Dach – für private, gewerbliche und kommunale Projekte
             </RegularText>
           </div>
           <div className="mt-32 mb-32">
@@ -66,6 +66,50 @@ export default function Home() {
           <div className="flex flex-col space-y-3">
             <div className="flex items-center">
               <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Maler- und Lackierarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Spachtel- und Putzarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Tapezierarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Bodenbelagsarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Bodenbeschichtungsarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Sandstrahlarbeiten</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Parkplatz- und Hallenmarkierungen</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Trockenbau</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>OWA-Decken</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Graffitientfernung & Graffitischutz</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <Subtitle>Taktile Leitsysteme und aufklebare Bodenindikatoren</Subtitle>
+            </div>
+            <div className="flex items-center">
+              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Tiefbau</Subtitle>
             </div>
             <div className="flex items-center">
@@ -93,6 +137,7 @@ export default function Home() {
             <RegularText>
               <Link
                 href="/kontakt"
+                prefetch={false}
                 className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
               >
                 Kontaktieren

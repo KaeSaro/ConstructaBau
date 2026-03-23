@@ -1,4 +1,5 @@
 import { Montserrat, IBM_Plex_Mono } from 'next/font/google';
+import { headers } from 'next/headers';
 import './globals.css';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -43,8 +44,15 @@ export async function generateMetadata() {
   return defaultMetadata;
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
   const maintenance = maintenanceEnabled();
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
+
+  // Payload Admin/API liefert eigenes <html><body> – kein zusätzlicher Wrapper (verhindert Hydration-Fehler)
+  if (pathname.startsWith('/admin') || pathname.startsWith('/api')) {
+    return children;
+  }
 
   return (
     <html lang="de">

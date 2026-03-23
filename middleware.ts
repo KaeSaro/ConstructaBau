@@ -89,9 +89,15 @@ const MAINTENANCE_HTML = `<!DOCTYPE html>
 </html>`;
 
 export function middleware(request: NextRequest) {
-  if (!maintenanceEnabled()) {
-    return NextResponse.next();
-  }
+  // Pathname-Header für Root-Layout (Payload-Admin braucht kein eigenes html/body-Wrapper)
+  const response = maintenanceEnabled()
+    ? handleMaintenance(request)
+    : NextResponse.next();
+  response.headers.set('x-pathname', request.nextUrl.pathname);
+  return response;
+}
+
+function handleMaintenance(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 

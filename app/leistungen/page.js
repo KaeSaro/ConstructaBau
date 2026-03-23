@@ -17,45 +17,8 @@ export default function Leistungen() {
         {/* Haupttext */}
         <Title withDot>LASSEN SIE UNS IHR TRAUMPROJEKT GESTALTEN</Title>
 
-        {/* Tiefbau Section */}
+        {/* Maler- und Ausbau-Leistungen (neu – oben) */}
         <div className="mt-32 text-left">
-          <Subtitle>Tiefbau</Subtitle>
-          <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
-          <RegularText withDot>Wir legen das Fundament</RegularText>
-        </div>
-
-        {/* Baggerarbeiten Section */}
-        <div className="mt-16 text-left">
-          <Subtitle>Baggerarbeiten</Subtitle>
-
-          <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
-        </div>
-
-        {/* Pflastergestaltung Section */}
-        <div className="mt-16 text-left">
-          <Subtitle>Pflastergestaltung</Subtitle>
-          <RegularText withDot>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
-        </div>
-
-        {/* Grünflächenpflege Section */}
-        <div className="mt-16 text-left">
-          <Subtitle>Grünflächenpflege</Subtitle>
-          <RegularText withDot>
-            Damit Ihr Garten das ganze Jahr über in voller Pracht erstrahlt,
-            {'\n'}übernehmen wir alle Pflegearbeiten
-          </RegularText>
-        </div>
-        {/* Baustellenmanagement Section */}
-        <div className="mt-16 text-left">
-          <Subtitle>Baustellenmanagement</Subtitle>
-          <RegularText withDot>
-            Mit unserem professionellen Baustellenmanagement sorgen wir für eine reibungslose Koordination aller
-            Gewerke, die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort
-          </RegularText>
-        </div>
-
-        {/* Maler- und Ausbau-Leistungen */}
-        <div className="mt-16 text-left">
           <Subtitle>Maler- und Lackierarbeiten</Subtitle>
           <RegularText withDot>
             Innen und außen – vom klassischen Anstrich bis zu kreativen Techniken, fachgerecht umgesetzt
@@ -122,6 +85,46 @@ export default function Leistungen() {
           <Subtitle>Graffitientfernung & Graffitischutz</Subtitle>
           <RegularText withDot>
             Schonendes Entfernen und Schutzbeschichtungen, damit neue Graffitis leichter zu beseitigen sind
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Taktile Leitsysteme und aufklebare Bodenindikatoren</Subtitle>
+          <RegularText withDot>
+            Barrierefreie Orientierung durch taktile Leitlinien und Bodenindikatoren – für sichere Wege in öffentlichen Räumen, Bahnhöfen und Gebäuden
+          </RegularText>
+        </div>
+
+        {/* Tiefbau und Außenarbeiten */}
+        <div className="mt-16 text-left">
+          <Subtitle>Tiefbau</Subtitle>
+          <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
+          <RegularText withDot>Wir legen das Fundament</RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Baggerarbeiten</Subtitle>
+          <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Pflastergestaltung</Subtitle>
+          <RegularText withDot>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Grünflächenpflege</Subtitle>
+          <RegularText withDot>
+            Damit Ihr Garten das ganze Jahr über in voller Pracht erstrahlt,
+            {'\n'}übernehmen wir alle Pflegearbeiten
+          </RegularText>
+        </div>
+
+        <div className="mt-16 text-left">
+          <Subtitle>Baustellenmanagement</Subtitle>
+          <RegularText withDot>
+            Mit unserem professionellen Baustellenmanagement sorgen wir für eine reibungslose Koordination aller
+            Gewerke, die Einhaltung von Zeitplänen und maximale Sicherheit vor Ort
           </RegularText>
         </div>
 

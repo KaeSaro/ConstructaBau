@@ -1,6 +1,4 @@
 import { Content } from '../../components/Content';
-import { getPayload } from '@/client/payload';
-import { RegularText } from '@/components/RegularText';
 import { Subtitle } from '@/components/Subtitle';
 import { Title } from '@/components/Title';
 import { Suspense } from 'react';
@@ -43,52 +41,100 @@ const LAYOUTS = {
 
 // Separate data fetching into its own component
 async function NewsData() {
-  const payload = await getPayload();
-  const { docs: news } = await payload.find({
-    collection: 'news',
-    depth: 1,
-  });
+  const hasDb =
+    (process.env.DATABASE_URI && process.env.DATABASE_URI.trim()) ||
+    (process.env.DATABASE_URL && process.env.DATABASE_URL.trim()) ||
+    (process.env.POSTGRES_URL && process.env.POSTGRES_URL.trim());
 
-  return (
-    <div className="mt-32">
-      {news.map((article, index) => {
-        const layout = LAYOUTS[article.layout || 'mediumSquareTextBelow'];
-        const date = new Date(article.publishedDate);
+  if (!hasDb) {
+    return (
+      <div className="mt-32">
+        <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">
+          Aktuell sind keine News eingetragen.
+        </p>
+        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-gray-500">
+          News können im Admin-Bereich unter /admin verwaltet werden (Datenbank erforderlich).
+        </p>
+      </div>
+    );
+  }
 
-        return (
-          <article key={article.id} className={index !== 0 ? 'mt-20' : ''}>
-            <div className="flex flex-col-reverse gap-1 md:flex-row md:justify-between md:items-start">
-              <Subtitle withDot withLeadingSlash>
-                {article.title}
-              </Subtitle>
-              <span className="font-['IBM_Plex_Mono'] text-sm">
-                ({date.toLocaleDateString('de-DE', { month: 'long' })}, {date.getFullYear()})
-              </span>
-            </div>
+  try {
+    const { getPayload } = await import('@/client/payload');
+    const payload = await getPayload();
+    const { docs: news } = await payload.find({
+      collection: 'news',
+      depth: 1,
+    });
 
-            <div className={layout.grid}>
-              {article.featuredImage && (
-                <div className={`overflow-hidden ${layout.image}`}>
-                  <Image
-                    className="object-cover w-full h-full transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
-                    src={article.featuredImage.url}
-                    alt={article.featuredImage.alt}
-                    width={800}
-                    height={600}
-                    priority={index === 0}
-                    loading={index === 0 ? 'eager' : 'lazy'}
-                  />
-                </div>
-              )}
-              <div className={layout.text}>
-                <RichText data={article.contents} />
+    if (!news || news.length === 0) {
+      return (
+        <div className="mt-32">
+          <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">Aktuell sind keine News eingetragen.</p>
+        </div>
+      );
+    }
+
+    return (
+      <div className="mt-32">
+        {news.map((article, index) => {
+          const layoutKey = article.layout || 'mediumSquareTextBelow';
+          const layout = LAYOUTS[layoutKey] || LAYOUTS.mediumSquareTextBelow;
+          const date = article.publishedDate ? new Date(article.publishedDate) : null;
+
+          return (
+            <article key={article.id} className={index !== 0 ? 'mt-20' : ''}>
+              <div className="flex flex-col-reverse gap-1 md:flex-row md:justify-between md:items-start">
+                <Subtitle withDot withLeadingSlash>
+                  {article.title || 'Artikel'}
+                </Subtitle>
+                {date && (
+                  <span className="font-['IBM_Plex_Mono'] text-sm">
+                    ({date.toLocaleDateString('de-DE', { month: 'long' })}, {date.getFullYear()})
+                  </span>
+                )}
               </div>
-            </div>
-          </article>
-        );
-      })}
-    </div>
-  );
+
+              <div className={layout.grid}>
+                {article.featuredImage && typeof article.featuredImage === 'object' && article.featuredImage.url && (
+                  <div className={`overflow-hidden ${layout.image}`}>
+                    <Image
+                      className="object-cover w-full h-full transition-all duration-300 filter grayscale hover:grayscale-0 hover:scale-105"
+                      src={article.featuredImage.url}
+                      alt={article.featuredImage.alt || article.title || 'News'}
+                      width={800}
+                      height={600}
+                      priority={index === 0}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                )}
+                <div className={layout.text}>
+                  {article.contents ? (
+                    <RichText data={article.contents} />
+                  ) : (
+                    <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">Kein Inhalt.</p>
+                  )}
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    );
+  } catch (error) {
+    console.error('News page error:', error);
+    return (
+      <div className="mt-32">
+        <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">
+          Die News konnten nicht geladen werden.
+        </p>
+        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-gray-500">
+          Bitte prüfen Sie die Datenbankverbindung (DATABASE_URI) in .env.local.
+        </p>
+      </div>
+    );
+  }
 }
 
 // Static header component

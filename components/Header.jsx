@@ -38,6 +38,7 @@ export function Header() {
             <div className="absolute left-8 sm:left-12 lg:left-16 h-[80px] flex items-center z-[60]">
               <Link
                 href="/"
+                prefetch={false}
                 onClick={() => setIsOpen(false)}
                 className={`rounded-lg px-4 py-1 text-[24px] font-['Montserrat',_sans-serif] uppercase transition-colors duration-300 ease-in-out ${
                   isOpen ? 'bg-white text-black' : 'bg-[#1a1a1a] text-white'
@@ -57,6 +58,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    prefetch={false}
                     className="group relative inline-flex items-center px-1 text-md font-medium font-['Montserrat',_sans-serif] text-[#0d0e14] whitespace-nowrap"
                   >
                     {item.name}
@@ -111,6 +113,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
+              prefetch={false}
               className={`block text-[25px] font-[500] font-bold font-['Montserrat',_sans-serif] transition-colors duration-200 mb-0.5 
                 ${pathname === item.href ? 'text-white' : 'text-[#6a6a6a] hover:text-white'}`}
               onClick={() => setIsOpen(false)}
