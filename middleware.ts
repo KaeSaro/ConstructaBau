@@ -8,6 +8,11 @@ import { NextRequest, NextResponse } from 'next/server';
  */
 function maintenanceEnabled(): boolean {
   const norm = (v: string | undefined) => v?.replace(/^\uFEFF/, '').trim().toLowerCase();
+  // Lokal: Wenn Windows/Terminal schon MAINTENANCE_MODE=true setzt, ignoriert Next die .env.local-Zeile.
+  // SKIP_MAINTENANCE=true in .env.local erzwingt normale Site (nur lokal setzen, nicht auf Vercel).
+  if (norm(process.env.SKIP_MAINTENANCE) === 'true') {
+    return false;
+  }
   return (
     norm(process.env.MAINTENANCE_MODE) === 'true' ||
     norm(process.env.NEXT_PUBLIC_MAINTENANCE_MODE) === 'true'
