@@ -1,22 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
- * Env-Zugriff nur hier (nicht aus `lib/` importieren), damit Next die Werte ins Edge-Bundle übernimmt.
- * Auf Vercel ist `MAINTENANCE_MODE` manchmal zur Laufzeit nicht gesetzt wie lokal – zusätzlich
- * `NEXT_PUBLIC_MAINTENANCE_MODE` setzen (gleicher Wert `true`), dann wird er beim Build zuverlässig eingebunden.
- * Hinweis: `NEXT_PUBLIC_*` ist im Client-JS sichtbar (für einen Wartungs-Schalter unkritisch).
+ * Edge: eigene Prüfung (nicht `lib/` importieren). Wartung derzeit aus — Logik wieder aktivieren siehe `lib/maintenance-mode.ts`.
  */
 function maintenanceEnabled(): boolean {
-  const norm = (v: string | undefined) => v?.replace(/^\uFEFF/, '').trim().toLowerCase();
-  // Lokal: Wenn Windows/Terminal schon MAINTENANCE_MODE=true setzt, ignoriert Next die .env.local-Zeile.
-  // SKIP_MAINTENANCE=true in .env.local erzwingt normale Site (nur lokal setzen, nicht auf Vercel).
-  if (norm(process.env.SKIP_MAINTENANCE) === 'true') {
-    return false;
-  }
-  return (
-    norm(process.env.MAINTENANCE_MODE) === 'true' ||
-    norm(process.env.NEXT_PUBLIC_MAINTENANCE_MODE) === 'true'
-  );
+  return false;
 }
 
 /** Statische Wartungsseite – kein Next/React, direkt aus dem Edge. */
