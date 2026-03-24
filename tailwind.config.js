@@ -12,6 +12,8 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1064px',
+      /** Header: horizontale Nav / Burger — muss zu NAV_DESKTOP_MIN_PX in components/Header.jsx passen */
+      navdesk: '880px',
       xl: '1280px',
       '2xl': '1536px',
     },

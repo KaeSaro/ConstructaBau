@@ -8,7 +8,7 @@ export function Footer() {
         {/* Left column with logo */}
         <div className="text-on-dark w-full md:w-1/2">
           <div className="flex flex-col items-start">
-            <h1 className="text-[35px] font-jazmin font-thin uppercase">
+            <h1 className="whitespace-nowrap text-[35px] font-jazmin font-thin uppercase">
               Constructa Bau<span className="text-accent">.</span>
             </h1>
             <p className="text-muted-on-dark text-[16px] font-jazmin">Wir schaffen solide Grundlagen</p>
