@@ -1,11 +1,13 @@
 export function Subtitle({ children, withDot, withLeadingSlash }) {
   return (
-    <h2 className="text-[22px] sm:text-[26px] md:text-[32px] lg:text-[36px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left mb-4 flex items-center">
+    <h2 className="text-[24px] sm:text-[28px] md:text-[34px] lg:text-[40px] xl:text-[42px] leading-[1.08] font-jazmin font-light uppercase tracking-wide text-foreground text-left mb-5 flex items-center">
       {withLeadingSlash && (
-        <span className="text-[#D0312D] text-[16px] sm:text-[18px] md:text-[22px] lg:text-[26px] mr-2">/</span>
+        <span className="text-accent text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[30px] mr-2 shrink-0">
+          /
+        </span>
       )}
       {children}
-      {withDot && <span className="text-[#D0312D] -ml-[0.75px] sm:-ml-0.5 md:-ml-0.5">.</span>}
+      {withDot && <span className="text-accent -ml-[0.75px] sm:-ml-0.5 md:-ml-0.5">.</span>}
     </h2>
   );
 }

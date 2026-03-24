@@ -13,8 +13,8 @@ export default function WartungPage() {
     <Content withoutTopMargin>
       <div className="flex min-h-[70vh] flex-col justify-center pb-32 pt-24">
         <div className="mb-1 flex items-center">
-          <span className="ml-2 mr-1 h-2 w-2 rounded-full bg-[#D0312D]" />
-          <p className="text-left font-['Montserrat',_sans-serif] text-[16px] uppercase leading-[1.1]">
+          <span className="ml-2 mr-1 h-2 w-2 rounded-full bg-accent" />
+          <p className="text-left font-jazmin font-thin text-[16px] uppercase leading-[1.1]">
             Wartung
           </p>
         </div>

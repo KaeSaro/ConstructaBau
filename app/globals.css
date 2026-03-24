@@ -2,30 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Jazmín Thin — Latinotype (lizenziert). Webfont aus MyFonts-Kit nach public/fonts/Jazmin-Thin.woff2 legen (ggf. umbenennen). */
+@font-face {
+  font-family: 'Jazmin Thin';
+  src: url('/fonts/Jazmin-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #e5e5e5;
-  --foreground: #000000;
-  --border: #c7c7c7;
-  --accent: #000000; /* Rote Akzentfarbe auf Root-Ebene */
+  /* Markenpalette: WHITE #FFFFFF · PEARL #FAF8F5 · KHAKI #DFDACF · TAUPE #A3968D · CACAO #4D403A · LEATHER #262626 */
+
+  /* Seitenhintergrund */
+  --background: #faf8f5; /* PEARL */
+  /* Fließtext */
+  --foreground: #4d403a; /* CACAO */
+  /* Sekundärtext */
+  --muted: #a3968d; /* TAUPE */
+  /* Trennlinien */
+  --border: #dfdacf; /* KHAKI */
+
+  /* Punkte, Schrägstriche, Logo-Punkt, Akzentlinien */
+  --accent: #a3968d; /* TAUPE */
+  --accent-hover: #4d403a; /* CACAO */
+
+  /* Footer, Mobile-Menü, Logo-Kachel (geschlossen) */
+  --surface-dark: #4d403a; /* CACAO */
+  --on-dark: #ffffff; /* WHITE */
+  --muted-on-dark: #dfdacf; /* KHAKI */
+  --link-on-dark: #dfdacf; /* KHAKI */
+  --nav-muted: #a3968d; /* TAUPE */
+
+  /* Hero-Streifen hinter dem Bild */
+  --hero-bg: #262626; /* LEATHER */
+  --hero-text: #faf8f5; /* PEARL */
+
+  /* Logo geöffnetes Menü */
+  --elevated: #ffffff; /* WHITE */
+
+  /* Formularfelder */
+  --input-surface: #dfdacf; /* KHAKI */
+  --input-border: #4d403a; /* CACAO */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-montserrat);
+  /* Schrift: app/layout.js — font-jazmin font-light (Cormorant/Jazmin), nicht Montserrat erzwingen */
   overflow-y: scroll;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; /* Verhindert horizontales Scrollen */
-}
-
-@layer base {
-  .font-\[\'Montserrat\'\2c _sans-serif\] {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -0.09em; /* adjust spacing as needed */
-    /* add other font styles here */
-  }
 }
 
 /* Scrollbar Styles - angepasst wie im zweiten Beispiel */
@@ -38,7 +67,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
+  background: var(--muted);
   border-radius: 6px;
   border: none; /* Border entfernt */
 }

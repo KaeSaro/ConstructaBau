@@ -1,5 +1,5 @@
 export const regularTextStyles =
-  "text-[16px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-left";
+  'text-[18px] sm:text-[19px] md:text-[22px] lg:text-[26px] xl:text-[28px] leading-snug font-jazmin font-light uppercase text-left';
 
 export function RegularText({ children, withQuotes, withDot }) {
   return (
@@ -12,8 +12,8 @@ export function RegularText({ children, withQuotes, withDot }) {
         <span
           className={
             withQuotes
-              ? `text-[#D0312D] -ml-1 sm:-ml-1 md:-ml-1 lg:-ml-2 -mr-1 sm:-mr-1 md:-mr-2 lg:-mr-3`
-              : `text-[#D0312D] -ml-1 sm:-ml-1 md:-ml-1 lg:-ml-1.5`
+              ? `text-accent -ml-1 sm:-ml-1 md:-ml-1 lg:-ml-2 -mr-1 sm:-mr-1 md:-mr-2 lg:-mr-3`
+              : `text-accent -ml-1 sm:-ml-1 md:-ml-1 lg:-ml-1.5`
           }
         >
           .

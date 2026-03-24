@@ -9,8 +9,8 @@ export default function Impressum() {
       <div className="flex flex-col mt-[304px]">
         {/* Punkt und Seitentitel */}
         <div className="flex items-center mb-1">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-          <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+          <span className="w-2 h-2 rounded-full bg-accent ml-2 mr-1"></span>
+          <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-jazmin font-thin uppercase text-left">
             Impressum
           </h1>
         </div>
@@ -86,7 +86,7 @@ export default function Impressum() {
                 href="https://ec.europa.eu/consumers/odr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white [&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px]"
+                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-surface-dark hover:text-on-dark [&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px]"
               >
                 <RegularText>https://ec.europa.eu/consumers/odr/</RegularText>
               </Link>

@@ -2,16 +2,16 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] w-full py-8 p-8 relative">
+    <footer className="bg-surface-dark w-full py-8 p-8 relative">
       {/* Main container for logo and links */}
       <div className="flex flex-col md:flex-row justify-between items-start mb-16">
         {/* Left column with logo */}
-        <div className="text-white w-full md:w-1/2">
+        <div className="text-on-dark w-full md:w-1/2">
           <div className="flex flex-col items-start">
-            <h1 className="text-[35px] font-['Montserrat',_sans-serif] uppercase">
-              Constructa Bau<span className="text-[#D0312D]">.</span>
+            <h1 className="text-[35px] font-jazmin font-thin uppercase">
+              Constructa Bau<span className="text-accent">.</span>
             </h1>
-            <p className="text-[#999999] text-[16px] font-['Montserrat',_sans-serif]">Wir schaffen solide Grundlagen</p>
+            <p className="text-muted-on-dark text-[16px] font-jazmin">Wir schaffen solide Grundlagen</p>
           </div>
         </div>
 
@@ -19,37 +19,37 @@ export function Footer() {
         <div className="w-full md:w-1/2 text-right mt-8 md:mt-0">
           <ul className="space-y-4">
             <li>
-              <Link href="/" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/leistungen" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/leistungen" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 LEISTUNGEN
               </Link>
             </li>
             <li>
-              <Link href="/impressionen" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressionen" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 IMPRESSIONEN
               </Link>
             </li>
             <li>
-              <Link href="/team" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/team" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 TEAM
               </Link>
             </li>
             <li>
-              <Link href="/impressum" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/impressum" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 IMPRESSUM
               </Link>
             </li>
             <li>
-              <Link href="/kontakt" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/kontakt" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 Kontakt
               </Link>
             </li>
             <li>
-              <Link href="/news" prefetch={false} className="text-[#c7c7c7] text-[18px] uppercase hover:text-white">
+              <Link href="/news" prefetch={false} className="text-link-on-dark text-[18px] uppercase hover:text-on-dark">
                 NEWS
               </Link>
             </li>
@@ -58,10 +58,10 @@ export function Footer() {
       </div>
 
       {/* Footer Bottom with contact information */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start border-t border-[#D0312D] pt-2 space-y-4 md:space-y-0 md:space-x-8">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start border-t border-accent pt-2 space-y-4 md:space-y-0 md:space-x-8">
         {/* Copyright Text */}
         <div className="w-full md:w-auto text-center md:text-left">
-          <p className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] whitespace-nowrap">
+          <p className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark whitespace-nowrap">
             <span className="block custom:inline whitespace-nowrap">
               © {new Date().getFullYear()} Constructa Bau GmbH
             </span>
@@ -75,7 +75,7 @@ export function Footer() {
           <div className="flex whitespace-nowrap">
             <Link
               href="tel:+4915170220139"
-              className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
+              className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark hover:text-on-dark transition-colors duration-300"
             >
               +49 (0) 151 7022 0139
             </Link>
@@ -83,14 +83,14 @@ export function Footer() {
           <div className="flex whitespace-nowrap justify-center">
             <Link
               href="mailto:info@c-bau.com"
-              className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
+              className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark hover:text-on-dark transition-colors duration-300"
             >
               info@c-bau.com
             </Link>
           </div>
         </div>
 
-        <p className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] inline-block">
+        <p className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark inline-block">
           <span className="block custom:inline whitespace-nowrap">Faule Birke 1</span>
           <span className="hidden custom:inline">, </span>
           <span className="block custom:inline whitespace-nowrap">57080 Siegen</span>
@@ -100,7 +100,7 @@ export function Footer() {
           <Link
             href="/agb"
             prefetch={false}
-            className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
+            className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark hover:text-on-dark transition-colors duration-300"
           >
             AGB
           </Link>
@@ -110,7 +110,7 @@ export function Footer() {
           <Link
             href="/datenschutz"
             prefetch={false}
-            className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-[#999999] hover:text-white transition-colors duration-300"
+            className="text-[12px] leading-tight font-['IBM_Plex_Mono',_sans-serif] uppercase text-muted-on-dark hover:text-on-dark transition-colors duration-300"
           >
             Datenschutz
           </Link>

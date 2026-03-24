@@ -394,8 +394,8 @@ export default function Impressionen() {
       <div className="flex flex-col mt-28 md:mt-[304px]">
         {/* Header Sektion */}
         <div className="flex items-center mb-1">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-          <h1 className="text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+          <span className="w-2 h-2 rounded-full bg-accent ml-2 mr-1"></span>
+          <h1 className="text-[16px] leading-[1.1] font-jazmin font-thin uppercase text-left">
             IMPRESSIONEN
           </h1>
         </div>

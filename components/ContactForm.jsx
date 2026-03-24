@@ -60,7 +60,7 @@ export function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
+          className="p-4 border border-input-border rounded-md bg-input-surface text-foreground"
         />
         <input
           type="email"
@@ -69,7 +69,7 @@ export function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
+          className="p-4 border border-input-border rounded-md bg-input-surface text-foreground"
         />
         {/* Neues Telefonnummer-Feld */}
         <input
@@ -79,7 +79,7 @@ export function ContactForm() {
           value={formData.phoneNumber}
           onChange={handleChange}
           required
-          className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
+          className="p-4 border border-input-border rounded-md bg-input-surface text-foreground"
         />
         <textarea
           name="message"
@@ -88,11 +88,11 @@ export function ContactForm() {
           onChange={handleChange}
           rows="6"
           required
-          className="p-4 border border-[#1a1a1a] rounded-md bg-[#e5e5e5] text-black"
+          className="p-4 border border-input-border rounded-md bg-input-surface text-foreground"
         />
         <button
           type="submit"
-          className="bg-[#e5e5e5] text-black p-4 rounded-full mt-4 border-2 border-black transition-all duration-200 hover:bg-black hover:text-white"
+          className="bg-input-surface text-foreground p-4 rounded-full mt-4 border-2 border-foreground transition-all duration-200 hover:bg-surface-dark hover:text-on-dark"
         >
           Senden
         </button>
@@ -100,7 +100,7 @@ export function ContactForm() {
         {/* Call Button */}
         <Link
           href="tel:+4915170220139"
-          className="bg-[#e5e5e5] text-black p-4 rounded-full border-2 border-black transition-all duration-200 hover:bg-black hover:text-white text-center"
+          className="bg-input-surface text-foreground p-4 rounded-full border-2 border-foreground transition-all duration-200 hover:bg-surface-dark hover:text-on-dark text-center"
         >
           Anrufen
         </Link>

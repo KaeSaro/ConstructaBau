@@ -1,4 +1,4 @@
-import { Montserrat, IBM_Plex_Mono } from 'next/font/google';
+import { IBM_Plex_Mono, Cormorant_Garamond } from 'next/font/google';
 import { headers } from 'next/headers';
 import './globals.css';
 import { Header } from '../components/Header';
@@ -14,13 +14,13 @@ const ibmPlexMono = IBM_Plex_Mono({
   fallback: ['sans-serif'],
 });
 
-// Montserrat mit sans-serif fallback
-const montserrat = Montserrat({
+// Serif-Fallback / Fließschrift (Cormorant); Jazmín Thin optional aus public/fonts — siehe globals.css @font-face
+const cormorantDisplay = Cormorant_Garamond({
   subsets: ['latin'],
-  variable: '--font-montserrat',
+  variable: '--font-cormorant',
   display: 'swap',
-  weight: ['500'],
-  fallback: ['sans-serif'],
+  weight: ['300', '400', '500', '600', '700'],
+  fallback: ['Georgia', 'serif'],
 });
 
 const defaultMetadata = {
@@ -60,10 +60,7 @@ export default async function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${montserrat.variable} ${ibmPlexMono.variable} antialiased`}
-        style={{
-          fontFamily: 'Arial, Helvetica Neue, Helvetica, sans-serif',
-        }}
+        className={`${ibmPlexMono.variable} ${cormorantDisplay.variable} font-jazmin font-light antialiased`}
       >
         {!maintenance && <Header />}
         {children}

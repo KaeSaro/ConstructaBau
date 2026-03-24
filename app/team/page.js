@@ -18,15 +18,15 @@ const TeamMember = ({ name, position, image, phone, email }) => {
         />
       </div>
       <div className="mt-4">
-        <h3 className="text-[32px] font-montserrat font-bold uppercase text-left">
+        <h3 className="text-[32px] font-jazmin font-thin uppercase text-left">
           {name}
-          <span className="text-[#D0312D] -ml-0.4">.</span>
+          <span className="text-accent -ml-0.4">.</span>
         </h3>
-        <p className="text-[20px] font-ibm-plex-mono uppercase text-[#1a1a1a] mt-1">{position}</p>
+        <p className="text-[20px] font-jazmin font-light uppercase text-foreground mt-1">{position}</p>
         {phone && (
           <Link
             href={`tel:${phone.replace(/\s/g, '')}`}
-            className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
+            className="text-[16px] font-jazmin font-light text-accent mt-1 hover:underline block"
           >
             {phone}
           </Link>
@@ -34,7 +34,7 @@ const TeamMember = ({ name, position, image, phone, email }) => {
         {email && (
           <Link
             href={`mailto:${email}`}
-            className="text-[16px] font-ibm-plex-mono text-[#D0312D] mt-1 hover:underline block"
+            className="text-[16px] font-jazmin font-light text-accent mt-1 hover:underline block"
           >
             {email}
           </Link>
@@ -87,8 +87,8 @@ export default function Team() {
     <Content>
       <div className="flex flex-col mt-[304px]">
         <div className="flex items-center mb-1">
-          <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-          <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">
+          <span className="w-2 h-2 rounded-full bg-accent ml-2 mr-1"></span>
+          <h1 className="text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] leading-[1.1] font-jazmin font-thin uppercase text-left">
             Team
           </h1>
         </div>

@@ -49,10 +49,10 @@ async function NewsData() {
   if (!hasDb) {
     return (
       <div className="mt-32">
-        <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">
+        <p className="font-['IBM_Plex_Mono',_sans-serif] text-foreground">
           Aktuell sind keine News eingetragen.
         </p>
-        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-gray-500">
+        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-muted">
           News können im Admin-Bereich unter /admin verwaltet werden (Datenbank erforderlich).
         </p>
       </div>
@@ -70,7 +70,7 @@ async function NewsData() {
     if (!news || news.length === 0) {
       return (
         <div className="mt-32">
-          <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">Aktuell sind keine News eingetragen.</p>
+          <p className="font-['IBM_Plex_Mono',_sans-serif] text-foreground">Aktuell sind keine News eingetragen.</p>
         </div>
       );
     }
@@ -113,7 +113,7 @@ async function NewsData() {
                   {article.contents ? (
                     <RichText data={article.contents} />
                   ) : (
-                    <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">Kein Inhalt.</p>
+                    <p className="font-['IBM_Plex_Mono',_sans-serif] text-foreground">Kein Inhalt.</p>
                   )}
                 </div>
               </div>
@@ -126,10 +126,10 @@ async function NewsData() {
     console.error('News page error:', error);
     return (
       <div className="mt-32">
-        <p className="font-['IBM_Plex_Mono',_sans-serif] text-[#1a1a1a]">
+        <p className="font-['IBM_Plex_Mono',_sans-serif] text-foreground">
           Die News konnten nicht geladen werden.
         </p>
-        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-gray-500">
+        <p className="mt-4 font-['IBM_Plex_Mono',_sans-serif] text-sm text-muted">
           Bitte prüfen Sie die Datenbankverbindung (DATABASE_URI) in .env.local.
         </p>
       </div>
@@ -142,8 +142,8 @@ function NewsHeader() {
   return (
     <div className="flex flex-col mt-[304px]">
       <div className="flex items-center mb-1">
-        <span className="w-2 h-2 rounded-full bg-[#D0312D] ml-2 mr-1"></span>
-        <h1 className="text-[16px] leading-[1.1] font-['Montserrat',_sans-serif] uppercase text-left">News</h1>
+        <span className="w-2 h-2 rounded-full bg-accent ml-2 mr-1"></span>
+        <h1 className="text-[16px] leading-[1.1] font-jazmin font-thin uppercase text-left">News</h1>
       </div>
       <Title withDot>Impulse für die Zukunft</Title>
     </div>

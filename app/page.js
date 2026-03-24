@@ -3,37 +3,46 @@ import { Content } from '../components/Content';
 import { RegularText } from '../components/RegularText';
 import { Subtitle } from '../components/Subtitle';
 import { Title } from '../components/Title';
-import Image from 'next/image';
+
+/** Abstraktes Hero (Variante A): Wand-/Lichtstimmung in Markenfarben, ohne Foto. */
+function HomeHeroAbstract() {
+  return (
+    <div
+      className="relative w-full min-h-[280px] h-[42vw] max-h-[760px] overflow-hidden bg-hero"
+      role="img"
+      aria-label="Abstrakte Oberfläche in Pearl, Khaki und Taupe"
+    >
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 100% 85% at 15% 25%, #faf8f5 0%, transparent 52%), radial-gradient(ellipse 80% 70% at 88% 18%, #dfdacf 0%, transparent 48%), radial-gradient(ellipse 90% 55% at 50% 95%, #a3968d 0%, transparent 55%), linear-gradient(168deg, #faf8f5 0%, #dfdacf 38%, #a3968d 72%, #6d6058 100%)',
+        }}
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_65%_55%,rgba(77,64,58,0.22)_0%,transparent_55%)] mix-blend-multiply" />
+      <div className="pointer-events-none absolute -left-[20%] -top-[30%] h-[70%] w-[55%] rounded-full bg-[#faf8f5]/45 blur-[100px]" />
+      <div className="pointer-events-none absolute -bottom-[25%] -right-[15%] h-[65%] w-[60%] rounded-full bg-[#dfdacf]/55 blur-[90px]" />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.35] mix-blend-soft-light bg-gradient-to-br from-white/20 via-transparent to-[#4d403a]/15" />
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage:
+            'repeating-linear-gradient(105deg, transparent, transparent 1px, rgba(77,64,58,0.12) 1px, rgba(77,64,58,0.12) 2px)',
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#262626] from-0% via-[#262626]/82 via-40% to-transparent to-68%" />
+    </div>
+  );
+}
 
 export default function Home() {
-  // You can replace this with an actual tiny base64 of your image
-  const blurDataURL =
-    'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0cHBwcHy8lHyUjJSk1LDArLTMzNTw5OTk5PDpFREVFRUdHR0dHR0dHR0dHR0dHR0f/2wBDARUXFyAeIBshIS03KjQqNDc2NjY2Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k=';
-
   return (
     <>
-      {/* Hero Image Section with Blur Loading */}
       <div className="relative mt-[80px]">
-        <div className="overflow-hidden bg-gray-900">
-          {/* Added background color */}
-          <Image
-            src="/radlader.JPG"
-            alt="Constructa Bau Hero Image"
-            width={1200}
-            height={676}
-            priority
-            quality={75}
-            placeholder="blur"
-            blurDataURL={blurDataURL}
-            sizes="(max-width: 768px) 100vw,
-             (max-width: 1200px) 100vw,
-             100vw"
-            className="w-full max-h-[980px] object-cover"
-          />
-        </div>
+        <HomeHeroAbstract />
         <div className="absolute bottom-0 w-full">
           <Content withoutMargin>
-            <div style={{ color: '#e5e5e5' }}>
+            <div className="text-hero-text">
               <Title>Willkommen bei</Title>
             </div>
           </Content>
@@ -65,67 +74,67 @@ export default function Home() {
 
           <div className="flex flex-col space-y-3">
             <div className="flex items-center">
-              <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="min-w-[8px] w-[8px] min-h-[8px] h-[8px] rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Maler- und Lackierarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Spachtel- und Putzarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Tapezierarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Bodenbelagsarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Bodenbeschichtungsarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Sandstrahlarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Parkplatz- und Hallenmarkierungen</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Trockenbau</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>OWA-Decken</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Graffitientfernung & Graffitischutz</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Taktile Leitsysteme und aufklebare Bodenindikatoren</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Tiefbau</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Baggerarbeiten</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Pflastergestaltung</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Grünflächenpflege</Subtitle>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#D0312D] self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
+              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Baustellenmanagement</Subtitle>
             </div>
           </div>
@@ -138,7 +147,7 @@ export default function Home() {
               <Link
                 href="/kontakt"
                 prefetch={false}
-                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#1a1a1a] hover:text-white"
+                className="inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-surface-dark hover:text-on-dark"
               >
                 Kontaktieren
               </Link>
