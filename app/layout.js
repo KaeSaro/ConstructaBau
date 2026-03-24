@@ -25,7 +25,7 @@ const cormorantDisplay = Cormorant_Garamond({
 
 const defaultMetadata = {
   title: 'Constructa Bau',
-  description: 'Ihr Partner für Garten- und Landschaftsbau sowie Tiefbauarbeiten.',
+  description: 'Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau.',
   robots: {
     index: true,
     follow: true,
