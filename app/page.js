@@ -54,22 +54,22 @@ export default function Home() {
           <Title withDot>der Constructa Bau GmbH</Title>
 
           <div className="mt-32 space-y-16">
-            <RegularText withDot>Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau</RegularText>
+            <RegularText>Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau</RegularText>
             <RegularText>
               Von Anstrich und Putz über Bodenbeläge und Trockenbau bis zu Markierungen und taktilen Leitsystemen –
               wir übernehmen Ihr Projekt von der Vorbereitung bis zur fertigen Oberfläche
             </RegularText>
-            <RegularText withDot>
+            <RegularText>
               Malerarbeiten innen und außen, Spachtel- und Tapezierarbeiten, Bodenbeschichtungen und
               Parkplatzmarkierungen – fachgerecht und zuverlässig für Wohn- und Gewerbeimmobilien
             </RegularText>
-            <RegularText withDot>
-              Ergänzt durch Tiefbau, Pflasterarbeiten und Grünflächenpflege: Constructa Bau bringt
+            <RegularText>
+              Ergänzt durch Tiefbau und Grünflächenpflege: Constructa Bau bringt
               alle Gewerke unter ein Dach – für private, gewerbliche und kommunale Projekte
             </RegularText>
           </div>
           <div className="mt-32 mb-32">
-            <Title withDot>Unsere Leistungen auf einen Blick</Title>
+            <Title>Unsere Leistungen auf einen Blick</Title>
           </div>
 
           <div className="flex flex-col space-y-3">
@@ -115,19 +115,11 @@ export default function Home() {
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-              <Subtitle>Taktile Leitsysteme und aufklebare Bodenindikatoren</Subtitle>
+              <Subtitle>Taktile Leitsysteme und aufklebbare Bodenindikatoren</Subtitle>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
               <Subtitle>Tiefbau</Subtitle>
-            </div>
-            <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-              <Subtitle>Baggerarbeiten</Subtitle>
-            </div>
-            <div className="flex items-center">
-              <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>
-              <Subtitle>Pflastergestaltung</Subtitle>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-accent self-start mt-[8px] sm:mt-[10px] md:mt-[14px] lg:mt-[18px] mr-1"></span>

@@ -89,7 +89,7 @@ export default function Leistungen() {
         </div>
 
         <div className="mt-16 text-left">
-          <Subtitle>Taktile Leitsysteme und aufklebare Bodenindikatoren</Subtitle>
+          <Subtitle>Taktile Leitsysteme und aufklebbare Bodenindikatoren</Subtitle>
           <RegularText withDot>
             Barrierefreie Orientierung durch taktile Leitlinien und Bodenindikatoren – für sichere Wege in öffentlichen Räumen, Bahnhöfen und Gebäuden
           </RegularText>
@@ -101,17 +101,7 @@ export default function Leistungen() {
           <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
           <RegularText withDot>Wir legen das Fundament</RegularText>
         </div>
-
-        <div className="mt-16 text-left">
-          <Subtitle>Baggerarbeiten</Subtitle>
-          <RegularText withDot>Präzise und effiziente Erdbewegungen für Neuprojekte{'\n'}jeder Größe</RegularText>
-        </div>
-
-        <div className="mt-16 text-left">
-          <Subtitle>Pflastergestaltung</Subtitle>
-          <RegularText withDot>Hochwertige Gestaltung von Einfahrten{'\n'}Gehwegen und Außenflächen</RegularText>
-        </div>
-
+        
         <div className="mt-16 text-left">
           <Subtitle>Grünflächenpflege</Subtitle>
           <RegularText withDot>

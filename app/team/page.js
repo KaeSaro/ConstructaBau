@@ -26,7 +26,7 @@ const TeamMember = ({ name, position, image, phone, email }) => {
         {phone && (
           <Link
             href={`tel:${phone.replace(/\s/g, '')}`}
-            className="text-[16px] font-jazmin font-light text-accent mt-1 hover:underline block"
+            className="text-[16px] font-jazmin font-light text-foreground mt-1 hover:underline block"
           >
             {phone}
           </Link>
@@ -34,7 +34,7 @@ const TeamMember = ({ name, position, image, phone, email }) => {
         {email && (
           <Link
             href={`mailto:${email}`}
-            className="text-[16px] font-jazmin font-light text-accent mt-1 hover:underline block"
+            className="text-[16px] font-jazmin font-light text-foreground mt-1 hover:underline block"
           >
             {email}
           </Link>
