@@ -23,9 +23,24 @@ const cormorantDisplay = Cormorant_Garamond({
   fallback: ['Georgia', 'serif'],
 });
 
+/** Einheitlich für Meta-Description, Open Graph und Twitter (Link-Vorschauen). */
+const SITE_DESCRIPTION =
+  'Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau.';
+
 const defaultMetadata = {
   title: 'Constructa Bau',
-  description: 'Ihr Partner für Maler- und Ausbauarbeiten, Tiefbau sowie Garten- und Landschaftsbau.',
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: 'Constructa Bau',
+    description: SITE_DESCRIPTION,
+    locale: 'de_DE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Constructa Bau',
+    description: SITE_DESCRIPTION,
+  },
   robots: {
     index: true,
     follow: true,
