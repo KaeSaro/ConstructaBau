@@ -84,12 +84,14 @@ async function NewsData() {
 
           return (
             <article key={article.id} className={index !== 0 ? 'mt-20' : ''}>
-              <div className="flex flex-col-reverse gap-1 md:flex-row md:justify-between md:items-start">
-                <Subtitle withDot withLeadingSlash>
-                  {article.title || 'Artikel'}
-                </Subtitle>
+              <div className="flex flex-col-reverse gap-1 md:flex-row md:items-start md:justify-between md:gap-4">
+                <div className="min-w-0 flex-1">
+                  <Subtitle withDot withLeadingSlash>
+                    {article.title || 'Artikel'}
+                  </Subtitle>
+                </div>
                 {date && (
-                  <span className="font-['IBM_Plex_Mono'] text-sm">
+                  <span className="shrink-0 whitespace-nowrap pt-[0.35em] font-['IBM_Plex_Mono'] text-sm md:pt-[0.5em]">
                     ({date.toLocaleDateString('de-DE', { month: 'long' })}, {date.getFullYear()})
                   </span>
                 )}
