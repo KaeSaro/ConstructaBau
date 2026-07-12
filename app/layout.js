@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { maintenanceEnabled } from '../lib/maintenance-mode';
+import { Analytics } from '@vercel/analytics/next';
 
 // IBM Plex Mono mit sans-serif fallback
 const ibmPlexMono = IBM_Plex_Mono({
@@ -80,6 +81,7 @@ export default async function RootLayout({ children }) {
         {!maintenance && <Header />}
         {children}
         {!maintenance && <Footer />}
+        <Analytics />
       </body>
     </html>
   );

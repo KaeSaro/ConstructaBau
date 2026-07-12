@@ -76,6 +76,26 @@ export default function Datenschutz() {
             </div>
           </section>
 
+          {/* Web-Analyse */}
+          <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
+            <Title withDot>Web-Analyse</Title>
+            <div className="[&>p]:!text-[16px] md:[&>p]:!text-[20px] lg:[&>p]:!text-[24px] space-y-1">
+              <RegularText>
+                Wir nutzen auf unserer Website Vercel Web Analytics, einen Dienst der Vercel Inc., 340 S Lemon Ave #4133,
+                Walnut, CA 91789, USA, zur anonymen Auswertung der Websitenutzung (z. B. Seitenaufrufe).
+              </RegularText>
+              <RegularText>
+                Dabei werden keine Cookies gesetzt und keine personenbezogenen Daten wie Ihre IP-Adresse dauerhaft
+                gespeichert; die Daten werden anonymisiert und ausschließlich in aggregierter Form ausgewertet, sodass
+                kein Rückschluss auf einzelne Personen möglich ist.
+              </RegularText>
+              <RegularText>
+                Rechtsgrundlage ist unser berechtigtes Interesse an einer statistischen Analyse und Verbesserung unseres
+                Angebots gemäß Art. 6 Abs. 1 lit. f DSGVO.
+              </RegularText>
+            </div>
+          </section>
+
           {/* Ihre Rechte */}
           <section className="[&>h1]:!text-[24px] md:[&>h1]:!text-[40px] lg:[&>h1]:!text-[50px] space-y-4">
             <Title withDot>Ihre Rechte</Title>

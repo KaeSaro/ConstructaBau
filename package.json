@@ -17,6 +17,7 @@
     "@payloadcms/payload-cloud": "3.86.0",
     "@payloadcms/richtext-lexical": "3.86.0",
     "@payloadcms/storage-vercel-blob": "3.86.0",
+    "@vercel/analytics": "^2.0.1",
     "critters": "^0.0.23",
     "graphql": "^16.10.0",
     "lucide-react": "^0.457.0",
