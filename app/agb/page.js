@@ -20,7 +20,7 @@ export default function AGB() {
               <RegularText>
                 Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen der Constructa Bau GmbH
                 (nachfolgend &quot;Auftragnehmer&quot;) und ihren Kunden (nachfolgend &quot;Auftraggeber&quot;) über
-                Garten- und Tiefbauarbeiten sowie damit zusammenhängende Dienstleistungen.
+                Maler- und Ausbauarbeiten, Grünflächenpflege sowie damit zusammenhängende Dienstleistungen.
               </RegularText>
             </div>
           </section>

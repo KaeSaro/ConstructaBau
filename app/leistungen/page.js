@@ -95,13 +95,7 @@ export default function Leistungen() {
           </RegularText>
         </div>
 
-        {/* Tiefbau und Außenarbeiten */}
-        <div className="mt-16 text-left">
-          <Subtitle>Tiefbau</Subtitle>
-          <RegularText withDot>vom Aushub bis zu komplexen Infrastruktur-projekten</RegularText>
-          <RegularText withDot>Wir legen das Fundament</RegularText>
-        </div>
-        
+        {/* Außenarbeiten */}
         <div className="mt-16 text-left">
           <Subtitle>Grünflächenpflege</Subtitle>
           <RegularText withDot>

@@ -495,12 +495,6 @@ export default function Impressionen() {
 
               {/* Wilnsdorf */}
 
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <ImageCard {...images[39]} span="default" />
-            </div>
-
-
   {/* Two Default (1:1) + Wide (2:2) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
               <div className="md:col-span-1">
@@ -513,12 +507,6 @@ export default function Impressionen() {
                 <ImageCard {...images[41]} span="wide" />
               </div>
             </div>
-
-    {/* Landscape (3:1) */}
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-              <ImageCard {...images[39]} span="landscape" />
-            </div>
-
 
             {/* Wide (2:2) + Default (1:1) */}
             <div className="grid grid-cols-1 gap-6 md:gap-12">
@@ -584,45 +572,6 @@ export default function Impressionen() {
               <ImageCard {...images[35]} span="landscape" />
             </div>
 
-            {/* Netphen */}
-
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <ImageCard {...images[38]} span="default" />
-              <ImageCard {...images[47]} span="default" />
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-              <ImageCard {...images[22]} span="halflandscape" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <ImageCard {...images[23]} span="default" />
-              <ImageCard {...images[24]} span="default" />
-              <ImageCard {...images[26]} span="default" />
-            </div>
-
-            {/* Bad Endbach */}
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <div className="md:col-span-1">
-                <ImageCard {...images[37]} span="default" />
-              </div>
-              <div className="md:col-span-2">
-                <ImageCard {...images[38]} span="wide" />
-              </div>
-            </div>
-
-            {/* Wide (2:2) + Default (1:1) */}
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-                <ImageCard {...images[0]} span="wide" />
-            </div>
-
-            {/* Half Landscape (2:1) */}
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-                <ImageCard {...images[2]} span="halflandscape" />
-            </div>
-
             {/* Neunkirchen */}
 
             {/* Three Default (1:1) */}
@@ -632,31 +581,12 @@ export default function Impressionen() {
               <ImageCard {...images[6]} span="default" />
             </div>
 
-            {/* Single Half Landscape */}
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-              <ImageCard {...images[7]} span="halflandscape" />
-            </div>
-
-            {/* Wuerzburg */}
-
-            {/* Wide (2:2) + Two Default (1:1) – nur noch die beiden Standardformate */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
-                  <ImageCard {...images[8]} span="default" />
-                  <ImageCard {...images[9]} span="default" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <div className="md:col-span-1">
-                <div className="grid grid-cols-1 gap-6 md:gap-12">
-                  <ImageCard {...images[10]} span="default" />
-                </div>
-              </div>
-              <div className="md:col-span-2">
-                <ImageCard {...images[11]} span="wide" />
-              </div>
-            </div>
-
             {/* Taktiles Leitsystem */}
+
+            {/* Single Half Landscape (Taktile/1) */}
+            <div className="grid grid-cols-1 gap-6 md:gap-12">
+              <ImageCard {...images[11]} span="halflandscape" />
+            </div>
 
             {/* Default (1:1) + Wide (2:2) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
@@ -666,20 +596,6 @@ export default function Impressionen() {
               <div className="md:col-span-2">
                 <ImageCard {...images[13]} span="wide" />
               </div>
-            </div>
-
-            {/* Landscape (3:1) */}
-            <div className="grid grid-cols-1 gap-6 md:gap-12">
-              <ImageCard {...images[14]} span="landscape" />
-            </div>
-
-            {/* Kabelschachtabdeckung */}
-
-            {/* Three Default (1:1) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <ImageCard {...images[15]} span="default" />
-              <ImageCard {...images[16]} span="default" />
-              <ImageCard {...images[17]} span="default" />
             </div>
 
             {/* Reinigung Plattenbelag */}
@@ -693,18 +609,6 @@ export default function Impressionen() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Anfahrschutz */}
-
-            {/* Wide (2:2) + Default (1:1) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-              <div className="md:col-span-2">
-                <ImageCard {...images[20]} span="wide" />
-              </div>
-              <div className="md:col-span-1">
-                <ImageCard {...images[21]} span="default" />
-              </div>
             </div>
 
           </div>
