@@ -1,6 +1,6 @@
 import { Title } from '../../components/Title';
 import { Subtitle } from '../../components/Subtitle';
-import { RegularText } from '../../components/RegularText';
+import { RegularText, regularTextStyles } from '../../components/RegularText';
 import { Content } from '../../components/Content';
 
 export default function Leistungen() {
@@ -91,8 +91,17 @@ export default function Leistungen() {
         <div className="mt-16 text-left">
           <Subtitle>Taktile Leitsysteme und aufklebbare Bodenindikatoren</Subtitle>
           <RegularText withDot>
-            Barrierefreie Orientierung durch taktile Leitlinien und Bodenindikatoren – für sichere Wege in öffentlichen Räumen, Bahnhöfen und Gebäuden
+            Barrierefreie Orientierung mit dem PrefaTac-System – aufklebbare Rippen- und Noppenplatten für innen und
+            außen, deutschlandweit fachgerecht verlegt in Verkehrsstationen, öffentlichen Gebäuden und Bestandsflächen
           </RegularText>
+          <a
+            href="/Constructa_Bau_PrefaTac_Broschuere.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${regularTextStyles} mt-4 inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-surface-dark hover:text-on-dark`}
+          >
+            Broschüre herunterladen (PDF)
+          </a>
         </div>
 
         {/* Außenarbeiten */}
