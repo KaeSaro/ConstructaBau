@@ -98,8 +98,12 @@ export default function Leistungen() {
             href="/Constructa_Bau_PrefaTac_Broschuere.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${regularTextStyles} mt-4 inline-block rounded-lg ml-[-8px] px-2 py-0 transition-all duration-300 ease-in-out cursor-pointer hover:bg-surface-dark hover:text-on-dark`}
+            className={`${regularTextStyles} mt-4 inline-block rounded-lg ml-[-8px] px-2 py-1 transition-all duration-300 ease-in-out cursor-pointer bg-surface-dark text-on-dark hover:bg-background hover:text-foreground`}
           >
+            <span
+              aria-hidden="true"
+              className="relative top-[-0.12em] mr-2 inline-block h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-current align-middle animate-pulse [animation-duration:3.5s]"
+            />
             Broschüre herunterladen (PDF)
           </a>
         </div>
