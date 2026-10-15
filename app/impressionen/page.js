@@ -386,6 +386,21 @@ const images = [
   { src: '/Stuttgart/2.jpeg', alt: 'Stuttgart', title: 'Stuttgart', date: '2025', span: 'full' },
   { src: '/Stuttgart/4.jpeg', alt: 'Stuttgart', title: 'Stuttgart', date: '2025', span: 'full' },
   { src: '/Stuttgart/5.jpeg', alt: 'Stuttgart', title: 'Stuttgart', date: '2025', span: 'full' },
+  // Taktiles Leitsystem (2026) – neue Bilder, ACHTUNG: nur hinten anhaengen,
+  // die JSX unten greift ueber feste Array-Indizes zu.
+  { src: '/Taktile/4.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 76 portrait
+  { src: '/Taktile/5.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 77 portrait (hoch)
+  { src: '/Taktile/6.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 78 landscape
+  { src: '/Taktile/7.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 79 portrait
+  { src: '/Taktile/8.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 80 portrait
+  { src: '/Taktile/9.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },   // 81 landscape
+  { src: '/Taktile/10.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 82 portrait
+  { src: '/Taktile/11.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 83 portrait
+  { src: '/Taktile/12.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 84 portrait
+  { src: '/Taktile/13.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 85 landscape
+  { src: '/Taktile/14.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 86 portrait
+  { src: '/Taktile/15.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 87 portrait
+  { src: '/Taktile/16.jpeg', alt: 'Taktile', title: 'Taktiles Leitsystem', date: '2026', span: 'full' },  // 88 portrait
 ];
 
 export default function Impressionen() {
@@ -596,6 +611,59 @@ export default function Impressionen() {
               <div className="md:col-span-2">
                 <ImageCard {...images[13]} span="wide" />
               </div>
+            </div>
+
+            {/* Taktile 2026 – Wide (Querformat) + zwei Default (Hochformat) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+              <div className="md:col-span-2">
+                <ImageCard {...images[78]} span="wide" />
+              </div>
+              <div className="md:col-span-1">
+                <div className="grid grid-cols-1 gap-6 md:gap-12">
+                  <ImageCard {...images[76]} span="default" />
+                  <ImageCard {...images[79]} span="default" />
+                </div>
+              </div>
+            </div>
+
+            {/* Taktile 2026 – Portrait Images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+              {[80, 82, 83].map((index) => (
+                <div key={index} className="md:col-span-1">
+                  <div className="aspect-[3/4] md:aspect-[1/2]">
+                    <ImageCard {...images[index]} span="default" className="h-full object-cover" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Taktile 2026 – Single Half Landscape (Querformat) */}
+            <div className="grid grid-cols-1 gap-6 md:gap-12">
+              <ImageCard {...images[81]} span="halflandscape" />
+            </div>
+
+            {/* Taktile 2026 – Zwei Default (Hochformat) + Wide (Querformat) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+              <div className="md:col-span-1">
+                <div className="grid grid-cols-1 gap-6 md:gap-12">
+                  <ImageCard {...images[84]} span="default" />
+                  <ImageCard {...images[86]} span="default" />
+                </div>
+              </div>
+              <div className="md:col-span-2">
+                <ImageCard {...images[85]} span="wide" />
+              </div>
+            </div>
+
+            {/* Taktile 2026 – Portrait Images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+              {[77, 87, 88].map((index) => (
+                <div key={index} className="md:col-span-1">
+                  <div className="aspect-[3/4] md:aspect-[1/2]">
+                    <ImageCard {...images[index]} span="default" className="h-full object-cover" />
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* Reinigung Plattenbelag */}
